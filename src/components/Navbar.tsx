@@ -49,10 +49,10 @@ export function Navbar() {
       <div className="container mx-auto px-4 md:px-8 flex justify-between items-center">
         <Link to="/" className="flex items-center gap-2 group">
           <div className="w-10 h-10 border-2 border-primary flex items-center justify-center transition-transform group-hover:scale-105">
-            <span className="font-serif font-bold text-lg text-primary">H</span>
+            <span className="font-serif font-bold text-primary text-[1.43rem]">F</span>
           </div>
           <div className="flex flex-col">
-            <span className="font-serif font-bold text-xl leading-none tracking-wider">HMGC</span>
+            <span className="font-serif font-bold text-xl leading-none tracking-wider">FILETO</span>
             <span className="text-[10px] tracking-[0.2em] text-muted-foreground uppercase">
               Advogados
             </span>

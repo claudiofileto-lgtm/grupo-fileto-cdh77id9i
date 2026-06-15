@@ -14,13 +14,13 @@ export function Hero() {
         <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
       </div>
 
-      <div className="container mx-auto px-4 md:px-8 relative z-10">
+      <div className="container mx-auto px-4 md:px-8 relative z-10 text-[0rem] text-left">
         <div className="max-w-3xl">
           <FadeIn delay={100}>
             <div className="flex items-center gap-4 mb-6">
               <div className="h-[1px] w-12 bg-primary"></div>
               <span className="text-primary uppercase tracking-[0.2em] text-sm font-semibold">
-                HMGC Advogados
+                FILETO EXPERTISE EMPRESARIAL
               </span>
             </div>
           </FadeIn>
@@ -33,8 +33,8 @@ export function Hero() {
 
           <FadeIn delay={500}>
             <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl leading-relaxed">
-              Atuação combativa e estratégica para proteger o seu patrimônio e os interesses da sua
-              empresa com a máxima confidencialidade e rigor técnico.
+              Atuação estratégica para proteger o seu patrimônio e os interesses da sua empresa com
+              a máxima confidencialidade e rigor técnico.
             </p>
           </FadeIn>
 
@@ -46,7 +46,7 @@ export function Hero() {
                 document.getElementById('escritorio')?.scrollIntoView({ behavior: 'smooth' })
               }
             >
-              Conheça o Escritório
+              Conheça nosso Escritório
             </Button>
           </FadeIn>
         </div>
