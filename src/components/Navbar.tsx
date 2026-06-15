@@ -53,8 +53,9 @@ export function Navbar() {
           </div>
           <div className="flex flex-col">
             <span className="font-serif font-bold text-xl leading-none tracking-wider">FILETO</span>
-            <span className="text-[10px] tracking-[0.2em] text-muted-foreground uppercase">
-              Advogados
+            <span className="text-[10px] tracking-[0.2em] text-muted-foreground uppercase text-center">
+              expertise
+              <br />
             </span>
           </div>
         </Link>
