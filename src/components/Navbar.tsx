@@ -49,7 +49,7 @@ export function Navbar() {
     >
       <div className="container mx-auto px-4 md:px-8 flex justify-between items-center">
         <Link to="/" className="flex items-center gap-4 group">
-          <div className="w-12 h-12 border border-primary/50 flex items-center justify-center p-2 transition-transform duration-500 group-hover:scale-105">
+          <div className="w-12 h-12 md:w-14 md:h-14 border border-primary/50 flex items-center justify-center p-1.5 transition-transform duration-500 group-hover:scale-105">
             <img src={logoBronze} alt="Fileto Expertise" className="w-full h-full object-contain" />
           </div>
           <div className="flex flex-col justify-center">
