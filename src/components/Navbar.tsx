@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
 import { cn } from '@/lib/utils'
+import logoBronze from '@/assets/logofbronze-sf-07c40.png'
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -48,9 +49,11 @@ export function Navbar() {
     >
       <div className="container mx-auto px-4 md:px-8 flex justify-between items-center">
         <Link to="/" className="flex items-center gap-2 group">
-          <div className="w-10 h-10 border-2 border-primary flex items-center justify-center transition-transform group-hover:scale-105">
-            <span className="font-serif font-bold text-primary text-[1.43rem]">F</span>
-          </div>
+          <img
+            src={logoBronze}
+            alt="Fileto Expertise"
+            className="w-12 h-12 object-contain transition-transform group-hover:scale-105"
+          />
           <div className="flex flex-col">
             <span className="font-serif font-bold text-xl leading-none tracking-wider">FILETO</span>
             <span className="text-[10px] tracking-[0.2em] text-muted-foreground uppercase text-center">

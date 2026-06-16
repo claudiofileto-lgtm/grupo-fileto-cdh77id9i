@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { MapPin, Phone, Mail, Instagram, Linkedin } from 'lucide-react'
+import logoBronze from '@/assets/logofbronze-sf-07c40.png'
 
 export function Footer() {
   return (
@@ -7,16 +8,18 @@ export function Footer() {
       <div className="container mx-auto px-4 md:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           <div className="col-span-1 md:col-span-1">
-            <Link to="/" className="flex items-center gap-2 mb-6">
-              <div className="w-10 h-10 border-2 border-primary flex items-center justify-center">
-                <span className="font-serif font-bold text-lg text-primary">H</span>
-              </div>
+            <Link to="/" className="flex items-center gap-2 mb-6 group">
+              <img
+                src={logoBronze}
+                alt="Fileto Expertise"
+                className="w-12 h-12 object-contain transition-transform group-hover:scale-105"
+              />
               <div className="flex flex-col">
                 <span className="font-serif font-bold text-xl leading-none tracking-wider">
-                  HMGC
+                  FILETO
                 </span>
-                <span className="text-[10px] tracking-[0.2em] text-muted-foreground uppercase">
-                  Advogados
+                <span className="text-[10px] tracking-[0.2em] text-muted-foreground uppercase text-center">
+                  expertise
                 </span>
               </div>
             </Link>
@@ -51,7 +54,7 @@ export function Footer() {
               </li>
               <li className="flex gap-3 items-center hover:text-primary transition-colors">
                 <Mail className="text-primary shrink-0" size={18} />
-                <a href="mailto:contato@hmgcadvogados.com.br">contato@hmgcadvogados.com.br</a>
+                <a href="mailto:contato@filetoexpertise.com.br">contato@filetoexpertise.com.br</a>
               </li>
             </ul>
           </div>
@@ -76,7 +79,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} HMGC Advogados. Todos os direitos reservados.</p>
+          <p>&copy; {new Date().getFullYear()} Fileto Expertise. Todos os direitos reservados.</p>
           <p>Design sofisticado e desenvolvimento por Skip.</p>
         </div>
       </div>
