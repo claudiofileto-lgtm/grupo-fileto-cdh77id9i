@@ -27,14 +27,14 @@ export function Hero() {
 
           <FadeIn delay={300}>
             <h1 className="text-5xl md:text-7xl font-serif font-bold leading-tight mb-8 text-foreground">
-              Excelência e Tradição <br className="hidden md:block" /> em Soluções Jurídicas
+              Soluções Tributárias, Empresariais,&nbsp; Financeiras e Sucessória para sua empresa
             </h1>
           </FadeIn>
 
           <FadeIn delay={500}>
             <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl leading-relaxed">
-              Atuação estratégica para proteger o seu patrimônio e os interesses da sua empresa com
-              a máxima confidencialidade e rigor técnico.
+              Atuação estratégica para proteger o seu patrimônio e os interesses da sua empresa e
+              família com inteligência, confidencialidade e segurança
             </p>
           </FadeIn>
 
@@ -46,7 +46,7 @@ export function Hero() {
                 document.getElementById('escritorio')?.scrollIntoView({ behavior: 'smooth' })
               }
             >
-              Conheça nosso Escritório
+              Conheça o Escritório
             </Button>
           </FadeIn>
         </div>
