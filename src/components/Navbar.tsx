@@ -48,17 +48,16 @@ export function Navbar() {
       )}
     >
       <div className="container mx-auto px-4 md:px-8 flex justify-between items-center">
-        <Link to="/" className="flex items-center gap-2 group">
-          <img
-            src="/visual-edits/logo-f-bronze-sf-1636a10c.png"
-            alt="Fileto Expertise"
-            className="w-12 h-12 object-contain transition-transform group-hover:scale-105"
-          />
-          <div className="flex flex-col">
-            <span className="font-serif font-bold text-xl leading-none tracking-wider">FILETO</span>
-            <span className="text-[10px] tracking-[0.2em] text-muted-foreground uppercase text-center">
+        <Link to="/" className="flex items-center gap-4 group">
+          <div className="w-12 h-12 border border-primary/50 flex items-center justify-center p-2 transition-transform duration-500 group-hover:scale-105">
+            <img src={logoBronze} alt="Fileto Expertise" className="w-full h-full object-contain" />
+          </div>
+          <div className="flex flex-col justify-center">
+            <span className="font-serif font-bold text-xl leading-none tracking-[0.15em] mb-1">
+              FILETO
+            </span>
+            <span className="text-[9px] tracking-[0.3em] text-muted-foreground uppercase text-left">
               expertise
-              <br />
             </span>
           </div>
         </Link>
