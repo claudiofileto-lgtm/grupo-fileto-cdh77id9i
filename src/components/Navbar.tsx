@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
 import { cn } from '@/lib/utils'
-import logoBronze from '@/assets/logofbronze-sf-07c40.png'
+import logoBronze from '@/assets/logo-fileto-douradosf-f2cfd.png'
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -50,7 +50,7 @@ export function Navbar() {
       <div className="container mx-auto px-4 md:px-8 flex justify-between items-center">
         <Link to="/" className="flex items-center gap-3.5 group">
           <img
-            src="/visual-edits/logo-f-bronze-92193add.png"
+            src={logoBronze}
             alt="Fileto Expertise"
             className="h-[34px] w-auto object-contain transition-transform duration-500 group-hover:scale-105"
           />
