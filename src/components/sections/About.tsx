@@ -63,8 +63,9 @@ export function About() {
                 <div>
                   <h4 className="font-serif text-white text-xl mb-2">Missão</h4>
                   <p className="text-sm text-muted-foreground">
-                    Proteger e impulsionar os negócios de nossos clientes através da excelência
-                    jurídica.
+                    Proteger e impulsionar os negócios de nossos clientes com redução de custos e
+                    ampliação de margens, através da nossa expertise e de nossos parceiros, com
+                    agilidade e segurança.
                   </p>
                 </div>
                 <div>
