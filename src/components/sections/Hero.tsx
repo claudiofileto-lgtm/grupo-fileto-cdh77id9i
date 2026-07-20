@@ -27,14 +27,14 @@ export function Hero() {
 
           <FadeIn delay={300}>
             <h1 className="text-5xl md:text-7xl font-serif font-bold leading-tight mb-8 text-foreground">
-              Soluções Tributárias, Empresariais,&nbsp; Financeiras e Sucessória para sua empresa
+              Soluções Tributárias, Empresariais e Financeiras
             </h1>
           </FadeIn>
 
           <FadeIn delay={500}>
             <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl leading-relaxed">
-              Atuação estratégica para proteger o seu patrimônio e os interesses da sua empresa e
-              família com inteligência, confidencialidade e segurança
+              Atuação estratégica para proteger o seu patrimônio e os interesses da sua empresa com
+              inteligência, confidencialidade e segurança.
             </p>
           </FadeIn>
 
