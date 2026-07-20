@@ -24,9 +24,9 @@ export function PracticeAreas() {
           </div>
           <h3 className="text-4xl md:text-5xl font-serif font-bold mb-6">Áreas de Atuação</h3>
           <p className="text-muted-foreground text-lg">
-            Oferecemos o que há de melhor no mercado, unindo soluções que de encontro aos anseios e
-            necessidades de empresários, combinando conhecimento prático profundo, visão de negócios
-            em áreas estratégicas Tributárias, Administrativas e Financeiras, com&nbsp;
+            Oferecemos o que há de melhor no mercado, unindo soluções que vão de encontro aos
+            anseios e necessidades de empresários, combinando conhecimento prático profundo, visão
+            de negócios em áreas estratégicas Tributárias, Administrativas e Financeiras, com&nbsp;
             <span>suporte jurídico integral.&nbsp;</span>
           </p>
         </FadeIn>

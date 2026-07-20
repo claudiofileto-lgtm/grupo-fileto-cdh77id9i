@@ -50,10 +50,12 @@ export function About() {
                   </div>
                 </p>
                 <p>
-                  Não acreditamos em soluções padronizadas. Cada caso é analisado de forma minuciosa
-                  por uma equipe multidisciplinar, garantindo que a estratégia jurídica adotada seja
-                  não apenas robusta, mas perfeitamente alinhada aos objetivos de negócios e
-                  pessoais de quem confia em nosso trabalho.
+                  Não trabalhamos com soluções padronizadas.&nbsp;
+                  <div>
+                    Analisamos cada caso minuciosamente, garantindo que as estratégias adotadas
+                    sejam não apenas robustas, mas perfeitamente alinhadas às necessidades e aos
+                    objetivos de negócios e pessoais de quem confia em nosso trabalho.
+                  </div>
                 </p>
               </div>
 
