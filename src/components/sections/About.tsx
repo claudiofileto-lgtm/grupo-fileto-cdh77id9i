@@ -72,7 +72,7 @@ export function About() {
                   <h4 className="font-serif text-white text-xl mb-2">Valores</h4>
                   <p className="text-sm text-muted-foreground">
                     Ética inegociável, sofisticação técnica, atualização constante e dedicação
-                    absoluta.
+                    absoluta aos interesses dos nossos clientes.
                   </p>
                 </div>
               </div>
