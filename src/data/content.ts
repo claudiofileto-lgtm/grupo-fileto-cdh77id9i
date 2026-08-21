@@ -11,8 +11,8 @@ export const practiceAreas = [
   },
   {
     id: '2',
-    slug: 'direito-empresarial',
-    title: 'Direito Empresarial',
+    slug: 'empresarial',
+    title: 'Empresarial',
     icon: 'Building2',
     description: 'Consultoria para estruturação, fusões, aquisições e governança corporativa.',
     fullDescription:
@@ -30,7 +30,7 @@ export const practiceAreas = [
   {
     id: '4',
     slug: 'direito-tributario',
-    title: 'Direito Tributário',
+    title: 'Tributário',
     icon: 'Landmark',
     description: 'Planejamento fiscal e defesa em execuções e autuações fiscais.',
     fullDescription:
@@ -45,8 +45,8 @@ export const teamMembers = [
     name: 'Carlos Henrique',
     role: 'Sócio Fundador',
     image: 'https://img.usecurling.com/ppl/large?gender=male&seed=12',
-    bio: 'Com mais de 20 anos de experiência em Direito Empresarial, Carlos tem liderado grandes operações de M&A e reestruturações complexas no Brasil.',
-    expertise: ['Direito Empresarial', 'M&A', 'Governança'],
+    bio: 'Com mais de 20 anos de experiência em Empresarial, Carlos tem liderado grandes operações de M&A e reestruturações complexas no Brasil.',
+    expertise: ['Empresarial', 'M&A', 'Governança'],
     email: 'carlos@hmgcadvogados.com.br',
   },
   {
@@ -55,8 +55,8 @@ export const teamMembers = [
     name: 'Marina Gomes',
     role: 'Sócia Diretora',
     image: 'https://img.usecurling.com/ppl/large?gender=female&seed=45',
-    bio: 'Especialista em Direito Tributário e Mestre pela USP. Marina atua na vanguarda do planejamento fiscal para multinacionais.',
-    expertise: ['Direito Tributário', 'Planejamento Fiscal'],
+    bio: 'Especialista em Tributário e Mestre pela USP. Marina atua na vanguarda do planejamento fiscal para multinacionais.',
+    expertise: ['Tributário', 'Planejamento Fiscal'],
     email: 'marina@hmgcadvogados.com.br',
   },
   {
