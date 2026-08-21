@@ -1,12 +1,13 @@
 export const practiceAreas = [
   {
     id: '1',
-    slug: 'direito-civil',
-    title: 'Direito Civil',
-    icon: 'Scale',
-    description: 'Atuação estratégica em litígios complexos, contratos e responsabilidade civil.',
+    slug: 'tributario',
+    title: 'Tributário',
+    icon: 'Landmark',
+    description:
+      'Planejamento fiscal estratégico, recuperação de créditos e defesa no contencioso tributário.',
     fullDescription:
-      'Nossa equipe de Direito Civil oferece assessoria completa e contenciosa. Tratamos de questões envolvendo contratos, direitos reais, obrigações e responsabilidade civil com o máximo rigor técnico, buscando a melhor resolução para nossos clientes.',
+      'Oferecemos assessoria completa em matéria tributária com foco em inteligência fiscal, eficiência e mitigação de riscos. Atuamos com planejamento tributário, recuperação de tributos pagos indevidamente, consultoria preventiva e defesa contenciosa em processos administrativos e judiciais contra autuações e execuções fiscais.',
   },
   {
     id: '2',
