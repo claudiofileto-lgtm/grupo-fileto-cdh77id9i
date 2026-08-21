@@ -11,8 +11,8 @@ export const practiceAreas = [
   },
   {
     id: '2',
-    slug: 'empresarial',
-    title: 'Empresarial',
+    slug: 'direito-empresarial',
+    title: 'Direito Empresarial',
     icon: 'Building2',
     description: 'Consultoria para estruturação, fusões, aquisições e governança corporativa.',
     fullDescription:
@@ -45,8 +45,8 @@ export const teamMembers = [
     name: 'Carlos Henrique',
     role: 'Sócio Fundador',
     image: 'https://img.usecurling.com/ppl/large?gender=male&seed=12',
-    bio: 'Com mais de 20 anos de experiência em Empresarial, Carlos tem liderado grandes operações de M&A e reestruturações complexas no Brasil.',
-    expertise: ['Empresarial', 'M&A', 'Governança'],
+    bio: 'Com mais de 20 anos de experiência em Direito Empresarial, Carlos tem liderado grandes operações de M&A e reestruturações complexas no Brasil.',
+    expertise: ['Direito Empresarial', 'M&A', 'Governança'],
     email: 'carlos@hmgcadvogados.com.br',
   },
   {
