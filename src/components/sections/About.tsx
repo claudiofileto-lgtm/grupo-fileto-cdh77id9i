@@ -37,12 +37,12 @@ export function About() {
               </h3>
               <div className="space-y-6 text-muted-foreground leading-relaxed">
                 <p>
-                  Nosso CEO, CLAUDIO FILETO, advogado desde 1991, com especializações em
-                  administração empresarial e direito tributário, mais de 25 anos em gestão e
-                  direção em grandes empresas nacionais e multinacionais, fundou a Fileto Expertise
-                  Empresarial em janeiro de 2019, consolidando-se como um escritório parceiro dos
-                  empresários, que vai muito além do tradicional. Para tanto, agregou Parcerias
-                  importantes, que fazem toda a diferença.&nbsp;
+                  Nosso CEO, CLAUDIO FILETO, advogado desde 1991, com duas especializações em
+                  administração empresarial e duas na área do direito tributário, e mais de 25 anos
+                  de atuação em gestão e direção de grandes empresas nacionais e multinacionais,
+                  fundou a Fileto Expertise Empresarial em janeiro de 2019, consolidando-se como um
+                  escritório parceiro dos empresários, que vai muito além do tradicional. Para
+                  tanto, agregou Parcerias importantes, que fazem toda a diferença.&nbsp;
                   <div>
                     Nossa filosofia baseia-se no atendimento personalizado e na busca implacável
                     pelos melhores resultados para nossos clientes, com inteligência, celeridade e
