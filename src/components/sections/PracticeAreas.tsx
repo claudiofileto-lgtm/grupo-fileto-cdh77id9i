@@ -28,7 +28,7 @@ export function PracticeAreas() {
             Oferecemos o que há de melhor no mercado, unindo soluções que vão de encontro aos
             anseios e necessidades de empresas e empresários, combinando conhecimento prático
             profundo, visão de negócios em áreas estratégicas Tributárias, Administrativas e
-            Financeiras Inteligentes, com&nbsp;<span>suporte jurídico integral.</span>
+            Financeiras&nbsp;Inteligentes, com&nbsp;<span>suporte jurídico integral.</span>
             <span>&nbsp;</span>
           </p>
         </FadeIn>
