@@ -11,6 +11,14 @@ import {
   Briefcase,
   Landmark,
   DollarSign,
+  Users,
+  MapPin,
+  ShieldCheck,
+  Check,
+  FileText,
+  Lock,
+  Award,
+  TrendingUp,
 } from 'lucide-react'
 
 const iconMap: Record<string, React.ElementType> = {
@@ -19,6 +27,14 @@ const iconMap: Record<string, React.ElementType> = {
   Briefcase,
   Landmark,
   DollarSign,
+  Users,
+  MapPin,
+  ShieldCheck,
+  Check,
+  FileText,
+  Lock,
+  Award,
+  TrendingUp,
 }
 
 export default function AreaDetail() {
@@ -44,6 +60,15 @@ export default function AreaDetail() {
 
   const Icon = iconMap[area.icon] || Scale
 
+  const isRich = !!(
+    area.subtitle ||
+    area.aboutSection ||
+    area.stats ||
+    area.method ||
+    area.differentials ||
+    area.scenario
+  )
+
   return (
     <div className="pt-24 pb-32 min-h-screen bg-background">
       <div className="container mx-auto px-4 md:px-8">
@@ -68,32 +93,194 @@ export default function AreaDetail() {
                 </h1>
               </div>
 
-              <div className="prose prose-invert prose-lg max-w-none prose-p:text-muted-foreground prose-p:leading-relaxed">
-                <p className="text-xl text-white font-medium mb-8">{area.description}</p>
-                <div className="w-12 h-[1px] bg-primary mb-8"></div>
-                <p>{area.fullDescription}</p>
-                {area.highlights && area.highlights.length > 0 && (
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-12 mb-12 not-prose">
-                    {area.highlights.map((h, i) => (
-                      <div key={i} className="bg-card border border-border p-6">
-                        <h4 className="font-serif text-xl text-white mb-3">{h.title}</h4>
-                        <p className="text-muted-foreground leading-relaxed text-sm">
-                          {h.description}
-                        </p>
-                      </div>
-                    ))}
-                  </div>
-                )}
-                <p>
-                  Nossa abordagem é pautada na análise meticulosa de cada cenário, identificando
-                  riscos e oportunidades para desenvolver estratégias jurídicas sob medida.
-                  Compreendemos que as questões atinentes ao{' '}
-                  <strong>{area.title.toLowerCase()}</strong> exigem não apenas conhecimento técnico
-                  profundo, mas também sensibilidade para os impactos nos negócios e na vida de
-                  nossos clientes.
-                </p>
-              </div>
+              {isRich ? (
+                <div className="max-w-none">
+                  {area.subtitle && (
+                    <p className="text-2xl md:text-3xl font-serif text-primary mb-10 leading-snug">
+                      {area.subtitle}
+                    </p>
+                  )}
+                  <p className="text-xl text-white font-medium mb-8">{area.description}</p>
+                  <div className="w-12 h-[1px] bg-primary mb-8"></div>
+                  <p className="text-muted-foreground leading-relaxed text-lg">
+                    {area.fullDescription}
+                  </p>
+                </div>
+              ) : (
+                <div className="prose prose-invert prose-lg max-w-none prose-p:text-muted-foreground prose-p:leading-relaxed">
+                  <p className="text-xl text-white font-medium mb-8">{area.description}</p>
+                  <div className="w-12 h-[1px] bg-primary mb-8"></div>
+                  <p>{area.fullDescription}</p>
+                  {area.highlights && area.highlights.length > 0 && (
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-12 mb-12 not-prose">
+                      {area.highlights.map((h, i) => (
+                        <div key={i} className="bg-card border border-border p-6">
+                          <h4 className="font-serif text-xl text-white mb-3">{h.title}</h4>
+                          <p className="text-muted-foreground leading-relaxed text-sm">
+                            {h.description}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                  <p>
+                    Nossa abordagem é pautada na análise meticulosa de cada cenário, identificando
+                    riscos e oportunidades para desenvolver estratégias jurídicas sob medida.
+                    Compreendemos que as questões atinentes ao{' '}
+                    <strong>{area.title.toLowerCase()}</strong> exigem não apenas conhecimento
+                    técnico profundo, mas também sensibilidade para os impactos nos negócios e na
+                    vida de nossos clientes.
+                  </p>
+                </div>
+              )}
             </FadeIn>
+
+            {isRich && (
+              <div className="mt-20 space-y-24">
+                {/* Quem somos */}
+                {area.aboutSection && (
+                  <FadeIn>
+                    <SectionHeader
+                      eyebrow={area.aboutSection.eyebrow}
+                      title={area.aboutSection.title}
+                    />
+                    {area.aboutSection.body && (
+                      <p className="text-muted-foreground leading-relaxed text-lg max-w-3xl mb-8">
+                        {area.aboutSection.body}
+                      </p>
+                    )}
+                    {area.aboutSection.bullets && (
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-5">
+                        {area.aboutSection.bullets.map((b, i) => (
+                          <div key={i} className="flex items-start gap-3">
+                            <Check
+                              className="w-5 h-5 text-primary shrink-0 mt-0.5"
+                              strokeWidth={2}
+                            />
+                            <span className="text-foreground/90 leading-relaxed">{b}</span>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </FadeIn>
+                )}
+
+                {/* Números */}
+                {area.stats && area.stats.length > 0 && (
+                  <FadeIn>
+                    <SectionHeader eyebrow="Números" title="Resultados que geram caixa" />
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                      {area.stats.map((s, i) => {
+                        const StatIcon = iconMap[s.icon] || Award
+                        return (
+                          <div
+                            key={i}
+                            className="bg-card border border-border p-8 text-center hover:border-primary/50 transition-colors"
+                          >
+                            <div className="w-12 h-12 mx-auto mb-5 flex items-center justify-center">
+                              <StatIcon className="w-8 h-8 text-primary" strokeWidth={1.5} />
+                            </div>
+                            <div className="text-3xl md:text-4xl font-serif font-bold text-white mb-2">
+                              {s.value}
+                            </div>
+                            <div className="text-sm text-muted-foreground leading-snug">
+                              {s.label}
+                            </div>
+                          </div>
+                        )
+                      })}
+                    </div>
+                  </FadeIn>
+                )}
+
+                {/* Método exclusivo */}
+                {area.method && (
+                  <FadeIn>
+                    <SectionHeader eyebrow={area.method.eyebrow} title={area.method.title} />
+                    {area.method.intro && (
+                      <p className="text-muted-foreground leading-relaxed text-lg max-w-3xl mb-10">
+                        {area.method.intro}
+                      </p>
+                    )}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      {area.method.steps.map((step, i) => (
+                        <div
+                          key={i}
+                          className="bg-card border border-border p-8 flex gap-5 hover:border-primary/50 transition-colors"
+                        >
+                          <div className="shrink-0 w-12 h-12 border border-primary/50 flex items-center justify-center">
+                            <span className="font-serif text-primary text-xl">{step.number}</span>
+                          </div>
+                          <div>
+                            <h4 className="font-serif text-lg text-white mb-1">{step.title}</h4>
+                            {step.description && (
+                              <p className="text-sm text-muted-foreground leading-relaxed">
+                                {step.description}
+                              </p>
+                            )}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </FadeIn>
+                )}
+
+                {/* Diferenciais */}
+                {area.differentials && (
+                  <FadeIn>
+                    <SectionHeader
+                      eyebrow={area.differentials.eyebrow}
+                      title={area.differentials.title}
+                    />
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                      {area.differentials.bullets?.map((b, i) => {
+                        const icons = [ShieldCheck, TrendingUp, Check, FileText, Award, Lock]
+                        const DiffIcon = icons[i % icons.length]
+                        return (
+                          <div
+                            key={i}
+                            className="bg-card border border-border p-8 hover:border-primary/50 transition-colors"
+                          >
+                            <DiffIcon className="w-8 h-8 text-primary mb-5" strokeWidth={1.5} />
+                            <p className="text-foreground/90 leading-relaxed">{b}</p>
+                          </div>
+                        )
+                      })}
+                    </div>
+                  </FadeIn>
+                )}
+
+                {/* Cenário tributário brasileiro */}
+                {area.scenario && (
+                  <FadeIn>
+                    <SectionHeader eyebrow={area.scenario.eyebrow} title={area.scenario.title} />
+                    {area.scenario.body && (
+                      <p className="text-muted-foreground leading-relaxed text-lg max-w-3xl mb-10">
+                        {area.scenario.body}
+                      </p>
+                    )}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      {area.scenario.bullets?.map((b, i) => {
+                        const icons = [DollarSign, TrendingUp, AlertIcon, FileText]
+                        const ScenarioIcon = icons[i % icons.length]
+                        return (
+                          <div
+                            key={i}
+                            className="bg-card border border-border p-8 flex items-start gap-5 hover:border-primary/50 transition-colors"
+                          >
+                            <ScenarioIcon
+                              className="w-8 h-8 text-primary shrink-0 mt-0.5"
+                              strokeWidth={1.5}
+                            />
+                            <p className="text-foreground/90 leading-relaxed text-lg">{b}</p>
+                          </div>
+                        )
+                      })}
+                    </div>
+                  </FadeIn>
+                )}
+              </div>
+            )}
           </div>
 
           <div className="lg:col-span-1">
@@ -134,5 +321,41 @@ export default function AreaDetail() {
         </div>
       </div>
     </div>
+  )
+}
+
+function SectionHeader({ eyebrow, title }: { eyebrow: string; title: string }) {
+  return (
+    <div className="mb-10">
+      <div className="flex items-center gap-4 mb-4">
+        <div className="h-[1px] w-8 bg-primary"></div>
+        <span className="text-primary uppercase tracking-widest text-xs font-semibold">
+          {eyebrow}
+        </span>
+      </div>
+      <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground">{title}</h2>
+    </div>
+  )
+}
+
+// Small inline alert icon (no direct Lucide "alert" import needed beyond what's imported)
+function AlertIcon(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      {...props}
+    >
+      <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z" />
+      <path d="M12 9v4" />
+      <path d="M12 17h.01" />
+    </svg>
   )
 }

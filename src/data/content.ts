@@ -3,6 +3,32 @@ export interface PracticeAreaHighlight {
   description: string
 }
 
+export interface PracticeAreaStat {
+  value: string
+  label: string
+  icon: string
+}
+
+export interface PracticeAreaStep {
+  number: string
+  title: string
+  description?: string
+}
+
+export interface PracticeAreaMethodSection {
+  eyebrow: string
+  title: string
+  intro?: string
+  steps: PracticeAreaStep[]
+}
+
+export interface PracticeAreaDetailSection {
+  eyebrow: string
+  title: string
+  body?: string
+  bullets?: string[]
+}
+
 export interface PracticeArea {
   id: string
   slug: string
@@ -11,18 +37,103 @@ export interface PracticeArea {
   description: string
   fullDescription: string
   highlights?: PracticeAreaHighlight[]
+  // Rich detail content (used by the AG TaxTech "Inteligência Tributária" area)
+  subtitle?: string
+  aboutSection?: PracticeAreaDetailSection
+  stats?: PracticeAreaStat[]
+  method?: PracticeAreaMethodSection
+  differentials?: PracticeAreaDetailSection
+  scenario?: PracticeAreaDetailSection
 }
 
 export const practiceAreas: PracticeArea[] = [
   {
     id: '1',
-    slug: 'tributario',
-    title: 'Tributário',
+    slug: 'inteligencia-tributaria',
+    title: 'Inteligência Tributária',
     icon: 'Landmark',
     description:
-      'Planejamento fiscal estratégico, recuperação de créditos e defesa no contencioso tributário.',
+      'Primeira TaxTech do Brasil. Tecnologia proprietária para identificação de ativos ocultos em tributos pagos, gerando fluxo de caixa imediato para empresas.',
     fullDescription:
-      'Oferecemos assessoria completa em matéria tributária com foco em inteligência fiscal, eficiência e mitigação de riscos. Atuamos com planejamento tributário, recuperação de tributos pagos indevidamente, consultoria preventiva e defesa contenciosa em processos administrativos e judiciais contra autuações e execuções fiscais.',
+      'Somos a primeira TaxTech do Brasil. Há mais de 15 anos geramos fluxo de caixa para empresas de todo o Brasil com tecnologia pioneira para identificação de ativos ocultos em tributos pagos a maior, referência em compliance previdenciário e especialistas em impostos diretos, indiretos e Reforma Tributária.',
+    subtitle: 'Desde 2010, a referência em tecnologia e inteligência tributária.',
+    aboutSection: {
+      eyebrow: 'Quem somos',
+      title: 'A primeira TaxTech do Brasil',
+      body: 'Desde 2010, a AG é referência em tecnologia e inteligência tributária. Com mais de 15 anos de mercado, utilizamos tecnologia proprietária para extrair 100% das oportunidades ainda não aproveitadas por empresas do Lucro Real, gerando fluxo de caixa imediato e seguro.',
+      bullets: [
+        'Somos a primeira TaxTech do Brasil',
+        'Há mais de 15 anos gerando fluxo de caixa para empresas de todo o Brasil',
+        'Tecnologia pioneira para identificação de ativos ocultos em tributos pagos a maior nos últimos 5 anos',
+        'Referência em compliance previdenciário e identificação de ativos ocultos na folha de pagamento',
+        'Especialistas em impostos diretos, indiretos e Reforma Tributária',
+        'Tecnologia proprietária para extrair 100% das oportunidades ainda não aproveitadas por empresas do Lucro Real',
+        'Primeiro verificador tributário do eSocial, SST e Gestão de Riscos a Terceiros',
+      ],
+    },
+    stats: [
+      { value: '12.000+', label: 'clientes satisfeitos', icon: 'Users' },
+      { value: 'R$8 bi+', label: 'em créditos aproveitados', icon: 'DollarSign' },
+      { value: '+14%', label: 'das empresas listadas na B3 atendidas', icon: 'Building2' },
+      { value: '+12', label: 'estados com presença da AG', icon: 'MapPin' },
+    ],
+    method: {
+      eyebrow: 'Método exclusivo',
+      title: 'Um método 100% exclusivo fundamentado nas normas da RFB',
+      intro:
+        'Tecnologia que enxerga e especialistas que interpretam. Um passo a passo fundamentado nas normas da Receita Federal para extrair 100% das oportunidades tributárias — sem estimativas ou amostragem documental.',
+      steps: [
+        { number: '1', title: 'Documentação inicial e obtenção do NDA' },
+        {
+          number: '2',
+          title: 'Relatório Técnico Inicial (RTI)',
+          description: 'Em 10 dias úteis, sem custo.',
+        },
+        { number: '3', title: 'Início do trabalho hands on' },
+        { number: '4', title: 'Envio do relatório consolidado das oportunidades mapeadas' },
+        { number: '5', title: 'Regularização dos arquivos e documentos perante à RFB' },
+        {
+          number: '6',
+          title: 'Definição do cronograma de datas para início do aproveitamento',
+        },
+        {
+          number: '7',
+          title:
+            'Lançamento das compensações na DCTF Web e/ou solicitação de Pedidos de Restituição',
+        },
+        {
+          number: '8',
+          title: 'Dossiê Técnico Final',
+          description: 'Garantia de 5 anos e Suporte de CND.',
+        },
+      ],
+    },
+    differentials: {
+      eyebrow: 'Diferenciais',
+      title: 'Tecnologia de precisão full service',
+      bullets: [
+        'Tecnologia de precisão full service',
+        'Geração de caixa: resultado financeiro imediato após aprovação do projeto',
+        'Compliance: adequação e conformidade à legislação vigente',
+        'Relatório Técnico Inicial (RTI), sem custo, em 10 dias úteis',
+        'Dominância de todo o ciclo: apuração, monetização e retificação de forma automatizada',
+        'Segurança: compliance na FOPAG e sigilo das informações durante todo o trabalho',
+        'Remuneração apenas no êxito da operação, sem pró-labore ou antecipação de honorários',
+        'Operação segurada pela Berkley',
+        'Suporte AG por 5 anos',
+      ],
+    },
+    scenario: {
+      eyebrow: 'Cenário tributário brasileiro',
+      title: 'O tamanho da oportunidade no Brasil',
+      body: 'O cenário tributário brasileiro revela oportunidades gigantescas de fluxo de caixa ainda não aproveitadas pelas empresas. Fonte: Instituto Brasileiro de Planejamento e Tributação (IBPT) e Qive/Opinion Box.',
+      bullets: [
+        'Total em tributos: R$ 2,9 trilhões',
+        'Compensações tributárias: R$ 275 bilhões (9,5% dos tributos declarados quitados com oportunidades tributárias)',
+        'Mais de 60% das empresas ainda não mediram o impacto da Reforma Tributária nos negócios',
+        '6.782.002 normas editadas desde a CF/88, sendo 443.236 tributárias',
+      ],
+    },
   },
   {
     id: '2',
