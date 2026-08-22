@@ -55,7 +55,7 @@ export function Navbar() {
             className="h-10 sm:h-12 w-auto object-contain flex-shrink-0"
           />
           <div className="flex flex-col">
-            <span className="font-brand font-semibold text-[22px] leading-none tracking-[0.15em] text-primary">
+            <span className="font-serif font-bold text-[22px] leading-none tracking-[0.15em] text-primary">
               FILETO
             </span>
             <span className="text-[8px] leading-none tracking-[0.3em] text-muted-foreground uppercase">
