@@ -110,19 +110,21 @@ export default function AreaDetail() {
               {isRich ? (
                 <div className="max-w-none">
                   {area.subtitle && (
-                    <p className="text-lg md:text-xl font-serif text-primary mb-10 leading-snug">
+                    <p className="text-lg md:text-xl font-serif text-primary mb-8 leading-snug">
                       {renderSubtitle(area.subtitle)}
                     </p>
                   )}
+                  <div className="w-12 h-[1px] bg-primary mb-8"></div>
                   <p
                     className="text-xl text-white font-medium mb-8 [&_strong]:font-semibold"
                     dangerouslySetInnerHTML={{ __html: area.description }}
                   />
-                  <div className="w-12 h-[1px] bg-primary mb-8"></div>
-                  <p
-                    className="text-muted-foreground leading-relaxed text-lg"
-                    dangerouslySetInnerHTML={{ __html: area.fullDescription }}
-                  />
+                  {area.fullDescription && (
+                    <p
+                      className="text-muted-foreground leading-relaxed text-lg"
+                      dangerouslySetInnerHTML={{ __html: area.fullDescription }}
+                    />
+                  )}
                 </div>
               ) : (
                 <div className="prose prose-invert prose-lg max-w-none prose-p:text-muted-foreground prose-p:leading-relaxed">
