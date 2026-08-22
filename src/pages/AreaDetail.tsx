@@ -102,9 +102,10 @@ export default function AreaDetail() {
                   )}
                   <p className="text-xl text-white font-medium mb-8">{area.description}</p>
                   <div className="w-12 h-[1px] bg-primary mb-8"></div>
-                  <p className="text-muted-foreground leading-relaxed text-lg">
-                    {area.fullDescription}
-                  </p>
+                  <p
+                    className="text-muted-foreground leading-relaxed text-lg"
+                    dangerouslySetInnerHTML={{ __html: area.fullDescription }}
+                  />
                 </div>
               ) : (
                 <div className="prose prose-invert prose-lg max-w-none prose-p:text-muted-foreground prose-p:leading-relaxed">
