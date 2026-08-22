@@ -33,8 +33,8 @@ export function Hero() {
 
           <FadeIn delay={500}>
             <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl leading-relaxed">
-              Expertise estratégica jurídica e empresarial na defesa dos interesses corporativos e
-              empresariais mais complexos e desafiadores.
+              Expertise estratégica jurídica, empresarial e financeira a serviço dos interesses
+              corporativos e pessoais mais complexos e desafiadores.
             </p>
           </FadeIn>
 
