@@ -94,21 +94,28 @@ export function Contact() {
           <FadeIn direction="left" delay={200} className="h-full min-h-[400px]">
             <div className="w-full h-full border border-border relative group overflow-hidden">
               <div className="absolute inset-0 bg-primary/20 mix-blend-overlay z-10 pointer-events-none"></div>
-              <img
-                src="https://img.usecurling.com/p/800/800?q=saocaetano%20map&color=black&dpr=2"
-                alt="Localização"
-                className="w-full h-full object-cover filter grayscale opacity-70 group-hover:scale-105 transition-transform duration-1000"
+              <iframe
+                title="Localização da sede no Google Maps"
+                src="https://maps.google.com/maps?q=Rua+Manoel+Coelho,+676,+Centro,+São+Caetano+do+Sul,+SP&output=embed"
+                className="w-full h-full border-0 filter grayscale opacity-70 group-hover:scale-105 transition-transform duration-1000"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
               />
-              <div className="absolute bottom-6 left-6 z-20 bg-background/90 backdrop-blur-sm p-6 border border-border">
+              <a
+                href="https://www.google.com/maps?q=Rua+Manoel+Coelho,+676,+Centro,+São+Caetano+do+Sul,+SP"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="absolute bottom-6 left-6 z-20 bg-background/90 backdrop-blur-sm p-6 border border-border hover:border-primary transition-colors block"
+              >
                 <h4 className="font-serif text-lg font-semibold text-primary mb-2">
                   Sede São Caetano do Sul/SP
                 </h4>
                 <p className="text-sm text-muted-foreground">
-                  Rua Manoel Coelho, nº 676, sala 1508
-                  <br />
-                  Centro, SP
+                  Rua Manoel Coelho, nº 676, sala 1508 — Centro, São Caetano do Sul — SP — CEP
+                  09510-101
                 </p>
-              </div>
+                <span className="block mt-2 text-xs text-primary">Ver no Google Maps →</span>
+              </a>
             </div>
           </FadeIn>
         </div>

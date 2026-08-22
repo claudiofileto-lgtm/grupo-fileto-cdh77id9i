@@ -34,13 +34,15 @@ export function Footer() {
             <ul className="space-y-4 text-sm text-muted-foreground">
               <li className="flex gap-3">
                 <MapPin className="text-primary shrink-0" size={18} />
-                <span>
-                  Rua Manoel Coelho, nº 676, sala 1508
-                  <br />
-                  Centro, São Caetano do Sul - SP
-                  <br />
-                  CEP 09510-101
-                </span>
+                <a
+                  href="https://www.google.com/maps?q=Rua+Manoel+Coelho,+676,+Centro,+São+Caetano+do+Sul,+SP"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary transition-colors"
+                >
+                  Rua Manoel Coelho, nº 676, sala 1508 — Centro, São Caetano do Sul — SP — CEP
+                  09510-101
+                </a>
               </li>
             </ul>
           </div>
