@@ -114,7 +114,10 @@ export default function AreaDetail() {
                       {renderSubtitle(area.subtitle)}
                     </p>
                   )}
-                  <p className="text-xl text-white font-medium mb-8">{area.description}</p>
+                  <p
+                    className="text-xl text-white font-medium mb-8 [&_strong]:font-semibold"
+                    dangerouslySetInnerHTML={{ __html: area.description }}
+                  />
                   <div className="w-12 h-[1px] bg-primary mb-8"></div>
                   <p
                     className="text-muted-foreground leading-relaxed text-lg"

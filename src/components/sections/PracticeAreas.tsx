@@ -49,9 +49,10 @@ export function PracticeAreas() {
                       <h4 className="font-serif text-2xl font-semibold mb-4 text-foreground group-hover:text-primary transition-colors">
                         {area.title}
                       </h4>
-                      <p className="text-muted-foreground mb-6 leading-relaxed">
-                        {area.description}
-                      </p>
+                      <p
+                        className="mb-6 leading-relaxed text-white [&_strong]:font-semibold"
+                        dangerouslySetInnerHTML={{ __html: area.description }}
+                      />
                       <span className="inline-flex items-center text-sm font-medium text-primary opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
                         Saiba mais <ArrowRight className="ml-2 w-4 h-4" />
                       </span>

@@ -53,7 +53,7 @@ export const practiceAreas: PracticeArea[] = [
     title: 'Inteligência Tributária',
     icon: 'Landmark',
     description:
-      'Primeira TaxTech do Brasil. Tecnologia proprietária para identificação de ativos ocultos em tributos pagos, gerando fluxo de caixa imediato para empresas.',
+      'Nossa relação contratual garante melhores resultados, maior segurança e <strong>CELERIDADE</strong> nos processamentos, pois nossos clientes não têm tempo a perder.',
     fullDescription:
       'Nossa relação contratual garante melhores resultados, maior segurança e <strong>CELERIDADE</strong> nos processamentos, pois nossos clientes não têm tempo a perder.',
     subtitle:
