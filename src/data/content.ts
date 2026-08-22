@@ -57,7 +57,7 @@ export const practiceAreas: PracticeArea[] = [
     fullDescription:
       'Somos a primeira TaxTech do Brasil. Há mais de 15 anos geramos fluxo de caixa para empresas de todo o Brasil com tecnologia pioneira para identificação de ativos ocultos em tributos pagos a maior, referência em compliance previdenciário e especialistas em impostos diretos, indiretos e Reforma Tributária.',
     subtitle:
-      'Parceiro legítimo da empresa que é referência em tecnologia tributária desde 2010 — relação contratual séria que garante aos clientes melhores resultados e maior segurança.',
+      'Parceiro legítimo da empresa referência em tecnologia tributária desde 2010 — relação contratual séria que garante aos clientes melhores resultados e maior segurança.',
     aboutSection: {
       eyebrow: 'Quem somos',
       title: 'A primeira TaxTech do Brasil',
