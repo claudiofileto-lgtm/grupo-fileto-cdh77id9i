@@ -20,7 +20,7 @@ export function Hero() {
             <div className="flex items-center gap-4 mb-6">
               <div className="h-[1px] w-12 bg-primary"></div>
               <span className="text-primary uppercase tracking-[0.2em] text-sm font-semibold">
-                FILETO EXPERTISE EMPRESARIAL
+                GRUPO FILETO
               </span>
             </div>
           </FadeIn>
