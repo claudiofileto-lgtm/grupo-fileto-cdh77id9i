@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
 import { cn } from '@/lib/utils'
-import logoBronze from '@/assets/logo-fileto-douradosf-f2cfd.png'
+import logoBronze from '@/assets/logofbronze-sf-07c40.png'
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -48,20 +48,15 @@ export function Navbar() {
       )}
     >
       <div className="container mx-auto px-4 md:px-8 flex justify-between items-center">
-        <Link to="/" className="flex items-center gap-2.5 sm:gap-3.5 group">
+        <Link to="/" className="flex items-center gap-2 sm:gap-2.5 group">
           <img
             src={logoBronze}
             alt="Fileto logo"
-            className="h-9 sm:h-11 w-auto object-contain flex-shrink-0"
+            className="h-[20px] sm:h-[24px] w-auto object-contain flex-shrink-0"
           />
-          <div className="flex flex-col justify-center">
-            <span className="font-serif font-bold text-[17px] sm:text-[20px] leading-none tracking-[0.12em]">
-              FILETO
-            </span>
-            <span className="text-[8px] sm:text-[9px] leading-none tracking-[0.28em] text-muted-foreground uppercase text-left mt-1">
-              Expertise Empresarial
-            </span>
-          </div>
+          <span className="font-serif font-bold text-[17px] sm:text-[20px] leading-none tracking-[0.12em] text-primary">
+            FILETO
+          </span>
         </Link>
 
         {/* Desktop Nav */}
