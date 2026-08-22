@@ -206,9 +206,9 @@ export const founderMember: TeamMember = {
   name: 'Claudio Fileto',
   role: 'Sócio Fundador',
   image: '/Claudio_Circulo verde-SF-86d2f.png',
-  bio: 'Advogado desde 1991, especialista em administração empresarial e tributária, com mais de 25 anos de sólida atuação em gestão e direção executiva em grandes empresas nacionais e multinacionais. Fundador da Fileto Expertise Empresarial.',
+  bio: 'Advogado desde 1991, especialista em administração empresarial e direito tributário, com mais de 25 anos de sólida atuação em gestão e direção executiva em grandes empresas nacionais e multinacionais. Fundador da Fileto Expertise Empresarial.',
   extendedBio: [
-    'Advogado inscrito na OAB desde 1991, Claudio Fileto reúne mais de três décadas de sólida trajetória jurídica e executiva, com especializações nas áreas de administração empresarial e tributária.',
+    'Advogado inscrito na OAB desde 1991, Claudio Fileto reúne mais de três décadas de sólida trajetória jurídica e executiva, com especializações nas áreas de administração empresarial e direito tributário.',
     'Ao longo de mais de 25 anos ocupando posições de gestão e alta liderança em grandes companhias nacionais e multinacionais, desenvolveu uma visão estratégica 360° sobre negócios, finanças estruturadas, eficiência tributária e governança.',
     'Em janeiro de 2019, fundou a Fileto Expertise Empresarial com o propósito de oferecer às empresas e empresários uma advocacia consultiva e estratégica de alto padrão, que alia rigor técnico à geração prática de valor e proteção patrimonial.',
   ],
@@ -226,7 +226,7 @@ export const founderMember: TeamMember = {
     { label: 'Advocacia', value: 'Desde 1991' },
     { label: 'Trajetória Executiva', value: '25+ Anos em Grandes Empresas' },
     { label: 'Fundação', value: 'Fileto Expertise Empresarial (2019)' },
-    { label: 'Especialização', value: 'Administração Empresarial e Tributária' },
+    { label: 'Especialização', value: 'Administração Empresarial e Direito Tributário' },
   ],
 }
 
