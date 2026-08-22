@@ -24,8 +24,8 @@ export function Footer() {
               </div>
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed">
-              Excelência e sofisticação jurídica na defesa dos interesses corporativos e individuais
-              mais complexos.
+              Expertise estratégica jurídica e empresarial na defesa dos interesses corporativos e
+              empresariais mais complexos e desafiadores.
             </p>
           </div>
 
