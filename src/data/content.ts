@@ -186,35 +186,47 @@ export const practiceAreas: PracticeArea[] = [
   },
 ]
 
-export const teamMembers = [
-  {
-    id: '1',
-    slug: 'carlos-henrique',
-    name: 'Carlos Henrique',
-    role: 'Sócio Fundador',
-    image: 'https://img.usecurling.com/ppl/large?gender=male&seed=12',
-    bio: 'Com mais de 20 anos de experiência em Direito Empresarial, Carlos tem liderado grandes operações de M&A e reestruturações complexas no Brasil.',
-    expertise: ['Direito Empresarial', 'M&A', 'Governança', 'Home Equity'],
-    email: 'carlos@hmgcadvogados.com.br',
-  },
-  {
-    id: '2',
-    slug: 'marina-gomes',
-    name: 'Marina Gomes',
-    role: 'Sócia Diretora',
-    image: 'https://img.usecurling.com/ppl/large?gender=female&seed=45',
-    bio: 'Especialista em Tributário e Mestre pela USP. Marina atua na vanguarda do planejamento fiscal para multinacionais.',
-    expertise: ['Tributário', 'Planejamento Fiscal'],
-    email: 'marina@hmgcadvogados.com.br',
-  },
-  {
-    id: '3',
-    slug: 'roberto-costa',
-    name: 'Roberto Costa',
-    role: 'Sócio',
-    image: 'https://img.usecurling.com/ppl/large?gender=male&seed=33',
-    bio: 'Focado em litígios civis de alta complexidade. Roberto possui vasta experiência em tribunais superiores e arbitragem.',
-    expertise: ['Direito Civil', 'Contencioso Estratégico', 'Arbitragem'],
-    email: 'roberto@hmgcadvogados.com.br',
-  },
-]
+export interface TeamMember {
+  id: string
+  slug: string
+  name: string
+  role: string
+  image: string
+  bio: string
+  extendedBio?: string[]
+  expertise: string[]
+  email: string
+  phone?: string
+  credentials?: { label: string; value: string }[]
+}
+
+export const founderMember: TeamMember = {
+  id: '1',
+  slug: 'claudio-fileto',
+  name: 'Claudio Fileto',
+  role: 'Sócio Fundador',
+  image: '/src/assets/claudiocirculo-verde-sf-86d2f.png',
+  bio: 'Advogado desde 1991, especialista em administração empresarial e tributária, com mais de 25 anos de sólida atuação em gestão e direção executiva em grandes empresas nacionais e multinacionais. Fundador da Fileto Expertise Empresarial.',
+  extendedBio: [
+    'Advogado inscrito na OAB desde 1991, Claudio Fileto reúne mais de três décadas de sólida trajetória jurídica e executiva, com especializações nas áreas de administração empresarial e tributária.',
+    'Ao longo de mais de 25 anos ocupando posições de gestão e alta liderança em grandes companhias nacionais e multinacionais, desenvolveu uma visão estratégica 360° sobre negócios, finanças estruturadas, eficiência tributária e governança.',
+    'Em janeiro de 2019, fundou a Fileto Expertise Empresarial com o propósito de oferecer às empresas e empresários uma advocacia consultiva e estratégica de alto padrão, que alia rigor técnico à geração prática de valor e proteção patrimonial.',
+  ],
+  expertise: [
+    'Gestão Estratégica & Empresarial',
+    'Inteligência & Planejamento Tributário',
+    'Home Equity & Finanças Estruturadas',
+    'Governança Corporativa',
+    'Negociações & M&A',
+  ],
+  email: 'contato@filetoexpertise.com.br',
+  phone: '+55 (11) 93329-3331',
+  credentials: [
+    { label: 'Advocacia', value: 'Desde 1991' },
+    { label: 'Trajetória Executiva', value: '25+ Anos em Grandes Empresas' },
+    { label: 'Fundação', value: 'Fileto Expertise Empresarial (2019)' },
+    { label: 'Especialização', value: 'Administração Empresarial e Tributária' },
+  ],
+}
+
+export const teamMembers: TeamMember[] = [founderMember]
