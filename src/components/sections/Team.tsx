@@ -1,7 +1,5 @@
 import { FadeIn } from '../FadeIn'
 import { founderMember } from '@/data/content'
-import { CleanFounderImage } from '@/components/CleanFounderImage'
-import claudioPhoto from '@/assets/claudiocirculo-verde-sf-86d2f.png'
 import {
   Mail,
   Phone,
@@ -16,7 +14,7 @@ import {
 export function Team() {
   return (
     <section id="lideranca" className="py-24 md:py-32 bg-background relative overflow-hidden">
-      {/* Background Decorative Gold Radiance (Strictly Gold / Primary, No Green) */}
+      {/* Background Decorative Gold Radiance */}
       <div className="absolute top-1/3 left-10 -translate-y-1/2 w-[500px] h-[500px] bg-primary/[0.07] rounded-full blur-[140px] pointer-events-none" />
       <div className="absolute bottom-10 right-10 w-[450px] h-[450px] bg-primary/[0.05] rounded-full blur-[130px] pointer-events-none" />
 
@@ -48,31 +46,35 @@ export function Team() {
           <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-primary/50 to-transparent" />
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-            {/* Founder Portrait Column - Large, imposing with gold rings & pure white inner background */}
+            {/* Founder Portrait Column - Rectangular format, subtle gold borders, warm nude background */}
             <div className="lg:col-span-5 flex flex-col items-center justify-center">
               <FadeIn direction="right">
-                <div className="relative flex flex-col items-center">
+                <div className="relative flex flex-col items-center w-full max-w-sm sm:max-w-md mx-auto">
                   {/* Outer Gold Ambient Glow Halo */}
-                  <div className="absolute -inset-4 sm:-inset-6 rounded-full bg-primary/20 blur-2xl opacity-75 pointer-events-none" />
+                  <div className="absolute -inset-4 sm:-inset-6 rounded-2xl bg-primary/15 blur-2xl opacity-75 pointer-events-none" />
 
-                  {/* Outer Gold Ring 1 (Thin outer gold border) */}
-                  <div className="relative p-2.5 sm:p-3 rounded-full bg-gradient-to-br from-primary/60 via-primary/20 to-primary/70 shadow-[0_10px_40px_rgba(197,160,89,0.25)] flex items-center justify-center">
-                    {/* Inner Gold Frame Border */}
-                    <div className="p-1 rounded-full bg-background flex items-center justify-center">
-                      {/* White Background Inner Circle Container - Large and imposing */}
-                      <div className="w-72 h-72 sm:w-84 sm:h-84 md:w-96 md:h-96 lg:w-[410px] lg:h-[410px] rounded-full overflow-hidden bg-white relative flex items-center justify-center shadow-inner">
-                        {/* Processed Founder Portrait with Green Ring Removed and White Background */}
-                        <CleanFounderImage
-                          src={claudioPhoto}
+                  {/* Rectangular Outer Gold Frame */}
+                  <div className="relative p-1.5 sm:p-2 rounded-2xl bg-gradient-to-b from-primary/70 via-primary/30 to-primary/70 shadow-[0_15px_40px_rgba(197,160,89,0.2)] w-full">
+                    {/* Inner Gold Inset Frame */}
+                    <div className="p-1 rounded-xl bg-background/80 border border-primary/40">
+                      {/* Rectangular Photo Container with Nude Background */}
+                      <div
+                        className="relative w-full aspect-[4/5] sm:aspect-[3/4] rounded-lg overflow-hidden flex items-end justify-center shadow-inner"
+                        style={{ backgroundColor: '#f5f0eb' }}
+                      >
+                        {/* Direct Rectangular Image */}
+                        <img
+                          src={founderMember.image}
                           alt={founderMember.name}
-                          className="w-full h-full object-cover object-center transform scale-110 hover:scale-115 transition-transform duration-700 select-none"
+                          className="w-full h-full object-cover object-top transition-transform duration-700 hover:scale-105 select-none"
+                          loading="lazy"
                         />
                       </div>
                     </div>
                   </div>
 
                   {/* Floating Gold Pill Badge - Advogado desde 1991 */}
-                  <div className="mt-[-20px] relative z-20 bg-background/95 border-2 border-primary px-5 py-2 rounded-full shadow-[0_8px_20px_rgba(0,0,0,0.6)] flex items-center gap-2.5 backdrop-blur-sm">
+                  <div className="mt-[-16px] relative z-20 bg-background/95 border border-primary/80 px-5 py-2 rounded-full shadow-[0_8px_20px_rgba(0,0,0,0.6)] flex items-center gap-2.5 backdrop-blur-sm">
                     <span className="relative flex h-2.5 w-2.5">
                       <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
                       <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-primary"></span>

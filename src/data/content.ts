@@ -205,7 +205,7 @@ export const founderMember: TeamMember = {
   slug: 'claudio-fileto',
   name: 'Claudio Fileto',
   role: 'Sócio Fundador',
-  image: '/src/assets/claudiocirculo-verde-sf-86d2f.png',
+  image: '/Claudio_Circulo verde-SF-86d2f.png',
   bio: 'Advogado desde 1991, especialista em administração empresarial e tributária, com mais de 25 anos de sólida atuação em gestão e direção executiva em grandes empresas nacionais e multinacionais. Fundador da Fileto Expertise Empresarial.',
   extendedBio: [
     'Advogado inscrito na OAB desde 1991, Claudio Fileto reúne mais de três décadas de sólida trajetória jurídica e executiva, com especializações nas áreas de administração empresarial e tributária.',

@@ -2,7 +2,6 @@ import { useParams, Link } from 'react-router-dom'
 import { useEffect } from 'react'
 import { teamMembers, founderMember } from '@/data/content'
 import { FadeIn } from '@/components/FadeIn'
-import { CleanFounderImage } from '@/components/CleanFounderImage'
 import {
   ArrowLeft,
   Mail,
@@ -14,7 +13,6 @@ import {
   ShieldCheck,
   ArrowUpRight,
 } from 'lucide-react'
-import claudioPhoto from '@/assets/claudiocirculo-verde-sf-86d2f.png'
 
 export default function TeamDetail() {
   const { slug } = useParams()
@@ -60,30 +58,34 @@ export default function TeamDetail() {
           <div className="absolute bottom-0 left-0 w-28 h-28 border-b-2 border-l-2 border-primary/20 rounded-bl-2xl pointer-events-none" />
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-start">
-            {/* Founder Portrait Column */}
+            {/* Founder Portrait Column - Rectangular, elegant gold borders, nude background */}
             <div className="lg:col-span-5 flex flex-col items-center justify-center">
               <FadeIn direction="up" delay={100}>
-                <div className="relative flex flex-col items-center">
+                <div className="relative flex flex-col items-center w-full max-w-sm sm:max-w-md mx-auto">
                   {/* Outer Gold Ambient Halo */}
-                  <div className="absolute -inset-4 sm:-inset-6 rounded-full bg-primary/20 blur-2xl opacity-75 pointer-events-none" />
+                  <div className="absolute -inset-4 sm:-inset-6 rounded-2xl bg-primary/15 blur-2xl opacity-75 pointer-events-none" />
 
-                  {/* Outer Gold Ring */}
-                  <div className="relative p-2.5 sm:p-3 rounded-full bg-gradient-to-br from-primary/60 via-primary/20 to-primary/70 shadow-[0_10px_40px_rgba(197,160,89,0.25)] flex items-center justify-center">
+                  {/* Rectangular Outer Gold Frame */}
+                  <div className="relative p-1.5 sm:p-2 rounded-2xl bg-gradient-to-b from-primary/70 via-primary/30 to-primary/70 shadow-[0_15px_40px_rgba(197,160,89,0.2)] w-full">
                     {/* Inner frame */}
-                    <div className="p-1 rounded-full bg-background flex items-center justify-center">
-                      {/* Pure White Background Inner Circle Container */}
-                      <div className="w-64 h-64 sm:w-80 sm:h-80 md:w-88 md:h-88 lg:w-[380px] lg:h-[380px] rounded-full overflow-hidden bg-white relative flex items-center justify-center shadow-inner">
-                        <CleanFounderImage
-                          src={claudioPhoto}
+                    <div className="p-1 rounded-xl bg-background/80 border border-primary/40">
+                      {/* Rectangular Photo Container with Nude Background */}
+                      <div
+                        className="relative w-full aspect-[4/5] sm:aspect-[3/4] rounded-lg overflow-hidden flex items-end justify-center shadow-inner"
+                        style={{ backgroundColor: '#f5f0eb' }}
+                      >
+                        <img
+                          src={member.image}
                           alt={member.name}
-                          className="w-full h-full object-cover object-center transform scale-110 select-none"
+                          className="w-full h-full object-cover object-top select-none transition-transform duration-700 hover:scale-105"
+                          loading="lazy"
                         />
                       </div>
                     </div>
                   </div>
 
                   {/* Floating Gold Pill Badge */}
-                  <div className="mt-[-18px] relative z-20 bg-background/95 border-2 border-primary px-4 py-1.5 rounded-full shadow-[0_8px_20px_rgba(0,0,0,0.6)] flex items-center gap-2 backdrop-blur-sm">
+                  <div className="mt-[-16px] relative z-20 bg-background/95 border border-primary/80 px-4 py-1.5 rounded-full shadow-[0_8px_20px_rgba(0,0,0,0.6)] flex items-center gap-2 backdrop-blur-sm">
                     <span className="relative flex h-2.5 w-2.5">
                       <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
                       <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-primary"></span>
