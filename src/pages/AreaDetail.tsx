@@ -110,7 +110,7 @@ export default function AreaDetail() {
               {isRich ? (
                 <div className="max-w-none">
                   {area.subtitle && (
-                    <p className="text-2xl md:text-3xl font-serif text-primary mb-10 leading-snug">
+                    <p className="text-lg md:text-xl font-serif text-primary mb-10 leading-snug">
                       {renderSubtitle(area.subtitle)}
                     </p>
                   )}
