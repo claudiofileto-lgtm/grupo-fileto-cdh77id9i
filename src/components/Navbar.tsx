@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
 import { cn } from '@/lib/utils'
-import logoFileto from '@/assets/logo-fileto-douradosf-f2cfd.png'
+import logoFileto from '@/assets/logofbronze-sf-07c40.png'
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -52,8 +52,16 @@ export function Navbar() {
           <img
             src={logoFileto}
             alt="Fileto Expertise Empresarial"
-            className="h-10 sm:h-11 w-auto object-contain flex-shrink-0"
+            className="h-10 sm:h-12 w-auto object-contain flex-shrink-0"
           />
+          <div className="flex flex-col">
+            <span className="font-serif font-bold text-[22px] leading-none tracking-[0.15em] text-primary">
+              FILETO
+            </span>
+            <span className="text-[8px] leading-none tracking-[0.3em] text-muted-foreground uppercase">
+              expertise empresarial
+            </span>
+          </div>
         </Link>
 
         {/* Desktop Nav */}
