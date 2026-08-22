@@ -145,8 +145,8 @@ export default function AreaDetail() {
                   )}
                   <p>
                     Nossa abordagem é pautada na análise meticulosa de cada cenário, identificando
-                    riscos e oportunidades para desenvolver estratégias jurídicas sob medida.
-                    Compreendemos que as questões atinentes ao{' '}
+                    riscos e oportunidades para desenvolver estratégias jurídicas e administrativas
+                    sob medida. Compreendemos que as questões atinentes ao{' '}
                     <strong>{area.title.toLowerCase()}</strong> exigem não apenas conhecimento
                     técnico profundo, mas também sensibilidade para os impactos nos negócios e na
                     vida de nossos clientes.
