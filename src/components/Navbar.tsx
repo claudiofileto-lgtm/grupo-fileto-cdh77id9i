@@ -51,12 +51,17 @@ export function Navbar() {
         <Link to="/" className="flex items-center gap-2 sm:gap-2.5 group">
           <img
             src={logoBronze}
-            alt="Fileto logo"
+            alt="Fileto Expertise Empresarial"
             className="h-[20px] sm:h-[24px] w-auto object-contain flex-shrink-0"
           />
-          <span className="font-serif font-bold text-[17px] sm:text-[20px] leading-none tracking-[0.12em] text-primary">
-            FILETO
-          </span>
+          <div className="flex flex-col justify-center">
+            <span className="font-serif font-bold text-[17px] sm:text-[20px] leading-none tracking-[0.12em] text-primary">
+              FILETO
+            </span>
+            <span className="text-[8px] leading-none tracking-[0.3em] text-muted-foreground uppercase">
+              expertise empresarial
+            </span>
+          </div>
         </Link>
 
         {/* Desktop Nav */}
