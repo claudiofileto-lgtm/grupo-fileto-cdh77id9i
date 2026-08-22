@@ -1,5 +1,5 @@
 import { useParams, Link } from 'react-router-dom'
-import { useEffect } from 'react'
+import { useEffect, Fragment } from 'react'
 import { practiceAreas } from '@/data/content'
 import { FadeIn } from '@/components/FadeIn'
 import { Button } from '@/components/ui/button'
@@ -35,6 +35,20 @@ const iconMap: Record<string, React.ElementType> = {
   Lock,
   Award,
   TrendingUp,
+}
+
+const HIGHLIGHT_PHRASE = 'Primeira TaxTech do Brasil'
+
+// Renders the subtitle in gold (text-primary, inherited from the <p>) but
+// isolates the TaxTech highlight phrase in white, per the area detail design.
+function renderSubtitle(text: string) {
+  const parts = text.split(HIGHLIGHT_PHRASE)
+  return parts.map((part, i) => (
+    <Fragment key={i}>
+      {part}
+      {i < parts.length - 1 && <span className="text-white">{HIGHLIGHT_PHRASE}</span>}
+    </Fragment>
+  ))
 }
 
 export default function AreaDetail() {
@@ -97,7 +111,7 @@ export default function AreaDetail() {
                 <div className="max-w-none">
                   {area.subtitle && (
                     <p className="text-2xl md:text-3xl font-serif text-primary mb-10 leading-snug">
-                      {area.subtitle}
+                      {renderSubtitle(area.subtitle)}
                     </p>
                   )}
                   <p className="text-xl text-white font-medium mb-8">{area.description}</p>
