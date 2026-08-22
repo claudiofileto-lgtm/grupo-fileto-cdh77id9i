@@ -51,7 +51,7 @@ export function Navbar() {
         <Link to="/" className="flex items-center gap-2 sm:gap-2.5 group">
           <img
             src={logoFileto}
-            alt="Fileto Expertise Empresarial"
+            alt="GRUPO FILETO"
             className="h-10 sm:h-12 w-auto object-contain flex-shrink-0"
           />
           <div className="flex flex-col">
