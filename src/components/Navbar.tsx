@@ -52,7 +52,7 @@ export function Navbar() {
           <img
             src={logoFileto}
             alt="GRUPO FILETO"
-            className="h-10 sm:h-12 w-auto object-contain flex-shrink-0"
+            className="h-8 sm:h-9 md:h-10 w-auto object-contain flex-shrink-0"
           />
           <div className="flex flex-col items-center justify-center font-serif font-bold text-primary text-xs sm:text-sm md:text-base leading-tight">
             <span className="tracking-[0.22em] mr-[-0.22em]">GRUPO</span>
