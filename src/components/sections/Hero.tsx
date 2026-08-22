@@ -26,7 +26,7 @@ export function Hero() {
           </FadeIn>
 
           <FadeIn delay={300}>
-            <h1 className="text-5xl md:text-7xl font-serif font-bold leading-tight mb-8 text-foreground">
+            <h1 className="text-4xl md:text-6xl font-serif font-bold leading-tight mb-8 text-foreground">
               Soluções Tributárias, Empresariais e Financeiras&nbsp;Inteligentes
             </h1>
           </FadeIn>
