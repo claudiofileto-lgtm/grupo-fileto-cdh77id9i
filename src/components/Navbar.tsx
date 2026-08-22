@@ -54,9 +54,10 @@ export function Navbar() {
             alt="GRUPO FILETO"
             className="h-10 sm:h-12 w-auto object-contain flex-shrink-0"
           />
-          <span className="font-serif font-bold text-lg sm:text-xl md:text-[22px] leading-none tracking-[0.08em] sm:tracking-[0.12em] text-primary whitespace-nowrap">
-            GRUPO FILETO
-          </span>
+          <div className="flex flex-col items-center justify-center font-serif font-bold text-primary text-xs sm:text-sm md:text-base leading-tight">
+            <span className="tracking-[0.22em] mr-[-0.22em]">GRUPO</span>
+            <span className="tracking-[0.08em] mr-[-0.08em]">FILETO</span>
+          </div>
         </Link>
 
         {/* Desktop Nav */}
