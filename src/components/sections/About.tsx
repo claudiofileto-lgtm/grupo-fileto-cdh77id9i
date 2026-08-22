@@ -15,7 +15,7 @@ export function About() {
                 className="w-full h-auto object-cover relative z-10 filter grayscale-[20%]"
               />
               <div className="absolute bottom-0 right-0 bg-card p-6 md:p-8 z-20 shadow-2xl border-l border-t border-primary/30 transform translate-x-4 md:translate-x-12 translate-y-4 md:translate-y-12">
-                <p className="font-serif text-3xl md:text-5xl text-primary font-bold mb-2">29+</p>
+                <p className="font-serif text-3xl md:text-5xl text-primary font-bold mb-2">32+</p>
                 <p className="text-sm md:text-base text-muted-foreground uppercase tracking-wider">
                   Anos de Experiência
                 </p>
