@@ -1,3 +1,4 @@
+import { Phone, MessageCircle } from 'lucide-react'
 import { FadeIn } from '../FadeIn'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
@@ -36,6 +37,31 @@ export function Contact() {
                 Preencha o formulário para agendar uma consulta. Nossa equipe retornará com a máxima
                 brevidade e confidencialidade.
               </p>
+
+              <div className="flex flex-col sm:flex-row gap-4 mb-12">
+                <a
+                  href="tel:+5511933293331"
+                  className="flex items-center gap-3 text-sm text-foreground hover:text-primary transition-colors"
+                >
+                  <span className="w-10 h-10 rounded-full border border-border flex items-center justify-center text-primary">
+                    <Phone size={18} />
+                  </span>
+                  +55 (11) 93329-3331
+                </a>
+                <a
+                  href={`https://wa.me/5511933293331?text=${encodeURIComponent(
+                    'Olá, gostaria de agendar uma consulta.',
+                  )}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 text-sm text-foreground hover:text-primary transition-colors"
+                >
+                  <span className="w-10 h-10 rounded-full border border-border flex items-center justify-center text-primary">
+                    <MessageCircle size={18} />
+                  </span>
+                  WhatsApp
+                </a>
+              </div>
 
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
