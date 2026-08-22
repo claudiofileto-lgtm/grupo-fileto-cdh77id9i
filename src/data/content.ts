@@ -37,7 +37,7 @@ export interface PracticeArea {
   description: string
   fullDescription: string
   highlights?: PracticeAreaHighlight[]
-  // Rich detail content (used by the AG TaxTech "Inteligência Tributária" area)
+  // Rich detail content (Inteligência Tributária)
   subtitle?: string
   aboutSection?: PracticeAreaDetailSection
   stats?: PracticeAreaStat[]
@@ -56,11 +56,11 @@ export const practiceAreas: PracticeArea[] = [
       'Primeira TaxTech do Brasil. Tecnologia proprietária para identificação de ativos ocultos em tributos pagos, gerando fluxo de caixa imediato para empresas.',
     fullDescription:
       'Somos a primeira TaxTech do Brasil. Há mais de 15 anos geramos fluxo de caixa para empresas de todo o Brasil com tecnologia pioneira para identificação de ativos ocultos em tributos pagos a maior, referência em compliance previdenciário e especialistas em impostos diretos, indiretos e Reforma Tributária.',
-    subtitle: 'Desde 2010, a referência em tecnologia e inteligência tributária.',
+    subtitle: 'Desde 2010, referência em tecnologia e inteligência tributária.',
     aboutSection: {
       eyebrow: 'Quem somos',
       title: 'A primeira TaxTech do Brasil',
-      body: 'Desde 2010, a AG é referência em tecnologia e inteligência tributária. Com mais de 15 anos de mercado, utilizamos tecnologia proprietária para extrair 100% das oportunidades ainda não aproveitadas por empresas do Lucro Real, gerando fluxo de caixa imediato e seguro.',
+      body: 'Desde 2010, o Grupo Fileto é referência em tecnologia e inteligência tributária. Com mais de 15 anos de mercado, utilizamos tecnologia proprietária para extrair 100% das oportunidades ainda não aproveitadas por empresas do Lucro Real, gerando fluxo de caixa imediato e seguro.',
       bullets: [
         'Somos a primeira TaxTech do Brasil',
         'Há mais de 15 anos gerando fluxo de caixa para empresas de todo o Brasil',
@@ -75,7 +75,7 @@ export const practiceAreas: PracticeArea[] = [
       { value: '12.000+', label: 'clientes satisfeitos', icon: 'Users' },
       { value: 'R$8 bi+', label: 'em créditos aproveitados', icon: 'DollarSign' },
       { value: '+14%', label: 'das empresas listadas na B3 atendidas', icon: 'Building2' },
-      { value: '+12', label: 'estados com presença da AG', icon: 'MapPin' },
+      { value: '+12', label: 'estados de atuação', icon: 'MapPin' },
     ],
     method: {
       eyebrow: 'Método exclusivo',
@@ -119,8 +119,8 @@ export const practiceAreas: PracticeArea[] = [
         'Dominância de todo o ciclo: apuração, monetização e retificação de forma automatizada',
         'Segurança: compliance na FOPAG e sigilo das informações durante todo o trabalho',
         'Remuneração apenas no êxito da operação, sem pró-labore ou antecipação de honorários',
-        'Operação segurada pela Berkley',
-        'Suporte AG por 5 anos',
+        'Operação segurada',
+        'Suporte por 5 anos',
       ],
     },
     scenario: {
