@@ -54,14 +54,9 @@ export function Navbar() {
             alt="GRUPO FILETO"
             className="h-10 sm:h-12 w-auto object-contain flex-shrink-0"
           />
-          <div className="flex flex-col">
-            <span className="font-serif font-bold text-[22px] leading-none tracking-[0.15em] text-primary">
-              FILETO
-            </span>
-            <span className="text-[8px] leading-none tracking-[0.3em] text-muted-foreground uppercase">
-              expertise empresarial
-            </span>
-          </div>
+          <span className="font-serif font-bold text-lg sm:text-xl md:text-[22px] leading-none tracking-[0.08em] sm:tracking-[0.12em] text-primary whitespace-nowrap">
+            GRUPO FILETO
+          </span>
         </Link>
 
         {/* Desktop Nav */}
