@@ -1,4 +1,19 @@
-export const practiceAreas = [
+export interface PracticeAreaHighlight {
+  title: string
+  description: string
+}
+
+export interface PracticeArea {
+  id: string
+  slug: string
+  title: string
+  icon: string
+  description: string
+  fullDescription: string
+  highlights?: PracticeAreaHighlight[]
+}
+
+export const practiceAreas: PracticeArea[] = [
   {
     id: '1',
     slug: 'tributario',
@@ -20,12 +35,35 @@ export const practiceAreas = [
   },
   {
     id: '3',
-    slug: 'direito-trabalhista',
-    title: 'Direito Trabalhista',
-    icon: 'Briefcase',
-    description: 'Prevenção de passivos e atuação contenciosa em instâncias superiores.',
+    slug: 'financeiro',
+    title: 'Financeiro',
+    icon: 'DollarSign',
+    description:
+      'Home Equity (Crédito com Garantia de Imóveis) para empresas, empresários, pessoas físicas e condomínios.',
     fullDescription:
-      'Atuação focada na prevenção de litígios por meio de auditorias e consultoria contínua. No contencioso, representamos empresas em processos complexos e ações civis públicas, sempre visando mitigar riscos e custos.',
+      'Atuamos na estruturação e condução de operações de Home Equity — o crédito com garantia de imóvel — para empresas, empresários, pessoas físicas e condomínios. Transformamos o valor imobilizado em imóveis em capital líquido, com taxas competitivas, prazos alongados e condições sob medida, viabilizando investimentos, capital de giro, expansão de negócios, quitação de passivos e projetos das mais diversas naturezas. Cuidamos de toda a esteira jurídica: due diligence do imóvel dado em garantia, constituição e liberação de alienação fiduciária, contratos, cessões, anuências e a interlocução com instituições financeiras, assegurando celeridade e segurança jurídica em todas as etapas.',
+    highlights: [
+      {
+        title: 'O que é Home Equity',
+        description:
+          'O Home Equity, ou Crédito com Garantia de Imóvel, é uma modalidade de crédito em que o imóvel é oferecido como garantia de pagamento, viabilizando condições mais atrativas — taxas menores, prazos mais longos e limites superiores aos das modalidades tradicionais.',
+      },
+      {
+        title: 'Vantagens',
+        description:
+          'Acesso a capital a custos reduzidos, prazos de pagamento alongados, manutenção da propriedade do imóvel e liquidez para investimentos, capital de giro, expansão de negócios e reestruturação de dívidas.',
+      },
+      {
+        title: 'Público Atendido',
+        description:
+          'Empresas, empresários, pessoas físicas e condomínios que buscam captar recursos com lastro imobiliário, com soluções ajustadas ao perfil e à finalidade de cada cliente.',
+      },
+      {
+        title: 'Esteira Jurídica Completa',
+        description:
+          'Due diligence do imóvel, constituição de alienação fiduciária, contratos, cessões, anuências e interlocução com instituições financeiras, garantindo celeridade e segurança jurídica em todas as etapas.',
+      },
+    ],
   },
   {
     id: '4',
@@ -46,7 +84,7 @@ export const teamMembers = [
     role: 'Sócio Fundador',
     image: 'https://img.usecurling.com/ppl/large?gender=male&seed=12',
     bio: 'Com mais de 20 anos de experiência em Direito Empresarial, Carlos tem liderado grandes operações de M&A e reestruturações complexas no Brasil.',
-    expertise: ['Direito Empresarial', 'M&A', 'Governança'],
+    expertise: ['Direito Empresarial', 'M&A', 'Governança', 'Home Equity'],
     email: 'carlos@hmgcadvogados.com.br',
   },
   {

@@ -1,13 +1,14 @@
 import { Link } from 'react-router-dom'
 import { FadeIn } from '../FadeIn'
 import { practiceAreas } from '@/data/content'
-import { Scale, Building2, Briefcase, Landmark, ArrowRight } from 'lucide-react'
+import { Scale, Building2, Briefcase, Landmark, DollarSign, ArrowRight } from 'lucide-react'
 
 const iconMap: Record<string, React.ElementType> = {
   Scale,
   Building2,
   Briefcase,
   Landmark,
+  DollarSign,
 }
 
 export function PracticeAreas() {

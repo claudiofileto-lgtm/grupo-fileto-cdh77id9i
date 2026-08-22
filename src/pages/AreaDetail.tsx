@@ -3,13 +3,22 @@ import { useEffect } from 'react'
 import { practiceAreas } from '@/data/content'
 import { FadeIn } from '@/components/FadeIn'
 import { Button } from '@/components/ui/button'
-import { ArrowLeft, ChevronRight, Scale, Building2, Briefcase, Landmark } from 'lucide-react'
+import {
+  ArrowLeft,
+  ChevronRight,
+  Scale,
+  Building2,
+  Briefcase,
+  Landmark,
+  DollarSign,
+} from 'lucide-react'
 
 const iconMap: Record<string, React.ElementType> = {
   Scale,
   Building2,
   Briefcase,
   Landmark,
+  DollarSign,
 }
 
 export default function AreaDetail() {
@@ -63,6 +72,18 @@ export default function AreaDetail() {
                 <p className="text-xl text-white font-medium mb-8">{area.description}</p>
                 <div className="w-12 h-[1px] bg-primary mb-8"></div>
                 <p>{area.fullDescription}</p>
+                {area.highlights && area.highlights.length > 0 && (
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-12 mb-12 not-prose">
+                    {area.highlights.map((h, i) => (
+                      <div key={i} className="bg-card border border-border p-6">
+                        <h4 className="font-serif text-xl text-white mb-3">{h.title}</h4>
+                        <p className="text-muted-foreground leading-relaxed text-sm">
+                          {h.description}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                )}
                 <p>
                   Nossa abordagem é pautada na análise meticulosa de cada cenário, identificando
                   riscos e oportunidades para desenvolver estratégias jurídicas sob medida.
