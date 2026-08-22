@@ -8,7 +8,7 @@ export function Team() {
     <section id="lideranca" className="py-24 md:py-32 bg-background relative overflow-hidden">
       {/* Subtle gold glow in background */}
       <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-96 h-96 bg-primary/5 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-10 right-10 w-72 h-72 bg-emerald-500/5 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-10 right-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl pointer-events-none" />
 
       <div className="container mx-auto px-4 md:px-8 relative z-10">
         {/* Header Section */}
@@ -42,11 +42,11 @@ export function Team() {
               <FadeIn direction="right">
                 <div className="relative group">
                   {/* Outer glowing halo */}
-                  <div className="absolute -inset-3 rounded-full bg-gradient-to-tr from-primary/30 via-emerald-400/20 to-primary/40 blur-xl opacity-70 group-hover:opacity-100 transition-opacity duration-700" />
+                  <div className="absolute -inset-3 rounded-full bg-gradient-to-tr from-primary/30 via-primary/20 to-primary/40 blur-xl opacity-70 group-hover:opacity-100 transition-opacity duration-700" />
 
                   {/* Circular framing */}
-                  <div className="relative w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 rounded-full p-2 bg-gradient-to-b from-primary/30 via-background to-border flex items-center justify-center">
-                    <div className="w-full h-full rounded-full overflow-hidden bg-background flex items-center justify-center relative">
+                  <div className="relative w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-full p-2 bg-gradient-to-b from-primary/30 via-background to-border flex items-center justify-center">
+                    <div className="w-full h-full rounded-full overflow-hidden bg-white flex items-center justify-center relative">
                       <img
                         src={claudioPhoto}
                         alt={founderMember.name}
@@ -57,7 +57,7 @@ export function Team() {
 
                   {/* Floating Badge */}
                   <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-card border border-primary/40 px-4 py-1.5 rounded-full shadow-lg flex items-center gap-2 whitespace-nowrap">
-                    <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                    <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
                     <span className="text-xs font-semibold text-primary uppercase tracking-wider">
                       Advogado desde 1991
                     </span>

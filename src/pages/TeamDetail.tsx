@@ -42,9 +42,9 @@ export default function TeamDetail() {
           <div className="lg:col-span-5 flex flex-col items-center">
             <FadeIn direction="up" delay={100}>
               <div className="relative group">
-                <div className="absolute -inset-3 rounded-full bg-gradient-to-tr from-primary/30 via-emerald-400/20 to-primary/40 blur-xl opacity-80" />
+                <div className="absolute -inset-3 rounded-full bg-gradient-to-tr from-primary/30 via-primary/20 to-primary/40 blur-xl opacity-80" />
                 <div className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full p-2 bg-gradient-to-b from-primary/40 via-background to-border flex items-center justify-center">
-                  <div className="w-full h-full rounded-full overflow-hidden bg-background flex items-center justify-center">
+                  <div className="w-full h-full rounded-full overflow-hidden bg-white flex items-center justify-center">
                     <img
                       src={claudioPhoto}
                       alt={member.name}
