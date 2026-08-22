@@ -93,7 +93,7 @@ export function Team() {
                       {founderMember.role}
                     </p>
                     <p className="text-xs text-muted-foreground uppercase tracking-widest mt-1 font-medium">
-                      Fileto Expertise Empresarial
+                      GRUPO FILETO
                     </p>
                   </div>
                 </div>
@@ -114,9 +114,8 @@ export function Team() {
                   </div>
                   <p className="text-foreground/90 font-normal leading-relaxed pt-2">
                     Com sólida formação jurídica e especializações em administração empresarial e
-                    tributária, Claudio Fileto lidera a Fileto Expertise Empresarial com o
-                    compromisso de entregar valor estratégico tangível aos negócios de seus
-                    clientes.
+                    tributária, Claudio Fileto lidera o Grupo Fileto com o compromisso de entregar
+                    valor estratégico tangível aos negócios de seus clientes.
                   </p>
                   <p>
                     Acumula mais de 25 anos de vivência em funções de gestão e direção executiva em

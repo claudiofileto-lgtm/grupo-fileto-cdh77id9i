@@ -97,7 +97,7 @@ export default function TeamDetail() {
 
                   <div className="mt-6 text-center">
                     <p className="text-xs text-muted-foreground uppercase tracking-widest font-medium">
-                      Fileto Expertise Empresarial
+                      GRUPO FILETO
                     </p>
                   </div>
                 </div>
