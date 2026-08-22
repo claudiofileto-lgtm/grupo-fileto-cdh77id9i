@@ -24,8 +24,8 @@ export function Footer() {
               </div>
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed">
-              Expertise estratégica jurídica, empresarial e financeira a serviço dos interesses
-              corporativos e pessoais mais complexos e desafiadores.
+              Expertise estratégica jurídica, tributária, empresarial e financeira a serviço dos
+              interesses corporativos e pessoais mais complexos e desafiadores.
             </p>
           </div>
 
