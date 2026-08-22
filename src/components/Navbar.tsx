@@ -52,11 +52,11 @@ export function Navbar() {
           <img
             src={logoFileto}
             alt="GRUPO FILETO"
-            className="h-8 sm:h-9 md:h-10 w-auto object-contain flex-shrink-0"
+            className="h-6 sm:h-7 md:h-8 w-auto object-contain flex-shrink-0"
           />
-          <div className="flex flex-col items-center justify-center font-serif font-bold text-primary text-xs sm:text-sm md:text-base leading-tight">
-            <span className="tracking-[0.22em] mr-[-0.22em]">GRUPO</span>
-            <span className="tracking-[0.08em] mr-[-0.08em]">FILETO</span>
+          <div className="flex flex-col items-center justify-center font-serif font-bold text-primary text-xs sm:text-sm md:text-base leading-none">
+            <span className="tracking-[0.30em] mr-[-0.30em]">GRUPO</span>
+            <span className="tracking-[0.02em] mr-[-0.02em]">FILETO</span>
           </div>
         </Link>
 
