@@ -52,10 +52,10 @@ export const practiceAreas: PracticeArea[] = [
     slug: 'inteligencia-tributaria',
     title: 'Inteligência Tributária',
     icon: 'Landmark',
-    description: '',
+    description:
+      'Parceiro da AG CAPITAL TAXTECH LTDA., a Primeira TaxTech do Brasil, empresa referência em tecnologia tributária desde 2010, que detém Tecnologia Proprietária para identificação de ativos ocultos nos recolhimentos tributários, gerando fluxo de caixa imediato para empresas.',
     fullDescription: '',
-    subtitle:
-      'Especialista na área tributária, o Grupo Fileto é Parceiro da AG CAPITAL TAXTECH LTDA., a Primeira TaxTech do Brasil, empresa referência em tecnologia tributária desde 2010, que detém Tecnologia Proprietária para identificação de ativos ocultos nos recolhimentos tributários, gerando fluxo de caixa imediato para empresas.',
+    subtitle: 'Especialista na área tributária, o Grupo Fileto é',
     aboutSection: {
       eyebrow: 'Quem somos',
       title: 'A primeira TaxTech do Brasil',
