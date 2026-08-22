@@ -56,11 +56,12 @@ export const practiceAreas: PracticeArea[] = [
       'Primeira TaxTech do Brasil. Tecnologia proprietária para identificação de ativos ocultos em tributos pagos, gerando fluxo de caixa imediato para empresas.',
     fullDescription:
       'Somos a primeira TaxTech do Brasil. Há mais de 15 anos geramos fluxo de caixa para empresas de todo o Brasil com tecnologia pioneira para identificação de ativos ocultos em tributos pagos a maior, referência em compliance previdenciário e especialistas em impostos diretos, indiretos e Reforma Tributária.',
-    subtitle: 'Desde 2010, parceiro da referência em tecnologia e inteligência tributária.',
+    subtitle:
+      'Parceiro legítimo da empresa que é referência em tecnologia tributária desde 2010 — relação contratual séria que garante aos clientes melhores resultados e maior segurança.',
     aboutSection: {
       eyebrow: 'Quem somos',
       title: 'A primeira TaxTech do Brasil',
-      body: 'Desde 2010, o Grupo Fileto é parceiro da referência em tecnologia e inteligência tributária. Com mais de 15 anos de mercado, utilizamos tecnologia proprietária para extrair 100% das oportunidades ainda não aproveitadas por empresas do Lucro Real, gerando fluxo de caixa imediato e seguro.',
+      body: 'O Grupo Fileto mantém parceria legítima e contratual com a empresa que é referência em tecnologia tributária desde 2010. Uma relação séria e formalizada que entrega aos nossos clientes melhores resultados e maior segurança. Com mais de 15 anos de mercado, utilizamos tecnologia proprietária para extrair 100% das oportunidades ainda não aproveitadas por empresas do Lucro Real, gerando fluxo de caixa imediato e seguro.',
       bullets: [
         'Somos a primeira TaxTech do Brasil',
         'Há mais de 15 anos gerando fluxo de caixa para empresas de todo o Brasil',
