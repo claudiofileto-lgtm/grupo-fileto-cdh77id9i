@@ -61,7 +61,7 @@ export const practiceAreas: PracticeArea[] = [
     aboutSection: {
       eyebrow: 'Quem somos',
       title: 'A primeira TaxTech do Brasil',
-      body: 'O Grupo Fileto mantém parceria legítima e contratual com a empresa que é referência em tecnologia tributária desde 2010. Uma relação séria e formalizada que entrega aos nossos clientes melhores resultados e maior segurança. Com mais de 15 anos de mercado, utilizamos tecnologia proprietária para extrair 100% das oportunidades ainda não aproveitadas por empresas do Lucro Real, gerando fluxo de caixa imediato e seguro.',
+      body: 'O Grupo Fileto mantém parceria legítima e contratual com a empresa referência em tecnologia tributária desde 2010. Uma relação séria e formalizada que entrega aos nossos clientes melhores resultados e maior segurança. Com mais de 15 anos de mercado, utilizamos tecnologia proprietária para extrair 100% das oportunidades ainda não aproveitadas por empresas do Lucro Real, gerando fluxo de caixa imediato e seguro.',
       bullets: [
         'Somos a primeira TaxTech do Brasil',
         'Há mais de 15 anos gerando fluxo de caixa para empresas de todo o Brasil',
