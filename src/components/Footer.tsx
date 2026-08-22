@@ -35,11 +35,11 @@ export function Footer() {
               <li className="flex gap-3">
                 <MapPin className="text-primary shrink-0" size={18} />
                 <span>
-                  Av. Faria Lima, 3000 - 15º Andar
+                  Rua Manoel Coelho, nº 676, sala 1508
                   <br />
-                  Itaim Bibi, São Paulo - SP
+                  Centro, São Caetano do Sul - SP
                   <br />
-                  CEP 01451-000
+                  CEP 09510-101
                 </span>
               </li>
             </ul>

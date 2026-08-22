@@ -95,18 +95,18 @@ export function Contact() {
             <div className="w-full h-full border border-border relative group overflow-hidden">
               <div className="absolute inset-0 bg-primary/20 mix-blend-overlay z-10 pointer-events-none"></div>
               <img
-                src="https://img.usecurling.com/p/800/800?q=saopaulo%20map&color=black&dpr=2"
+                src="https://img.usecurling.com/p/800/800?q=saocaetano%20map&color=black&dpr=2"
                 alt="Localização"
                 className="w-full h-full object-cover filter grayscale opacity-70 group-hover:scale-105 transition-transform duration-1000"
               />
               <div className="absolute bottom-6 left-6 z-20 bg-background/90 backdrop-blur-sm p-6 border border-border">
                 <h4 className="font-serif text-lg font-semibold text-primary mb-2">
-                  Sede São Paulo
+                  Sede São Caetano do Sul/SP
                 </h4>
                 <p className="text-sm text-muted-foreground">
-                  Av. Faria Lima, 3000 - 15º Andar
+                  Rua Manoel Coelho, nº 676, sala 1508
                   <br />
-                  Itaim Bibi, SP
+                  Centro, SP
                 </p>
               </div>
             </div>
