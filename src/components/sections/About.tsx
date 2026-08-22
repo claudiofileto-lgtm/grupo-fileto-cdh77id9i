@@ -42,7 +42,9 @@ export function About() {
                   de atuação em gestão e direção de grandes empresas nacionais e multinacionais,
                   fundou a Fileto Expertise Empresarial em janeiro de 2019, consolidando-se como um
                   escritório parceiro dos empresários, que vai muito além do tradicional. Para
-                  tanto, agregou Parcerias importantes, que fazem toda a diferença.&nbsp;
+                  tanto, agregou Parcerias importantes, que fazem toda a diferença, quer aumentando
+                  o fluxo de caixa, quer resolvendo situações repentinas inesperadas pelos
+                  empresários.&nbsp;
                   <div>
                     Nossa filosofia baseia-se no atendimento personalizado e na busca implacável
                     pelos melhores resultados para nossos clientes, com inteligência, celeridade e
