@@ -254,7 +254,7 @@ export const practiceAreas: PracticeArea[] = [
   {
     id: '3',
     slug: 'financeiro',
-    title: 'Financeiro',
+    title: 'Financeiro - Home Equity (Crédito com Garantia de Imóveis)',
     icon: 'DollarSign',
     description:
       'Home Equity (Crédito com Garantia de Imóveis) para empresas, empresários, pessoas físicas e condomínios.',
