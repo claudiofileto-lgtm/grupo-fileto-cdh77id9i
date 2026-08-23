@@ -8,19 +8,15 @@ export function Footer() {
       <div className="container mx-auto px-4 md:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           <div className="col-span-1 md:col-span-1">
-            <Link to="/" className="flex items-center gap-3 mb-6 group">
+            <Link to="/" className="flex items-center gap-0 mb-6 group">
               <img
                 src={logoBronze}
-                alt="Fileto Expertise"
-                className="h-8 w-auto object-contain transition-transform duration-500 group-hover:scale-105"
+                alt="GRUPO FILETO"
+                className="h-28 sm:h-32 md:h-36 w-auto object-contain flex-shrink-0 transition-transform duration-300 group-hover:scale-105"
               />
-              <div className="flex flex-col justify-center">
-                <span className="font-serif font-bold text-xl leading-none tracking-[0.15em] mb-1">
-                  FILETO
-                </span>
-                <span className="text-[9px] leading-none tracking-[0.3em] text-muted-foreground uppercase text-left">
-                  expertise
-                </span>
+              <div className="-ml-8 sm:-ml-10 flex flex-col items-center font-serif font-bold text-[#b8934a] text-xs sm:text-sm md:text-base leading-tight select-none">
+                <span className="block w-full text-center tracking-[0.10em]">GRUPO</span>
+                <span className="block w-full text-center tracking-[0.04em]">FILETO</span>
               </div>
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed">
