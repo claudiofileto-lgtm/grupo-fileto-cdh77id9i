@@ -8,7 +8,7 @@ export function Footer() {
       <div className="container mx-auto px-4 md:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10 lg:gap-12 mb-12 items-start">
           {/* Coluna 1: Logo F + GRUPO FILETO + bloco Sobre (lado a lado) */}
-          <div className="flex items-start gap-3 sm:gap-4">
+          <div className="flex items-center gap-3 sm:gap-4">
             <Link to="/" className="flex items-center gap-0 group flex-shrink-0">
               <img
                 src={logoFileto}
