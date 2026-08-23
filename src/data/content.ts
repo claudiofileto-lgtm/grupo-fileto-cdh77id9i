@@ -405,6 +405,122 @@ export const practiceAreas: PracticeArea[] = [
       ],
     },
   },
+  {
+    id: '6',
+    slug: 'consultoria-gestao-empresarial',
+    title: 'Consultoria em Gestão Empresarial para Pequenas e Médias Empresas',
+    icon: 'Briefcase',
+    description:
+      'Soluções estratégicas para pequenas e médias empresas superarem desafios de gestão, aumentarem a competitividade e alcançarem crescimento sustentável com metodologia CONSULTING NOW.',
+    fullDescription: '',
+    subtitle: 'CONSULTING NOW: diagnóstico e transformação da gestão empresarial em tempo real',
+    aboutSection: {
+      eyebrow: 'CONSULTING NOW',
+      title: 'Consultoria em Gestão Empresarial',
+      body: 'O CONSULTING NOW é a metodologia proprietária do Grupo Fileto para transformar a gestão de pequenas e médias empresas. Diferente das consultorias tradicionais — lentas, genéricas e caras — o CONSULTING NOW entrega diagnóstico rápido, plano de ação imediato e implementação acompanhada, focando em resultados concretos: aumento de faturamento, redução de custos, otimização de processos e professionalização da gestão.',
+      bullets: [
+        'Diagnóstico empresarial completo em até 10 dias úteis com o método CONSULTING NOW',
+        'Plano de ação personalizado com metas, prazos e indicadores de desempenho (KPIs)',
+        'Reestruturação de processos internos: financeiro, comercial, operações e RH',
+        'Professionalização da gestão: implantação de governança, conselhos consultivos e melhores práticas',
+        'Acesso a capital de giro e linhas de financiamento adequadas ao porte da empresa',
+        'Estratégias de crescimento: expansão de mercado, novos canais e diversificação de receitas',
+        'Mentoria e capacitação de lideranças para sustentabilidade do crescimento',
+        'Monitoramento trimestral de resultados com ajustes contínuos do plano de ação',
+      ],
+    },
+    stats: [
+      {
+        value: '90%',
+        label: 'das empresas brasileiras são de pequeno e médio porte (MPEs)',
+        icon: 'Building2',
+      },
+      {
+        value: '30%',
+        label: 'do PIB nacional é gerado pelas MPEs',
+        icon: 'TrendingUp',
+      },
+      {
+        value: '60%',
+        label: 'das MPEs fecham em menos de 5 anos por falta de gestão profissional',
+        icon: 'TrendingDown',
+      },
+      {
+        value: '100%',
+        label: 'dos projetos CONSULTING NOW com diagnóstico em até 10 dias',
+        icon: 'CheckCircle',
+      },
+    ],
+    method: {
+      eyebrow: 'Método CONSULTING NOW',
+      title: 'Da diagnóstico à transformação em 7 etapas',
+      intro:
+        'O CONSULTING NOW segue um método estruturado e acelerado, com foco em resultados de curto prazo e sustentabilidade de longo prazo. Sem relatórios intermináveis: ação, implementação e resultado.',
+      steps: [
+        {
+          number: '1',
+          title:
+            'Imersão inicial: entendimento do negócio, mercado, desafios e objetivos do empresário',
+        },
+        {
+          number: '2',
+          title:
+            'Diagnóstico CONSULTING NOW: análise de processos, finanças, equipe e posicionamento',
+          description: 'Em até 10 dias úteis.',
+        },
+        {
+          number: '3',
+          title:
+            'Devolutiva estratégica: apresentação dos achados e priorização das oportunidades de melhoria',
+        },
+        {
+          number: '4',
+          title: 'Plano de Ação Imediata (PAI): definição de metas, responsáveis, prazos e KPIs',
+        },
+        {
+          number: '5',
+          title:
+            'Implementação acompanhada: execução com suporte presencial e remoto da equipe Grupo Fileto',
+        },
+        {
+          number: '6',
+          title:
+            'Acesso a capital: estruturação de crédito, capital de giro e financiamento para viabilizar o plano',
+        },
+        {
+          number: '7',
+          title:
+            'Monitoramento trimestral: reuniões de follow-up, ajustes de rota e validação de resultados',
+        },
+      ],
+    },
+    differentials: {
+      eyebrow: 'Diferenciais',
+      title: 'Por que o CONSULTING NOW é diferente',
+      bullets: [
+        'Metodologia exclusiva e acelerada: diagnóstico em 10 dias, não em meses',
+        'Foco em implementação, não apenas em relatórios — colocamos a mão na massa',
+        'Visão integrada: gestão, finanças, jurídico e tributário em uma única consultoria',
+        'Acesso facilitado a capital de giro e financiamento para executar o plano de ação',
+        'Experiência de mais de 30 anos em gestão e direção de grandes empresas',
+        'Atendimento personalizado: cada empresa recebe um plano sob medida, não uma fórmula pronta',
+        'Monitoramento contínuo: não abandonamos o cliente após a entrega do diagnóstico',
+        'Resultados mensuráveis: metas claras, KPIs definidos e acompanhamento trimestral',
+      ],
+    },
+    scenario: {
+      eyebrow: 'Cenário brasileiro',
+      title: 'O desafio das pequenas e médias empresas no Brasil',
+      body: 'As micro, pequenas e médias empresas são a espinha dorsal da economia brasileira — mas também as mais vulneráveis. Falta de acesso a crédito, gestão amadora, carga tributária complexa e ausência de planejamento estratégico estão entre as principais causas de mortalidade. O CONSULTING NOW nasceu para mudar esse cenário. Dados do SEBRAE, IBGE e Banco Central.',
+      bullets: [
+        'Mais de 90% das empresas brasileiras são MPEs e respondem por 55% dos empregos formais (SEBRAE)',
+        'A cada 10 empresas abertas no Brasil, 6 fecham antes de completar 5 anos (IBGE)',
+        'Falta de capital de giro e gestão deficiente são as 2 principais causas de falência de MPEs',
+        'Apenas 38% das MPEs brasileiras têm acesso a crédito formal (Banco Central)',
+        'Empresas que investem em consultoria de gestão têm 3x mais chances de sobreviver à 1ª década',
+      ],
+    },
+  },
 ]
 
 export interface TeamMember {
