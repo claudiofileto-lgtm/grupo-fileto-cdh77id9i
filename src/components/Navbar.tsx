@@ -48,7 +48,7 @@ export function Navbar() {
       )}
     >
       <div className="container mx-auto px-4 md:px-8 flex justify-between items-center">
-        <Link to="/" className="flex items-center gap-1.5 sm:gap-2 group">
+        <Link to="/" className="flex items-center gap-0.5 sm:gap-1 group">
           <img
             src={logoFileto}
             alt="GRUPO FILETO"
