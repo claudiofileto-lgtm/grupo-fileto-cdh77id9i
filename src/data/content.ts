@@ -142,6 +142,113 @@ export const practiceAreas: PracticeArea[] = [
     description: 'Consultoria para estruturação, fusões, aquisições e governança corporativa.',
     fullDescription:
       'Assessoramos empresas de diversos setores em suas operações diárias e estruturais. Desde a constituição de sociedades, passando por reorganizações societárias (M&A) até a implementação de práticas modernas de governança corporativa.',
+    subtitle: 'Especialista em direito empresarial, o Grupo Fileto oferece',
+    aboutSection: {
+      eyebrow: 'Direito Empresarial',
+      title: 'Soluções jurídicas completas para empresas e grupos empresariais',
+      body: 'O Direito Empresarial é a espinha dorsal do ambiente de negócios. O Grupo Fileto atua em todas as frentes do direito empresarial — do societário à recuperação de empresas — oferecendo assessoria jurídica estratégica para empresas de todos os portes, desde startups até grandes grupos empresariais, garantindo segurança jurídica, previsibilidade e competitividade.',
+      bullets: [
+        'Constituição e reorganização de sociedades empresariais (Ltda., S.A., S/S, EIRELI)',
+        'Elaboração e revisão de contratos empresariais, comerciais, de prestação de serviços e parcerias',
+        'Acordos de sócios, quotistas e acionistas com cláusulas de governança, lock-up, tag along e drag along',
+        'Operações de M&A (fusões, aquisições, incorporações, cisões e joint ventures)',
+        'Recuperação Judicial e Extrajudicial, Falências e reestruturação de passivos empresariais',
+        'Planejamento societário e estruturação de holdings empresariais',
+        'Soluções de capital de giro e financiamento para grupos empresariais',
+      ],
+    },
+    stats: [
+      {
+        value: '60%',
+        label:
+          'das empresas brasileiras fecham em menos de 5 anos por falta de assessoria jurídica adequada',
+        icon: 'TrendingDown',
+      },
+      {
+        value: 'R$ 1,2 tri',
+        label: 'em crédito empresarial movimentados em operações de M&A no Brasil em 2024',
+        icon: 'DollarSign',
+      },
+      {
+        value: '1.400+',
+        label:
+          'pedidos de Recuperação Judicial no Brasil em 2024 — ambiente exige assessoria especializada',
+        icon: 'AlertTriangle',
+      },
+      {
+        value: '100%',
+        label: 'de segurança jurídica em todos os contratos e operações estruturadas',
+        icon: 'CheckCircle',
+      },
+    ],
+    method: {
+      eyebrow: 'Nossa metodologia',
+      title: 'Uma abordagem completa do ciclo empresarial',
+      intro:
+        'Da constituição à expansão, da recuperação à perenidade, assessoramos cada fase da vida empresarial com profundidade técnica e visão estratégica de negócios.',
+      steps: [
+        {
+          number: '1',
+          title:
+            'Diagnóstico empresarial: análise da estrutura societária, contratos vigentes e passivos',
+        },
+        {
+          number: '2',
+          title:
+            'Planejamento societário: desenho da estrutura ideal conforme porte, atividade e objetivos',
+        },
+        {
+          number: '3',
+          title:
+            'Elaboração de contratos e acordos de sócios sob medida, com cláusulas de proteção e governança',
+        },
+        {
+          number: '4',
+          title:
+            'Due diligence e estruturação de operações de M&A — fusões, aquisições, incorporações',
+        },
+        {
+          number: '5',
+          title: 'Assessoria em Recuperação Judicial, Extrajudicial e reestruturação de passivos',
+        },
+        {
+          number: '6',
+          title:
+            'Captação de recursos: capital de giro, financiamento bancário e operações estruturadas',
+        },
+        {
+          number: '7',
+          title:
+            'Monitoramento contínuo: compliance societário, atualização contratual e prevenção de litígios',
+        },
+      ],
+    },
+    differentials: {
+      eyebrow: 'Diferenciais',
+      title: 'Por que o Direito Empresarial do Grupo Fileto é diferente',
+      bullets: [
+        'Atuação completa: do contrato social à recuperação judicial, todas as frentes cobertas',
+        'Visão de negócios além do jurídico: entendemos o mercado, o setor e os objetivos do empresário',
+        'Soluções de capital de giro e financiamento integradas à assessoria jurídica',
+        'Experiência de mais de 30 anos em operações societárias complexas e M&A',
+        'Acordos de sócios robustos com cláusulas de proteção, saída e governança',
+        'Atuação em Recuperação Judicial com foco na preservação da empresa e dos empregos',
+        'Assessoria preventiva: evitar litígios societários antes que eles surjam',
+        'Atendimento personalizado para cada porte de empresa, da startup ao grupo consolidado',
+      ],
+    },
+    scenario: {
+      eyebrow: 'Cenário brasileiro',
+      title: 'O ambiente empresarial no Brasil exige assessoria jurídica especializada',
+      body: 'O ambiente de negócios brasileiro é um dos mais complexos do mundo. Carga tributária elevada, burocracia, insegurança jurídica e juros altos tornam a assessoria jurídica empresarial um diferencial competitivo — e não apenas um custo. Dados do IBGE, Serasa Experian e Banco Mundial evidenciam os desafios.',
+      bullets: [
+        'O Brasil ocupa a 124ª posição no ranking Doing Business do Banco Mundial',
+        'Mais de 60% das empresas brasileiras fecham as portas em menos de 5 anos (IBGE)',
+        '1.400+ pedidos de Recuperação Judicial em 2024 — maior número desde a Lei 11.101/2005',
+        'A taxa Selic elevada torna o capital de giro um dos maiores desafios para grupos empresariais',
+        'Conflitos societários estão entre as 3 principais causas de dissolução de empresas no Brasil',
+      ],
+    },
   },
   {
     id: '3',

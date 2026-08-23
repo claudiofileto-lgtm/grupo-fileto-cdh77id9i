@@ -21,6 +21,7 @@ import {
   Award,
   TrendingUp,
   TrendingDown,
+  AlertTriangle,
   Percent,
   Shield,
 } from 'lucide-react'
@@ -41,6 +42,7 @@ const iconMap: Record<string, React.ElementType> = {
   Award,
   TrendingUp,
   TrendingDown,
+  AlertTriangle,
   Percent,
   Shield,
 }
