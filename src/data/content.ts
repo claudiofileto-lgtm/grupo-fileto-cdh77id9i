@@ -282,6 +282,108 @@ export const practiceAreas: PracticeArea[] = [
           'Due diligence do imóvel, constituição de alienação fiduciária, contratos, cessões, anuências e interlocução com instituições financeiras, garantindo celeridade e segurança jurídica em todas as etapas.',
       },
     ],
+    subtitle: 'Home Equity: o crédito inteligente com garantia de imóvel',
+    aboutSection: {
+      eyebrow: 'Home Equity',
+      title: 'Crédito com Garantia de Imóvel — taxas reduzidas e prazos alongados',
+      body: 'O Home Equity é a modalidade de crédito mais vantajosa do mercado. Ao oferecer um imóvel como garantia, você acessa taxas de juros significativamente reduzidas em comparação com empréstimos pessoais, cheque especial ou crédito sem garantia. O Grupo Fileto conduz toda a operação com segurança jurídica e agilidade.',
+      bullets: [
+        'Taxas de juros reduzidas: as menores do mercado, a partir de 0,79% ao mês + IPCA ou 11,9% ao ano + TR',
+        'Prazo de parcelamento alongado: até 240 meses (20 anos) para quitar o financiamento',
+        'Aceitação de mais de um garantidor: é possível compor garantia com múltiplos imóveis e garantidores',
+        'Objetivos atendidos: capital de giro, expansão de negócios, quitação de passivos, aquisição de equipamentos, reformas de imóveis, investimentos pessoais, antecipação de herança com isenção fiscal',
+        'Tipos de imóveis aceitos: residenciais, comerciais, galpões, terrenos, imóveis rurais, prédios inteiros ou salas e lajes comerciais em áreas urbanas — quitados ou com saldo devedor baixo',
+        'Manutenção da propriedade do imóvel: você continua proprietário e pode seguir utilizando o bem normalmente',
+        'Liberação ágil: recursos disponíveis em conta em até 15 dias úteis após a conclusão da due diligence jurídica',
+      ],
+    },
+    stats: [
+      {
+        value: 'A partir de 0,79%',
+        label: 'ao mês + IPCA',
+        icon: 'Percent',
+      },
+      {
+        value: 'Até 240 meses',
+        label: 'prazo de parcelamento',
+        icon: 'Calendar',
+      },
+      {
+        value: 'Mais de 1 garantidor',
+        label: 'imóveis e garantidores aceitos',
+        icon: 'Users',
+      },
+      {
+        value: '100%',
+        label: 'segurança jurídica em todas as etapas',
+        icon: 'CheckCircle',
+      },
+    ],
+    method: {
+      eyebrow: 'Nossa metodologia',
+      title: 'Da análise do imóvel à liberação do crédito',
+      intro:
+        'Conduzimos cada operação de Home Equity com rigor técnico e agilidade, cuidando de toda a esteira jurídica para que você receba o crédito com segurança e no menor prazo possível.',
+      steps: [
+        {
+          number: '1',
+          title: 'Análise de viabilidade: avaliação do imóvel e da documentação para elegibilidade',
+        },
+        {
+          number: '2',
+          title:
+            'Due diligence jurídica: matrícula, certidões, ônus, gravames e regularidade fiscal',
+        },
+        {
+          number: '3',
+          title:
+            'Estruturação da garantia: alienação fiduciária do imóvel em favor da instituição financeira',
+        },
+        {
+          number: '4',
+          title:
+            'Elaboração contratual: contrato de crédito, cessões, anuências e demais instrumentos',
+        },
+        {
+          number: '5',
+          title: 'Interlocução com a instituição financeira: agilidade na aprovação e desembolso',
+        },
+        {
+          number: '6',
+          title:
+            'Registro em cartório: constituição e averbação da garantia na matrícula do imóvel',
+        },
+        {
+          number: '7',
+          title: 'Liberação dos recursos: crédito em conta e acompanhamento pós-contratação',
+        },
+      ],
+    },
+    differentials: {
+      eyebrow: 'Diferenciais',
+      title: 'Por que contratar Home Equity com o Grupo Fileto',
+      bullets: [
+        'Taxas a partir de 0,79% ao mês + IPCA — as menores do mercado',
+        'Prazo de até 240 meses (20 anos) para parcelamento',
+        'Aceitação de mais de um garantidor, ampliando o limite de crédito disponível',
+        'Due diligence jurídica completa: segurança total sobre a situação do imóvel',
+        'Agilidade: recursos liberados em até 15 dias úteis',
+        'Ampla gama de imóveis aceitos: residenciais, comerciais, terrenos, rurais e galpões',
+        'Atendimento personalizado: soluções ajustadas ao perfil de cada cliente (empresas, empresários, pessoas físicas e condomínios)',
+      ],
+    },
+    scenario: {
+      eyebrow: 'Cenário brasileiro',
+      title: 'Home Equity: o mercado de crédito com garantia de imóvel no Brasil',
+      body: 'O Home Equity é o segmento que mais cresce no mercado de crédito brasileiro. Com a Selic elevada e as taxas de juros do crédito tradicional em patamares proibitivos, a garantia imobiliária se consolida como a alternativa mais inteligente e econômica para quem precisa de recursos com custo baixo e prazo alongado.',
+      bullets: [
+        'O crédito com garantia de imóvel cresceu mais de 50% ao ano no Brasil nos últimos exercícios (BACEN)',
+        'As taxas do Home Equity são até 80% menores que as do cheque especial e do crédito pessoal sem garantia',
+        'Mais de R$ 100 bilhões em operações de Home Equity já foram contratadas no país',
+        'A aceitação de mais de um garantidor permite ampliar significativamente o limite de crédito disponível',
+        'O Brasil possui mais de 70 milhões de imóveis — o potencial de alavancagem via Home Equity ainda é subutilizado',
+      ],
+    },
   },
   {
     id: '4',

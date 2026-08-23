@@ -24,6 +24,7 @@ import {
   AlertTriangle,
   Percent,
   Shield,
+  Calendar,
 } from 'lucide-react'
 
 const iconMap: Record<string, React.ElementType> = {
@@ -45,6 +46,7 @@ const iconMap: Record<string, React.ElementType> = {
   AlertTriangle,
   Percent,
   Shield,
+  Calendar,
 }
 
 const HIGHLIGHT_PHRASE = 'Primeira TaxTech do Brasil'
@@ -134,6 +136,18 @@ export default function AreaDetail() {
                       className="text-muted-foreground leading-relaxed text-lg"
                       dangerouslySetInnerHTML={{ __html: area.fullDescription }}
                     />
+                  )}
+                  {area.highlights && area.highlights.length > 0 && (
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-12 not-prose">
+                      {area.highlights.map((h, i) => (
+                        <div key={i} className="bg-card border border-border p-6">
+                          <h4 className="font-serif text-xl text-white mb-3">{h.title}</h4>
+                          <p className="text-muted-foreground leading-relaxed text-sm">
+                            {h.description}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
                   )}
                 </div>
               ) : (
