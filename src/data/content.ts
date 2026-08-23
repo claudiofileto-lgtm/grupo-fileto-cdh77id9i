@@ -401,7 +401,7 @@ export const practiceAreas: PracticeArea[] = [
   {
     id: '4',
     slug: 'direito-tributario',
-    title: 'Tributário',
+    title: 'Direito Tributário',
     icon: 'Landmark',
     description: 'Planejamento fiscal e defesa em execuções e autuações fiscais.',
     fullDescription:
