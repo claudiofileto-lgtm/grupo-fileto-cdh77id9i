@@ -417,6 +417,7 @@ export const practiceAreas: PracticeArea[] = [
           'O Planejamento Tributário consiste em uma análise minuciosa da estrutura fiscal de uma empresa, visando otimizar sua carga tributária de maneira legal e estratégica. Este serviço inclui a avaliação de diferentes regimes tributários disponíveis, identificação de incentivos fiscais aplicáveis, análise de créditos tributários, e a implementação de práticas que estejam alinhadas com a legislação vigente.',
           'Os principais objetivos são a redução dos custos fiscais, a prevenção de contingências tributárias, a maximização da eficiência operacional, e a garantia de conformidade com as normas legais. Além disso, busca-se proporcionar a empresa uma visão clara das implicações fiscais de suas atividades, permitindo uma gestão financeira mais estratégica e sustentável.',
           'Ao contar com a experiência de um advogado especializado, as empresas podem não apenas cumprir suas obrigações fiscais, mas também explorar oportunidades para otimizar seus recursos financeiros de maneira legal e ética.',
+          'Assessoria tributária para adaptação da empresa cliente à Reforma Tributária, com análise dos impactos do novo sistema de tributação sobre o consumo (IBS e CBS), revisão da estrutura fiscal atual e implementação das adequações necessárias para garantir conformidade e competitividade na transição para o novo regime.',
         ],
       },
       {
