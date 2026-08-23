@@ -6,7 +6,7 @@ export function Hero() {
     <section id="inicio" className="relative min-h-screen flex items-center pt-20">
       <div className="absolute inset-0 z-0">
         <img
-          src="https://img.usecurling.com/p/1920/1080?q=law%20firm%20architecture&color=black&dpr=2"
+          src="https://img.usecurling.com/p/1920/1080?q=modern%20corporate%20architecture%20building&color=black"
           alt="Escritório de Advocacia"
           className="w-full h-full object-cover opacity-40"
         />

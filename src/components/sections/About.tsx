@@ -10,7 +10,7 @@ export function About() {
             <div className="relative">
               <div className="absolute -inset-4 border border-primary/20 translate-x-4 translate-y-4" />
               <img
-                src="https://img.usecurling.com/p/800/1000?q=law%20office%20interior&color=black&dpr=2"
+                src="https://img.usecurling.com/p/800/1000?q=modern%20corporate%20office%20interior&color=black"
                 alt="Interior do Escritório"
                 className="w-full h-auto object-cover relative z-10 filter grayscale-[20%]"
               />
