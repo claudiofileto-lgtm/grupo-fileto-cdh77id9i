@@ -6,10 +6,10 @@ export function Footer() {
   return (
     <footer className="bg-card border-t border-border pt-16 pb-8">
       <div className="container mx-auto px-4 md:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-10 lg:gap-12 mb-12 items-start">
-          {/* Coluna 1: Logo F + GRUPO FILETO */}
-          <div className="flex items-center">
-            <Link to="/" className="flex items-center gap-0 group">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10 lg:gap-12 mb-12 items-start">
+          {/* Coluna 1: Logo F + GRUPO FILETO e Sobre lado a lado */}
+          <div className="flex flex-col sm:flex-row items-start gap-4 lg:gap-6">
+            <Link to="/" className="flex items-center gap-0 group shrink-0">
               <img
                 src={logoBronze}
                 alt="GRUPO FILETO"
@@ -20,18 +20,18 @@ export function Footer() {
                 <span className="block w-full text-center tracking-[0.04em]">FILETO</span>
               </div>
             </Link>
+            <div className="flex-1 pt-1 sm:pt-2">
+              <h4 className="font-serif text-lg font-semibold mb-3 md:mb-4 text-foreground">
+                Sobre
+              </h4>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                Expertise estratégica jurídica, tributária, empresarial e financeira a serviço dos
+                interesses corporativos e pessoais mais complexos e desafiadores.
+              </p>
+            </div>
           </div>
 
-          {/* Coluna 2: Texto Descritivo */}
-          <div>
-            <h4 className="font-serif text-lg font-semibold mb-6 text-foreground">Sobre</h4>
-            <p className="text-muted-foreground text-sm leading-relaxed">
-              Expertise estratégica jurídica, tributária, empresarial e financeira a serviço dos
-              interesses corporativos e pessoais mais complexos e desafiadores.
-            </p>
-          </div>
-
-          {/* Coluna 3: Endereço + Contato */}
+          {/* Coluna 2: Endereço + Contato */}
           <div className="space-y-6">
             <div>
               <h4 className="font-serif text-lg font-semibold mb-4 text-foreground">Endereço</h4>
@@ -66,7 +66,7 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Coluna 4: Redes Sociais */}
+          {/* Coluna 3: Redes Sociais */}
           <div>
             <h4 className="font-serif text-lg font-semibold mb-6 text-foreground">Redes Sociais</h4>
             <div className="flex gap-4">
@@ -89,7 +89,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Fileto Expertise. Todos os direitos reservados.</p>
+          <p>&copy; {new Date().getFullYear()} GRUPO FILETO. Todos os direitos reservados.</p>
           <p>Design sofisticado e desenvolvimento por Skip.</p>
         </div>
       </div>
