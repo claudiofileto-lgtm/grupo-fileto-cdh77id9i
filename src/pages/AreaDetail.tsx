@@ -25,6 +25,7 @@ import {
   Percent,
   Shield,
   Calendar,
+  MessageCircle,
 } from 'lucide-react'
 
 const iconMap: Record<string, React.ElementType> = {
@@ -476,9 +477,18 @@ export default function AreaDetail() {
                   </p>
                   <Button
                     asChild
-                    className="w-full bg-primary text-white hover:bg-primary/90 rounded-none"
+                    className="w-full bg-primary text-white hover:bg-primary/90 rounded-none flex items-center justify-center gap-2"
                   >
-                    <Link to="/#contato">Fale Conosco</Link>
+                    <a
+                      href={`https://wa.me/5511933293331?text=${encodeURIComponent(
+                        `Olá, gostaria de informações sobre ${area.title}.`,
+                      )}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <MessageCircle className="w-4 h-4" />
+                      Fale pelo WhatsApp
+                    </a>
                   </Button>
                 </div>
               </div>
