@@ -7,7 +7,7 @@ export function Footer() {
     <footer className="bg-gray-900 border-t border-gray-800 pt-1 sm:pt-2 pb-6 text-gray-300">
       <div className="container mx-auto px-4 md:px-8">
         {/* 1. Logo F + GRUPO FILETO centralizado no topo */}
-        <div className="flex justify-center items-center mb-0.5 sm:mb-1">
+        <div className="flex justify-center items-center mb-0">
           <Link to="/" className="flex items-center gap-0 group">
             <img
               src={logoFileto}
@@ -22,7 +22,7 @@ export function Footer() {
         </div>
 
         {/* 2. Abaixo do logo, os 4 blocos lado a lado na mesma linha horizontal */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4 mb-4 items-start">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 md:gap-3 mb-2 items-start">
           {/* Bloco 1: Sobre */}
           <div>
             <h4 className="font-serif text-base md:text-lg font-semibold mb-2.5 text-white">
