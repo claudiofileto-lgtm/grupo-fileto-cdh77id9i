@@ -48,15 +48,15 @@ export function Navbar() {
       )}
     >
       <div className="container mx-auto px-4 md:px-8 flex justify-between items-center">
-        <Link to="/" className="flex items-center gap-1.5 sm:gap-2 group">
+        <Link to="/" className="flex items-center gap-2 group">
           <img
             src={logoFileto}
             alt="GRUPO FILETO"
-            className="h-10 sm:h-11 md:h-12 w-auto object-contain flex-shrink-0"
+            className="h-9 sm:h-10 md:h-11 w-auto object-contain flex-shrink-0 transition-transform duration-300 group-hover:scale-105"
           />
-          <div className="flex flex-col items-center justify-center font-serif font-bold text-primary text-xs sm:text-sm md:text-base leading-tight">
-            <span className="tracking-[0.08em] mr-[-0.08em] w-full text-center">GRUPO</span>
-            <span className="tracking-[0.12em] mr-[-0.12em] w-full text-center">FILETO</span>
+          <div className="flex flex-col items-center justify-center font-serif font-bold text-primary text-xs sm:text-sm md:text-base leading-tight select-none">
+            <span className="tracking-[0.03em] mr-[-0.03em] inline-block text-center">GRUPO</span>
+            <span className="tracking-[0.20em] mr-[-0.20em] inline-block text-center">FILETO</span>
           </div>
         </Link>
 
