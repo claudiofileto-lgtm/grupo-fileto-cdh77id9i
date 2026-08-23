@@ -394,6 +394,7 @@ export const practiceAreas: PracticeArea[] = [
         'Expansão acelerada das operações via SFI e Home Equity no Brasil, impulsionadas pela digitalização e agilidade de fintechs especializadas',
         'Grande volume de concessões voltado a capital de giro empresarial, investimentos e consolidação de passivos onerosos',
         'Potencial bilionário ainda subutilizado no país, onde a maior parte do patrimônio das famílias e empresas permanece imobilizado',
+        'O Grupo Fileto é Parceiro Contratado pela principal fintech de Home Equity do país (pioneira, 3º maior player do Brasil, +R$ 4 bilhões originados, 100% online), atuando com consultoria jurídica especializada na estruturação, análise e formalização das operações de Home Equity e SFI.',
       ],
     },
   },
