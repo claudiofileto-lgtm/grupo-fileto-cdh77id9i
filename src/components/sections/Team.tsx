@@ -51,9 +51,10 @@ export function Team() {
               <FadeIn delay={100} className="w-full mb-6">
                 <div className="border-l-2 border-primary pl-4 py-1">
                   <p className="text-foreground font-serif text-base sm:text-lg font-medium leading-relaxed italic text-justify">
-                    &ldquo;Aliamos mais de três décadas de rigor técnico jurídico a uma visão de
-                    negócios pragmática para transformar desafios complexos em liquidez, segurança e
-                    valor tangível.&rdquo;
+                    &ldquo;Aliamos experiência de mais de vinte e cinco anos de rigor técnico em
+                    gestão e direção administrativa empresarial e vivência prática na área jurídica
+                    a uma visão de negócios pragmática para transformar desafios complexos em
+                    liquidez, com segurança e valor tangível.&rdquo;
                   </p>
                 </div>
               </FadeIn>
