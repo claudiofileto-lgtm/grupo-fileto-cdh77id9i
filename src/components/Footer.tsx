@@ -6,10 +6,10 @@ export function Footer() {
   return (
     <footer className="bg-card border-t border-border pt-16 pb-8">
       <div className="container mx-auto px-4 md:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10 lg:gap-12 mb-12 items-start">
-          {/* Coluna 1: Logo F + GRUPO FILETO + bloco Sobre (lado a lado) */}
-          <div className="flex items-start gap-3 sm:gap-4">
-            <Link to="/" className="flex items-center gap-0 group flex-shrink-0">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 lg:gap-16 mb-12 items-start">
+          {/* Coluna 1 (esquerda): APENAS o logo F + GRUPO FILETO */}
+          <div className="flex items-start">
+            <Link to="/" className="flex items-center gap-0 group">
               <img
                 src={logoFileto}
                 alt="GRUPO FILETO"
@@ -20,19 +20,20 @@ export function Footer() {
                 <span className="block w-full text-center tracking-[0.04em]">FILETO</span>
               </div>
             </Link>
-            <div className="flex-1">
-              <h4 className="font-serif text-base sm:text-lg font-semibold mb-2 sm:mb-3 text-foreground">
-                Sobre
-              </h4>
-              <p className="text-muted-foreground text-xs sm:text-sm leading-relaxed">
+          </div>
+
+          {/* Coluna 2 (direita): Sobre, Endereço, Contato e Redes Sociais empilhados verticalmente */}
+          <div className="space-y-8">
+            {/* Bloco Sobre */}
+            <div>
+              <h4 className="font-serif text-lg font-semibold mb-3 text-foreground">Sobre</h4>
+              <p className="text-muted-foreground text-sm leading-relaxed">
                 Expertise estratégica jurídica, tributária, empresarial e financeira a serviço dos
                 interesses corporativos e pessoais mais complexos e desafiadores.
               </p>
             </div>
-          </div>
 
-          {/* Coluna 2: Endereço + Contato */}
-          <div className="space-y-6">
+            {/* Bloco Endereço */}
             <div>
               <h4 className="font-serif text-lg font-semibold mb-4 text-foreground">Endereço</h4>
               <ul className="space-y-3 text-sm text-muted-foreground">
@@ -51,6 +52,7 @@ export function Footer() {
               </ul>
             </div>
 
+            {/* Bloco Contato */}
             <div>
               <h4 className="font-serif text-lg font-semibold mb-4 text-foreground">Contato</h4>
               <ul className="space-y-3 text-sm text-muted-foreground">
@@ -64,26 +66,28 @@ export function Footer() {
                 </li>
               </ul>
             </div>
-          </div>
 
-          {/* Coluna 3: Redes Sociais */}
-          <div>
-            <h4 className="font-serif text-lg font-semibold mb-6 text-foreground">Redes Sociais</h4>
-            <div className="flex gap-4">
-              <a
-                href="#"
-                aria-label="LinkedIn"
-                className="w-10 h-10 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-white hover:border-primary transition-all"
-              >
-                <Linkedin size={18} />
-              </a>
-              <a
-                href="#"
-                aria-label="Instagram"
-                className="w-10 h-10 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-white hover:border-primary transition-all"
-              >
-                <Instagram size={18} />
-              </a>
+            {/* Bloco Redes Sociais */}
+            <div>
+              <h4 className="font-serif text-lg font-semibold mb-4 text-foreground">
+                Redes Sociais
+              </h4>
+              <div className="flex gap-4">
+                <a
+                  href="#"
+                  aria-label="LinkedIn"
+                  className="w-10 h-10 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-white hover:border-primary transition-all"
+                >
+                  <Linkedin size={18} />
+                </a>
+                <a
+                  href="#"
+                  aria-label="Instagram"
+                  className="w-10 h-10 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-white hover:border-primary transition-all"
+                >
+                  <Instagram size={18} />
+                </a>
+              </div>
             </div>
           </div>
         </div>
