@@ -33,7 +33,7 @@ export function Contact() {
               <h3 className="text-4xl md:text-5xl font-serif font-bold mb-8">
                 Fale com Nossos Especialistas
               </h3>
-              <p className="text-muted-foreground mb-12 max-w-md">
+              <p className="text-muted-foreground mb-12 max-w-md text-justify">
                 Preencha o formulário para agendar uma consulta. Nossa equipe retornará com a máxima
                 brevidade e confidencialidade.
               </p>

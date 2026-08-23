@@ -25,12 +25,11 @@ export function PracticeAreas() {
             <div className="h-[1px] w-8 bg-primary"></div>
           </div>
           <h3 className="text-4xl md:text-5xl font-serif font-bold mb-6">Áreas de Atuação</h3>
-          <p className="text-muted-foreground text-lg">
+          <p className="text-muted-foreground text-lg text-justify">
             Oferecemos o que há de melhor no mercado, unindo soluções que vão de encontro aos
             anseios e necessidades de empresas e empresários, combinando conhecimento prático
             profundo, visão de negócios em áreas estratégicas Tributárias, Administrativas e
-            Financeiras&nbsp;Inteligentes, com&nbsp;<span>suporte jurídico integral.</span>
-            <span>&nbsp;</span>
+            Financeiras Inteligentes, com suporte jurídico integral.
           </p>
         </FadeIn>
 
@@ -46,12 +45,12 @@ export function PracticeAreas() {
                   <div className="absolute top-0 left-0 w-1 h-0 bg-primary transition-all duration-500 group-hover:h-full"></div>
 
                   <div className="flex flex-col md:flex-row gap-6 md:items-start">
-                    <div>
+                    <div className="w-full">
                       <h4 className="font-serif text-2xl font-semibold mb-4 text-foreground group-hover:text-primary transition-colors">
                         {area.title}
                       </h4>
                       <p
-                        className="mb-6 leading-relaxed text-white [&_strong]:font-semibold"
+                        className="mb-6 leading-relaxed text-white [&_strong]:font-semibold text-justify"
                         dangerouslySetInnerHTML={{ __html: area.description }}
                       />
                       <span className="inline-flex items-center text-sm font-medium text-primary opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">

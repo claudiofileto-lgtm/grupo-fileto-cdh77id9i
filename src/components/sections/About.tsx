@@ -35,35 +35,33 @@ export function About() {
                 Experiência, Precisão e <br />
                 <span className="text-muted-foreground italic font-normal">Comprometimento</span>
               </h3>
-              <div className="space-y-6 text-muted-foreground leading-relaxed">
-                <p>
+              <div className="space-y-6 text-muted-foreground leading-relaxed text-justify">
+                <p className="text-justify">
                   Nosso CEO, CLAUDIO FILETO, advogado desde 1991, com duas especializações em
                   administração empresarial e duas na área do direito tributário, e mais de 25 anos
                   de atuação em gestão e direção de grandes empresas nacionais e multinacionais,
                   fundou o GRUPO FILETO em janeiro de 2019, consolidando-se como um escritório
                   parceiro dos empresários, que vai muito além do tradicional. Para tanto, agregou
                   Parcerias importantes, que fazem toda a diferença, quer aumentando o fluxo de
-                  caixa, quer resolvendo situações repentinas inesperadas pelos empresários.&nbsp;
-                  <div>
-                    Nossa filosofia baseia-se no atendimento personalizado e na busca implacável
-                    pelos melhores resultados para nossos clientes, com inteligência, celeridade e
-                    segurança.
-                  </div>
+                  caixa, quer resolvendo situações repentinas inesperadas pelos empresários.
                 </p>
-                <p>
-                  Não trabalhamos com soluções padronizadas.&nbsp;
-                  <div>
-                    Analisamos cada caso minuciosamente, garantindo que as estratégias adotadas
-                    sejam não apenas robustas, mas perfeitamente alinhadas às necessidades e aos
-                    objetivos de negócios e pessoais de quem confia em nosso trabalho.
-                  </div>
+                <p className="text-justify">
+                  Nossa filosofia baseia-se no atendimento personalizado e na busca implacável pelos
+                  melhores resultados para nossos clientes, com inteligência, celeridade e
+                  segurança.
+                </p>
+                <p className="text-justify">
+                  Não trabalhamos com soluções padronizadas. Analisamos cada caso minuciosamente,
+                  garantindo que as estratégias adotadas sejam não apenas robustas, mas
+                  perfeitamente alinhadas às necessidades e aos objetivos de negócios e pessoais de
+                  quem confia em nosso trabalho.
                 </p>
               </div>
 
               <div className="mt-10 grid grid-cols-2 gap-8 border-t border-border pt-8">
                 <div>
                   <h4 className="font-serif text-white text-xl mb-2">Missão</h4>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-sm text-muted-foreground text-justify">
                     Proteger e impulsionar os negócios de nossos clientes com redução de custos e
                     ampliação de margens, através da nossa expertise e de nossos parceiros, com
                     agilidade e segurança.
@@ -71,7 +69,7 @@ export function About() {
                 </div>
                 <div>
                   <h4 className="font-serif text-white text-xl mb-2">Valores</h4>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-sm text-muted-foreground text-justify">
                     Ética inegociável, sofisticação técnica, atualização constante e dedicação
                     absoluta aos interesses dos nossos clientes.
                   </p>

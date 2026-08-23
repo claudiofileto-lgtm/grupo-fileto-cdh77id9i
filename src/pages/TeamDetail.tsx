@@ -148,15 +148,15 @@ export default function TeamDetail() {
                 </div>
 
                 {/* Trajectory & Bio Section */}
-                <div className="space-y-4 text-muted-foreground text-sm sm:text-base leading-relaxed mb-8">
-                  <h3 className="font-serif text-2xl text-foreground font-semibold mb-4 flex items-center gap-2">
+                <div className="space-y-4 text-muted-foreground text-sm sm:text-base leading-relaxed mb-8 text-justify">
+                  <h3 className="font-serif text-2xl text-foreground font-semibold mb-4 flex items-center gap-2 text-left">
                     <span>Trajetória & Visão Estratégica</span>
                   </h3>
                   {member.extendedBio?.map((paragraph, i) => (
-                    <p key={i} className="text-muted-foreground leading-relaxed">
+                    <p key={i} className="text-muted-foreground leading-relaxed text-justify">
                       {paragraph}
                     </p>
-                  )) || <p>{member.bio}</p>}
+                  )) || <p className="text-justify">{member.bio}</p>}
                 </div>
 
                 {/* Key Pillars Highlights Grid */}

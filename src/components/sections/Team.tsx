@@ -31,7 +31,7 @@ export function Team() {
             <h3 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-foreground leading-tight">
               CEO - Sócio Fundador
             </h3>
-            <p className="text-muted-foreground mt-4 text-base md:text-lg leading-relaxed font-light">
+            <p className="text-muted-foreground mt-4 text-base md:text-lg leading-relaxed font-light text-justify">
               Liderança pautada em mais de 30 anos de prática jurídica e executiva, integrando
               conhecimento técnico aprofundado, visão de negócios e soluções de alta precisão.
             </p>
@@ -104,26 +104,26 @@ export function Team() {
             <div className="lg:col-span-7 flex flex-col justify-center">
               <FadeIn direction="left" delay={200}>
                 {/* Introduction Paragraph */}
-                <div className="space-y-4 text-muted-foreground text-sm sm:text-base leading-relaxed mb-8">
+                <div className="space-y-4 text-muted-foreground text-sm sm:text-base leading-relaxed mb-8 text-justify">
                   <div className="border-l-2 border-primary pl-4 py-1">
-                    <p className="text-foreground font-serif text-lg sm:text-xl font-medium leading-relaxed italic">
+                    <p className="text-foreground font-serif text-lg sm:text-xl font-medium leading-relaxed italic text-justify">
                       &ldquo;Aliamos mais de três décadas de rigor técnico jurídico a uma visão de
                       negócios pragmática para transformar desafios complexos em liquidez, segurança
                       e valor tangível.&rdquo;
                     </p>
                   </div>
-                  <p className="text-foreground/90 font-normal leading-relaxed pt-2">
+                  <p className="text-foreground/90 font-normal leading-relaxed pt-2 text-justify">
                     Com sólida formação jurídica e especializações em administração empresarial e
                     direito tributário, Claudio Fileto lidera o Grupo Fileto com o compromisso de
                     entregar valor estratégico tangível aos negócios de seus clientes.
                   </p>
-                  <p>
+                  <p className="text-justify">
                     Acumula mais de 25 anos de vivência em funções de gestão e direção executiva em
                     grandes companhias nacionais e multinacionais, o que confere uma compreensão
                     pragmática e diferenciada dos desafios corporativos, fiscais e de liquidez
                     enfrentados por empresários.
                   </p>
-                  <p>
+                  <p className="text-justify">
                     Fundou a Fileto Expertise em janeiro de 2019, estruturando parcerias de alto
                     impacto como a AG Capital TaxTech e operações avançadas de Home Equity, unindo
                     segurança jurídica, tecnologia de ponta e celeridade nos resultados.
