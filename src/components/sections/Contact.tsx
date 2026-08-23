@@ -137,7 +137,7 @@ export function Contact() {
                   Sede São Caetano do Sul/SP
                 </h4>
                 <p className="text-sm text-muted-foreground">
-                  Rua Manoel Coelho, nº 676, sala 1508 — Centro, São Caetano do Sul — SP — CEP
+                  Rua Manoel Coelho, nº 676, sala 1508 — Centro — São Caetano do Sul — SP — CEP
                   09510-101
                 </p>
                 <span className="block mt-2 text-xs text-primary">Ver no Google Maps →</span>

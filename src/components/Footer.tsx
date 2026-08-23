@@ -40,7 +40,7 @@ export function Footer() {
                   rel="noopener noreferrer"
                   className="hover:text-primary transition-colors"
                 >
-                  Rua Manoel Coelho, nº 676, sala 1508 — Centro, São Caetano do Sul — SP — CEP
+                  Rua Manoel Coelho, nº 676, sala 1508 — Centro — São Caetano do Sul — SP — CEP
                   09510-101
                 </a>
               </li>
