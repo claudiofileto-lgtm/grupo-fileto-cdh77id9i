@@ -52,7 +52,7 @@ export function Navbar() {
           <img
             src={logoFileto}
             alt="GRUPO FILETO"
-            className="h-14 sm:h-16 md:h-18 w-auto object-contain flex-shrink-0 transition-transform duration-300 group-hover:scale-105"
+            className="h-28 sm:h-32 md:h-36 w-auto object-contain flex-shrink-0 transition-transform duration-300 group-hover:scale-105"
           />
           <div className="flex flex-col items-center font-serif font-bold text-primary text-xs sm:text-sm md:text-base leading-tight select-none">
             <span className="block w-full text-center tracking-[0.10em]">GRUPO</span>
