@@ -411,113 +411,108 @@ export const practiceAreas: PracticeArea[] = [
     title: 'Consultoria em Gestão Empresarial para Pequenas e Médias Empresas',
     icon: 'Briefcase',
     description:
-      'Soluções estratégicas para pequenas e médias empresas superarem desafios de gestão, aumentarem a competitividade e alcançarem crescimento sustentável com metodologia CONSULTING NOW.',
+      'Soluções estratégicas para pequenas e médias empresas superarem desafios de gestão, aumentarem a lucratividade e acelerarem o crescimento com a metodologia CONSULTING NOW.',
     fullDescription: '',
-    subtitle: 'CONSULTING NOW: diagnóstico e transformação da gestão empresarial em tempo real',
+    subtitle: 'CONSULTING NOW: corresponsáveis pelas implantações — colocamos a mão na massa!',
     aboutSection: {
       eyebrow: 'CONSULTING NOW',
-      title: 'Consultoria em Gestão Empresarial',
-      body: 'O CONSULTING NOW é a metodologia proprietária do Grupo Fileto para transformar a gestão de pequenas e médias empresas. Diferente das consultorias tradicionais — lentas, genéricas e caras — o CONSULTING NOW entrega diagnóstico rápido, plano de ação imediato e implementação acompanhada, focando em resultados concretos: aumento de faturamento, redução de custos, otimização de processos e professionalização da gestão.',
+      title: 'Por que os empresários nos procuram',
+      body: 'A CONSULTING NOW é referência nacional em consultoria de gestão empresarial, franquia, M&A e soluções sob medida para pequenas e médias empresas. Com a filosofia de 10% Inspiração, 90% Transpiração e 100% Paixão, vamos muito além de simples orientações ou aconselhamentos teóricos: somos corresponsáveis pelas implantações e colocamos a mão na massa ao lado do empresário.',
       bullets: [
-        'Diagnóstico empresarial completo em até 10 dias úteis com o método CONSULTING NOW',
-        'Plano de ação personalizado com metas, prazos e indicadores de desempenho (KPIs)',
-        'Reestruturação de processos internos: financeiro, comercial, operações e RH',
-        'Professionalização da gestão: implantação de governança, conselhos consultivos e melhores práticas',
-        'Acesso a capital de giro e linhas de financiamento adequadas ao porte da empresa',
-        'Estratégias de crescimento: expansão de mercado, novos canais e diversificação de receitas',
-        'Mentoria e capacitação de lideranças para sustentabilidade do crescimento',
-        'Monitoramento trimestral de resultados com ajustes contínuos do plano de ação',
+        'Recuperação ou melhoria da lucratividade',
+        'Aumento das vendas',
+        'Redução de custos e despesas operacionais',
+        'Reorganização geral de setores ou de toda a empresa',
+        'Maximização para Expansão',
+        'ERP — implantação e otimização de sistemas de gestão',
+        'Recuperação de impostos e eficiência fiscal integrada',
+        'Compra e venda de empresas (M&A) e consultoria em franquias',
+        'Entre outras soluções personalizadas para o seu negócio',
       ],
     },
     stats: [
       {
-        value: '90%',
-        label: 'das empresas brasileiras são de pequeno e médio porte (MPEs)',
+        value: '32 anos',
+        label: 'consolidados no mercado brasileiro',
+        icon: 'Award',
+      },
+      {
+        value: '+90',
+        label: 'unidades espalhadas pelo Brasil',
+        icon: 'MapPin',
+      },
+      {
+        value: '+700',
+        label: 'empresas reestruturadas com sucesso',
         icon: 'Building2',
       },
       {
-        value: '30%',
-        label: 'do PIB nacional é gerado pelas MPEs',
-        icon: 'TrendingUp',
-      },
-      {
-        value: '60%',
-        label: 'das MPEs fecham em menos de 5 anos por falta de gestão profissional',
-        icon: 'TrendingDown',
-      },
-      {
         value: '100%',
-        label: 'dos projetos CONSULTING NOW com diagnóstico em até 10 dias',
+        label: 'paixão e corresponsabilidade na implantação',
         icon: 'CheckCircle',
       },
     ],
     method: {
       eyebrow: 'Método CONSULTING NOW',
-      title: 'Da diagnóstico à transformação em 7 etapas',
+      title: 'Corresponsabilidade e implantação prática passo a passo',
       intro:
-        'O CONSULTING NOW segue um método estruturado e acelerado, com foco em resultados de curto prazo e sustentabilidade de longo prazo. Sem relatórios intermináveis: ação, implementação e resultado.',
+        'Nosso diferencial é ir muito além do diagnóstico tradicional: nós somos corresponsáveis pelas implantações. Atuamos lado a lado com sua equipe, transformando planos estratégicos em ações práticas e resultados mensuráveis no dia a dia da empresa.',
       steps: [
         {
           number: '1',
-          title:
-            'Imersão inicial: entendimento do negócio, mercado, desafios e objetivos do empresário',
+          title: 'Diagnóstico e Imersão no Negócio',
+          description:
+            'Mapeamento completo dos setores, finanças, equipe, processos e gargalos operacionais da empresa.',
         },
         {
           number: '2',
-          title:
-            'Diagnóstico CONSULTING NOW: análise de processos, finanças, equipe e posicionamento',
-          description: 'Em até 10 dias úteis.',
+          title: 'Plano de Ação e Metas Claras',
+          description:
+            'Definição de cronograma, responsáveis, indicadores de desempenho (KPIs) e prioridades imediatas.',
         },
         {
           number: '3',
-          title:
-            'Devolutiva estratégica: apresentação dos achados e priorização das oportunidades de melhoria',
+          title: 'Implantação Prática — Mão na Massa',
+          description:
+            'Execução conjunta no dia a dia, com corresponsabilidade real pelas mudanças e processos implantados.',
         },
         {
           number: '4',
-          title: 'Plano de Ação Imediata (PAI): definição de metas, responsáveis, prazos e KPIs',
+          title: 'Reorganização e Otimização de Processos',
+          description:
+            'Ajustes nos setores comercial, financeiro, operacional e ERP para elevar vendas e cortar desperdícios.',
         },
         {
           number: '5',
-          title:
-            'Implementação acompanhada: execução com suporte presencial e remoto da equipe Grupo Fileto',
-        },
-        {
-          number: '6',
-          title:
-            'Acesso a capital: estruturação de crédito, capital de giro e financiamento para viabilizar o plano',
-        },
-        {
-          number: '7',
-          title:
-            'Monitoramento trimestral: reuniões de follow-up, ajustes de rota e validação de resultados',
+          title: 'Monitoramento Contínuo e Resultados Mensuráveis',
+          description:
+            'Acompanhamento constante dos KPIs e evolução da lucratividade, garantindo a perenidade do crescimento.',
         },
       ],
     },
     differentials: {
       eyebrow: 'Diferenciais',
-      title: 'Por que o CONSULTING NOW é diferente',
+      title: 'Por que a CONSULTING NOW é a parceira ideal para o seu negócio',
       bullets: [
-        'Metodologia exclusiva e acelerada: diagnóstico em 10 dias, não em meses',
-        'Foco em implementação, não apenas em relatórios — colocamos a mão na massa',
-        'Visão integrada: gestão, finanças, jurídico e tributário em uma única consultoria',
-        'Acesso facilitado a capital de giro e financiamento para executar o plano de ação',
-        'Experiência de mais de 30 anos em gestão e direção de grandes empresas',
-        'Atendimento personalizado: cada empresa recebe um plano sob medida, não uma fórmula pronta',
-        'Monitoramento contínuo: não abandonamos o cliente após a entrega do diagnóstico',
-        'Resultados mensuráveis: metas claras, KPIs definidos e acompanhamento trimestral',
+        'Corresponsabilidade na implantação: não ficamos apenas no conselho, colocamos a mão na massa',
+        '+700 empresas reestruturadas com sucesso comprovado em diversos segmentos',
+        '+90 unidades presentes em todo o Brasil para atendimento ágil e próximo',
+        '32 anos consolidados no mercado com sólida bagagem e credibilidade',
+        'Metodologia própria testada e aprimorada para pequenas e médias empresas',
+        'Visão integrada (gestão + tributário + jurídico) potencializada pela estrutura do Grupo Fileto',
+        'Monitoramento contínuo: suporte presente em cada fase da transformação',
+        'Resultados mensuráveis: recuperação de lucratividade, aumento de vendas e controle de custos',
       ],
     },
     scenario: {
-      eyebrow: 'Cenário brasileiro',
-      title: 'O desafio das pequenas e médias empresas no Brasil',
-      body: 'As micro, pequenas e médias empresas são a espinha dorsal da economia brasileira — mas também as mais vulneráveis. Falta de acesso a crédito, gestão amadora, carga tributária complexa e ausência de planejamento estratégico estão entre as principais causas de mortalidade. O CONSULTING NOW nasceu para mudar esse cenário. Dados do SEBRAE, IBGE e Banco Central.',
+      eyebrow: 'Atitude e transformação',
+      title: 'Coragem para transformar e construir um negócio de sucesso',
+      body: '“Para ter um negócio de sucesso, alguém, algum dia, teve que tomar uma atitude de coragem.” — Peter Drucker. Pequenas e médias empresas enfrentam um mercado competitivo e exigente. Superar desafios operacionais, fiscais e estratégicos exige decisão, dedicação diária e a parceria certa para implementar as mudanças necessárias.',
       bullets: [
-        'Mais de 90% das empresas brasileiras são MPEs e respondem por 55% dos empregos formais (SEBRAE)',
-        'A cada 10 empresas abertas no Brasil, 6 fecham antes de completar 5 anos (IBGE)',
-        'Falta de capital de giro e gestão deficiente são as 2 principais causas de falência de MPEs',
-        'Apenas 38% das MPEs brasileiras têm acesso a crédito formal (Banco Central)',
-        'Empresas que investem em consultoria de gestão têm 3x mais chances de sobreviver à 1ª década',
+        'Filosofia de trabalho: 10% Inspiração, 90% Transpiração e 100% Paixão em cada projeto',
+        'Produtos especializados: Consultoria de gestão empresarial, Consultoria empresarial franquia, Consultoria M&A e Soluções para PMEs',
+        'Foco direto nos pilares vitais do negócio: lucratividade, vendas, despesas, reorganização e expansão',
+        'Parceria estratégica de longo prazo para transformar empresas e consolidar sua liderança',
       ],
     },
   },
