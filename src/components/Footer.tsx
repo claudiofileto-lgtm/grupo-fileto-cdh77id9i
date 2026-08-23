@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { MapPin, Phone, Mail, Instagram, Linkedin } from 'lucide-react'
-import logoBronze from '@/assets/logofbronze-sf-07c40.png'
+import logoFileto from '@/assets/logofbronze-sf-07c40.png'
 
 export function Footer() {
   return (
@@ -9,13 +9,13 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10 lg:gap-12 mb-12 items-start">
           {/* Coluna 1: Logo F + GRUPO FILETO + bloco Sobre (lado a lado) */}
           <div className="flex items-start gap-3 sm:gap-4">
-            <Link to="/" className="flex items-center gap-0 group shrink-0">
+            <Link to="/" className="flex items-center gap-0 group flex-shrink-0">
               <img
-                src={logoBronze}
+                src={logoFileto}
                 alt="GRUPO FILETO"
-                className="h-12 sm:h-14 md:h-16 w-auto object-contain flex-shrink-0 transition-transform duration-300 group-hover:scale-105"
+                className="h-28 sm:h-32 md:h-36 w-auto object-contain flex-shrink-0 transition-transform duration-300 group-hover:scale-105"
               />
-              <div className="-ml-3 sm:-ml-4 md:-ml-5 flex flex-col items-center font-serif font-bold text-[#b8934a] text-[10px] sm:text-xs md:text-sm leading-tight select-none">
+              <div className="-ml-8 sm:-ml-10 flex flex-col items-center font-serif font-bold text-[#b8934a] text-xs sm:text-sm md:text-base leading-tight select-none">
                 <span className="block w-full text-center tracking-[0.10em]">GRUPO</span>
                 <span className="block w-full text-center tracking-[0.04em]">FILETO</span>
               </div>
