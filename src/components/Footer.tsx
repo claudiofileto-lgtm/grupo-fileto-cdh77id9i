@@ -4,10 +4,10 @@ import logoFileto from '@/assets/logofbronze-sf-07c40.png'
 
 export function Footer() {
   return (
-    <footer className="bg-gray-900 border-t border-gray-800 pt-3 sm:pt-4 pb-6 text-gray-300">
+    <footer className="bg-gray-900 border-t border-gray-800 pt-1 sm:pt-2 pb-6 text-gray-300">
       <div className="container mx-auto px-4 md:px-8">
         {/* 1. Logo F + GRUPO FILETO centralizado no topo */}
-        <div className="flex justify-center items-center mb-6 sm:mb-8">
+        <div className="flex justify-center items-center mb-3 sm:mb-4">
           <Link to="/" className="flex items-center gap-0 group">
             <img
               src={logoFileto}
