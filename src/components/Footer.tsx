@@ -7,24 +7,24 @@ export function Footer() {
     <footer className="bg-card border-t border-border pt-16 pb-8">
       <div className="container mx-auto px-4 md:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10 lg:gap-12 mb-12 items-start">
-          {/* Coluna 1: Logo F + GRUPO FILETO e Sobre lado a lado */}
-          <div className="flex flex-col sm:flex-row items-start gap-4 lg:gap-6">
+          {/* Coluna 1: Logo F + GRUPO FILETO + bloco Sobre (lado a lado) */}
+          <div className="flex items-start gap-3 sm:gap-4">
             <Link to="/" className="flex items-center gap-0 group shrink-0">
               <img
                 src={logoBronze}
                 alt="GRUPO FILETO"
-                className="h-28 sm:h-32 md:h-36 w-auto object-contain flex-shrink-0 transition-transform duration-300 group-hover:scale-105"
+                className="h-12 sm:h-14 md:h-16 w-auto object-contain flex-shrink-0 transition-transform duration-300 group-hover:scale-105"
               />
-              <div className="-ml-8 sm:-ml-10 flex flex-col items-center font-serif font-bold text-[#b8934a] text-xs sm:text-sm md:text-base leading-tight select-none">
+              <div className="-ml-3 sm:-ml-4 md:-ml-5 flex flex-col items-center font-serif font-bold text-[#b8934a] text-[10px] sm:text-xs md:text-sm leading-tight select-none">
                 <span className="block w-full text-center tracking-[0.10em]">GRUPO</span>
                 <span className="block w-full text-center tracking-[0.04em]">FILETO</span>
               </div>
             </Link>
-            <div className="flex-1 pt-1 sm:pt-2">
-              <h4 className="font-serif text-lg font-semibold mb-3 md:mb-4 text-foreground">
+            <div className="flex-1">
+              <h4 className="font-serif text-base sm:text-lg font-semibold mb-2 sm:mb-3 text-foreground">
                 Sobre
               </h4>
-              <p className="text-muted-foreground text-sm leading-relaxed">
+              <p className="text-muted-foreground text-xs sm:text-sm leading-relaxed">
                 Expertise estratégica jurídica, tributária, empresarial e financeira a serviço dos
                 interesses corporativos e pessoais mais complexos e desafiadores.
               </p>
