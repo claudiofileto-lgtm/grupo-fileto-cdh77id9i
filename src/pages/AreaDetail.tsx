@@ -291,6 +291,50 @@ export default function AreaDetail() {
                     )}
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       {area.scenario.bullets?.map((b, i) => {
+                        const isPhilosophy = b.toLowerCase().startsWith('filosofia de trabalho:')
+                        if (isPhilosophy) {
+                          const philosophyItems = [
+                            { percent: '10%', label: 'Inspiração' },
+                            { percent: '90%', label: 'Transpiração' },
+                            { percent: '100%', label: 'Paixão' },
+                          ]
+
+                          return (
+                            <div
+                              key={i}
+                              className="md:col-span-2 bg-card border border-border p-8 hover:border-primary/50 transition-colors"
+                            >
+                              <div className="flex items-center gap-3 mb-6">
+                                <div className="h-[1px] w-6 bg-primary" />
+                                <span className="text-primary uppercase tracking-widest text-xs font-semibold">
+                                  Filosofia de trabalho
+                                </span>
+                              </div>
+                              <div className="grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-border">
+                                {philosophyItems.map((item, idx) => (
+                                  <div
+                                    key={idx}
+                                    className={`flex flex-col items-center justify-center text-center p-4 ${
+                                      idx === 0
+                                        ? 'pt-0 sm:pt-4 sm:pl-0'
+                                        : idx === philosophyItems.length - 1
+                                          ? 'pb-0 sm:pb-4 sm:pr-0'
+                                          : ''
+                                    }`}
+                                  >
+                                    <span className="text-4xl md:text-5xl font-serif font-bold text-white tracking-tight mb-2">
+                                      {item.percent}
+                                    </span>
+                                    <span className="text-sm md:text-base text-muted-foreground font-medium uppercase tracking-wider">
+                                      {item.label}
+                                    </span>
+                                  </div>
+                                ))}
+                              </div>
+                            </div>
+                          )
+                        }
+
                         const icons = [DollarSign, TrendingUp, AlertIcon, FileText]
                         const ScenarioIcon = icons[i % icons.length]
                         return (
