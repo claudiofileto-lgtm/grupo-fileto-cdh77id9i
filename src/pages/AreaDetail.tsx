@@ -92,7 +92,8 @@ export default function AreaDetail() {
     area.stats ||
     area.method ||
     area.differentials ||
-    area.scenario
+    area.scenario ||
+    (area.sections && area.sections.length > 0)
   )
 
   return (
@@ -183,6 +184,65 @@ export default function AreaDetail() {
 
             {isRich && (
               <div className="mt-20 space-y-24">
+                {/* Seções genéricas/customizadas */}
+                {area.sections && area.sections.length > 0 && (
+                  <>
+                    {area.sections.map((sec, secIdx) => (
+                      <FadeIn key={secIdx}>
+                        <SectionHeader eyebrow={sec.eyebrow} title={sec.title} />
+                        {sec.body && (
+                          <p className="text-muted-foreground leading-relaxed text-lg mb-6 text-justify">
+                            {sec.body}
+                          </p>
+                        )}
+                        {sec.paragraphs && sec.paragraphs.length > 0 && (
+                          <div className="space-y-4 mb-6">
+                            {sec.paragraphs.map((p, pIdx) => (
+                              <p
+                                key={pIdx}
+                                className="text-muted-foreground leading-relaxed text-lg text-justify"
+                              >
+                                {p}
+                              </p>
+                            ))}
+                          </div>
+                        )}
+                        {sec.bullets && sec.bullets.length > 0 && (
+                          <div className="space-y-4 pt-2">
+                            {sec.bullets.map((b, bIdx) => {
+                              // Se o bullet tiver o padrão "Título: Descrição", destacamos o título em negrito sutil
+                              const colonIndex = b.indexOf(':')
+                              const hasPrefix = colonIndex > 0 && colonIndex < 45
+                              const titlePart = hasPrefix ? b.slice(0, colonIndex + 1) : null
+                              const restPart = hasPrefix ? b.slice(colonIndex + 1) : b
+
+                              return (
+                                <div
+                                  key={bIdx}
+                                  className="bg-card border border-border p-6 flex items-start gap-4 hover:border-primary/50 transition-colors"
+                                >
+                                  <Check
+                                    className="w-5 h-5 text-primary shrink-0 mt-1"
+                                    strokeWidth={2}
+                                  />
+                                  <p className="text-foreground/90 leading-relaxed text-justify">
+                                    {titlePart && (
+                                      <strong className="text-white font-semibold">
+                                        {titlePart}{' '}
+                                      </strong>
+                                    )}
+                                    {restPart}
+                                  </p>
+                                </div>
+                              )
+                            })}
+                          </div>
+                        )}
+                      </FadeIn>
+                    ))}
+                  </>
+                )}
+
                 {/* Quem somos */}
                 {area.aboutSection && (
                   <FadeIn>
@@ -194,6 +254,18 @@ export default function AreaDetail() {
                       <p className="text-muted-foreground leading-relaxed text-lg max-w-3xl mb-8 text-justify">
                         {area.aboutSection.body}
                       </p>
+                    )}
+                    {area.aboutSection.paragraphs && area.aboutSection.paragraphs.length > 0 && (
+                      <div className="space-y-4 mb-8">
+                        {area.aboutSection.paragraphs.map((p, pIdx) => (
+                          <p
+                            key={pIdx}
+                            className="text-muted-foreground leading-relaxed text-lg max-w-3xl text-justify"
+                          >
+                            {p}
+                          </p>
+                        ))}
+                      </div>
                     )}
                     {area.aboutSection.bullets && (
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-5">

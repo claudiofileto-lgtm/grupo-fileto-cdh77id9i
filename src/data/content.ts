@@ -26,6 +26,7 @@ export interface PracticeAreaDetailSection {
   eyebrow: string
   title: string
   body?: string
+  paragraphs?: string[]
   bullets?: string[]
 }
 
@@ -37,13 +38,14 @@ export interface PracticeArea {
   description: string
   fullDescription: string
   highlights?: PracticeAreaHighlight[]
-  // Rich detail content (Inteligência Tributária)
+  // Rich detail content
   subtitle?: string
   aboutSection?: PracticeAreaDetailSection
   stats?: PracticeAreaStat[]
   method?: PracticeAreaMethodSection
   differentials?: PracticeAreaDetailSection
   scenario?: PracticeAreaDetailSection
+  sections?: PracticeAreaDetailSection[]
 }
 
 export const practiceAreas: PracticeArea[] = [
@@ -406,6 +408,61 @@ export const practiceAreas: PracticeArea[] = [
     description: 'Planejamento fiscal e defesa em execuções e autuações fiscais.',
     fullDescription:
       'Oferecemos soluções inteligentes para otimização da carga tributária. Atuamos fortemente no contencioso administrativo e judicial, defendendo os interesses de nossos clientes contra autuações e buscando a recuperação de créditos.',
+    subtitle: 'Soluções jurídicas estratégicas e inteligentes para otimização da carga tributária',
+    sections: [
+      {
+        eyebrow: 'Estratégia Fiscal',
+        title: 'PLANEJAMENTO TRIBUTÁRIO',
+        paragraphs: [
+          'O Planejamento Tributário consiste em uma análise minuciosa da estrutura fiscal de uma empresa, visando otimizar sua carga tributária de maneira legal e estratégica. Este serviço inclui a avaliação de diferentes regimes tributários disponíveis, identificação de incentivos fiscais aplicáveis, análise de créditos tributários, e a implementação de práticas que estejam alinhadas com a legislação vigente.',
+          'Os principais objetivos são a redução dos custos fiscais, a prevenção de contingências tributárias, a maximização da eficiência operacional, e a garantia de conformidade com as normas legais. Além disso, busca-se proporcionar a empresa uma visão clara das implicações fiscais de suas atividades, permitindo uma gestão financeira mais estratégica e sustentável.',
+          'Ao contar com a experiência de um advogado especializado, as empresas podem não apenas cumprir suas obrigações fiscais, mas também explorar oportunidades para otimizar seus recursos financeiros de maneira legal e ética.',
+        ],
+      },
+      {
+        eyebrow: 'Negociação Fiscal',
+        title: 'TRANSAÇÕES TRIBUTÁRIAS',
+        paragraphs: [
+          'Negociação fiscal com o objetivo de diminuir os impactos dos débitos fiscais na rotina das empresas que venham a ter alguma pendência fiscal, de forma que o contribuinte consiga pagar ao fisco enquanto continua em atividade. Em vários casos conseguimos adequar esses serviços com o de Recuperação Tributária, trazendo vantagens interessantes com a compensação de débitos e celeridade ao processo.',
+        ],
+      },
+      {
+        eyebrow: 'Contencioso Administrativo e Judicial',
+        title: 'DEFESAS EM AUTUAÇÃO NAS ÁREAS ADMINISTRATIVA E JUDICIAL',
+        paragraphs: [
+          'Em casos de eventuais notificações e autuações fiscais a resposta do contribuinte precisa ser rápida e ao mesmo tempo bem fundamentada juridicamente falando, pois em muitos casos as notificações e autuações contêm erros que podem favorecer a defesa do contribuinte. Também pode ser adequado a esse serviço a Revisão Tributária, trazendo à tona Ativos Ocultos que serão aproveitados com a compensação de débitos, ou diretamente para reforçar o fluxo de caixa.',
+        ],
+      },
+      {
+        eyebrow: 'Recuperação e Revisão Fiscal',
+        title: 'MAPEAMENTO E APROVEITAMENTO DE ATIVOS OCULTOS',
+        paragraphs: [
+          'Oportunidades para Indústria, Comércio e Serviços nos regimes de tributação do Lucro Real e Lucro Presumido.',
+          'Consiste na Revisão dos recolhimentos dos últimos 5 anos, identificação e aproveitamento de valores pagos indevidamente ao Fisco. Serviço realizado com tecnologia avançada, analisando detalhadamente as obrigações fiscais dos últimos 5 anos, baseados na Legislação em vigor, conforme critérios da Receita Federal.',
+          'Esse é um trabalho que orientamos a todos os empresários, pois a partir dela, as empresas contarão com a segurança de obter toda a sua operação corrigida, o que quer dizer que no caso de ter recolhido contribuições com valores a menor, poderá corrigi-las antes de uma cobrança futura pelo Fisco, que trará transtorno e custos elevados.',
+          'Nesse sentido, o Mapeamento Fiscal é forte aliado do empresário, evitando que venha a sofrer uma autuação futura, além do possível aproveitamento de Créditos Tributários Ocultos',
+          'Entre em contato para conhecer as oportunidades do seu mercado de atuação.',
+        ],
+      },
+      {
+        eyebrow: 'Auditoria e Compliance',
+        title: '"DUE DILIGENCE" TRIBUTÁRIO',
+        paragraphs: [
+          'Análise detalhada dos aspectos tributários de uma empresa em caso de fusões, cisões, aquisições ou reestruturações com o objetivo de identificar riscos e passivos tributários que possam impactar a decisão de negócios',
+        ],
+      },
+      {
+        eyebrow: 'Consultoria Contínua',
+        title: 'ASSESSORIA TRIBUTÁRIA',
+        bullets: [
+          'Estudo de Regimes Tributários: Orientação à empresa na escolha do regime tributário mais adequado às suas características, considerando aspectos como Lucro Real, Lucro Presumido ou Simples Nacional.',
+          'Acompanhamento de Mudanças na Legislação: Atualização e monitoramento e análise constantemente das mudanças na legislação tributária para garantir que a empresa esteja ciente e se adapte a novas normas e regulamentações, evitando surpresas e garantindo conformidade.',
+          'Gestão de Tributos Indiretos: Envolvem a administração dos tributos incidentes sobre o consumo, como ICMS, IPI, PIS, e COFINS, visando otimizar a carga tributária e garantir o correto cumprimento das obrigações acessórias.',
+          'Gestão de Operações Fiscais: Fundamental para garantir que a empresa esteja em conformidade com a legislação tributária vigente, ao mesmo tempo em que busca a eficiência na gestão dos seus tributos.',
+          'Elaboração de Pareceres Técnicos: Envolve a produção de documentos técnicos que interpretam e aplicam a legislação tributária a situações específicas, fornecendo embasamento legal para as decisões empresariais.',
+        ],
+      },
+    ],
   },
   {
     id: '5',
