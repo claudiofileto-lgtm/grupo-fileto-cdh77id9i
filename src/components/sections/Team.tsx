@@ -38,16 +38,6 @@ export function Team() {
           </FadeIn>
         </div>
 
-        <FadeIn delay={100} className="max-w-3xl mb-12 md:mb-16">
-          <div className="border-l-2 border-primary pl-4 py-1">
-            <p className="text-foreground font-serif text-lg sm:text-xl font-medium leading-relaxed italic text-justify">
-              &ldquo;Aliamos mais de três décadas de rigor técnico jurídico a uma visão de negócios
-              pragmática para transformar desafios complexos em liquidez, segurança e valor
-              tangível.&rdquo;
-            </p>
-          </div>
-        </FadeIn>
-
         {/* Founder Showcase Card */}
         <div className="relative rounded-2xl bg-gradient-to-b from-card/90 via-card/70 to-card/95 border border-primary/20 backdrop-blur-md p-6 sm:p-10 md:p-14 lg:p-16 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.8)] overflow-hidden">
           {/* Elegant gold corner accents */}
@@ -58,6 +48,16 @@ export function Team() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
             {/* Founder Portrait Column - Rectangular format, subtle gold borders, warm nude background */}
             <div className="lg:col-span-5 flex flex-col items-center justify-center">
+              <FadeIn delay={100} className="w-full mb-6">
+                <div className="border-l-2 border-primary pl-4 py-1">
+                  <p className="text-foreground font-serif text-base sm:text-lg font-medium leading-relaxed italic text-justify">
+                    &ldquo;Aliamos mais de três décadas de rigor técnico jurídico a uma visão de
+                    negócios pragmática para transformar desafios complexos em liquidez, segurança e
+                    valor tangível.&rdquo;
+                  </p>
+                </div>
+              </FadeIn>
+
               <FadeIn direction="right">
                 <div className="relative flex flex-col items-center w-full max-w-[320px] sm:max-w-sm mx-auto">
                   {/* Outer Gold Ambient Glow Halo */}
