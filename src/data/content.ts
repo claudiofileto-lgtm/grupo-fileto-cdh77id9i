@@ -282,80 +282,92 @@ export const practiceAreas: PracticeArea[] = [
           'Due diligence do imóvel, constituição de alienação fiduciária, contratos, cessões, anuências e interlocução com instituições financeiras, garantindo celeridade e segurança jurídica em todas as etapas.',
       },
     ],
-    subtitle: 'Home Equity: o crédito inteligente com garantia de imóvel',
+    subtitle:
+      'Home Equity: o crédito inteligente com garantia de imóvel — taxas até 12x mais baixas',
     aboutSection: {
       eyebrow: 'Home Equity',
       title: 'Crédito com Garantia de Imóvel — taxas reduzidas e prazos alongados',
-      body: 'O Home Equity é a modalidade de crédito mais vantajosa do mercado. Ao oferecer um imóvel como garantia, você acessa taxas de juros significativamente reduzidas em comparação com empréstimos pessoais, cheque especial ou crédito sem garantia. O Grupo Fileto conduz toda a operação com segurança jurídica e agilidade.',
+      body: 'Em parceria com fintech pioneira e 3º maior player do mercado nacional de Home Equity — com mais de R$ 4 bilhões originados e atuação 100% online em todo o Brasil —, estruturamos operações de crédito com as melhores condições do país, além de produtos complementares como Financiamento Imobiliário (SFI), Crédito para Construção e Crédito para Condomínios.',
       bullets: [
-        'Taxas de juros reduzidas: as menores do mercado, a partir de 0,79% ao mês + IPCA ou 11,9% ao ano + TR',
-        'Prazo de parcelamento alongado: até 240 meses (20 anos) para quitar o financiamento',
-        'Aceitação de mais de um garantidor: é possível compor garantia com múltiplos imóveis e garantidores',
-        'Objetivos atendidos: capital de giro, expansão de negócios, quitação de passivos, aquisição de equipamentos, reformas de imóveis, investimentos pessoais, antecipação de herança com isenção fiscal',
-        'Tipos de imóveis aceitos: residenciais, comerciais, galpões, terrenos, imóveis rurais, prédios inteiros ou salas e lajes comerciais em áreas urbanas — quitados ou com saldo devedor baixo',
-        'Manutenção da propriedade do imóvel: você continua proprietário e pode seguir utilizando o bem normalmente',
-        'Liberação ágil: recursos disponíveis em conta em até 15 dias úteis após a conclusão da due diligence jurídica',
+        'Taxas até 12x mais baixas que outras linhas de crédito tradicionais (a partir de 0,79% a.m. + IPCA)',
+        'Prazos de até 240 meses (20 anos) com carência para o primeiro pagamento',
+        'Mais de um garantidor aceito (garantias próprias ou de terceiros, com possibilidade de múltiplos imóveis por contrato)',
+        'Objetivos atendidos (uso livre): capital de giro, investimentos, consolidação de dívidas, abertura de negócio, reformas, construção, viagens ou aquisição de segundo imóvel ou automóvel',
+        'Tipos de imóveis aceitos: apartamentos (luxo, novos e antigos), casas (condomínio e rua), salas e lojas comerciais, prédios comerciais, galpões e terrenos em condomínio',
+        'LTV de 30% a 60% conforme tipologia: Apto Luxo (até 60%), Apto Novo (até 55%), Apto Antigo/Casa Condomínio (até 50%), Sala/Casa Comercial (até 45%), Loja/Prédio Comercial/Casa Rua (até 40%) e Galpão/Terreno em Condomínio (até 30%)',
+        'Operação 100% on-line com atendimento humanizado, consultor dedicado e desembolso rápido com parceria em cartórios de todo o Brasil',
+        'Valores de R$ 50 mil a R$ 25 milhões para Pessoa Física, Pessoa Jurídica ou mista, com composição flexível de renda e esteira flex',
       ],
     },
     stats: [
       {
-        value: 'A partir de 0,79%',
-        label: 'ao mês + IPCA',
+        value: '0,79% a.m.',
+        label: 'Taxa a partir',
         icon: 'Percent',
       },
       {
-        value: 'Até 240 meses',
-        label: 'prazo de parcelamento',
+        value: '240 meses',
+        label: 'Prazo máximo',
         icon: 'Calendar',
       },
       {
-        value: 'Mais de 1 garantidor',
-        label: 'imóveis e garantidores aceitos',
+        value: '+1 garantidor',
+        label: 'Garantias aceitas',
         icon: 'Users',
       },
       {
-        value: '100%',
-        label: 'segurança jurídica em todas as etapas',
+        value: 'R$25 Mi',
+        label: 'Valor máximo',
         icon: 'CheckCircle',
       },
     ],
     method: {
       eyebrow: 'Nossa metodologia',
-      title: 'Da análise do imóvel à liberação do crédito',
+      title: 'Jornada ágil e integrada: da proposta à liberação dos recursos',
       intro:
-        'Conduzimos cada operação de Home Equity com rigor técnico e agilidade, cuidando de toda a esteira jurídica para que você receba o crédito com segurança e no menor prazo possível.',
+        'Conduzimos a jornada completa do cliente em duas fases estruturadas (Pré-venda e Pós-venda), aliando tecnologia, consultoria dedicada e segurança jurídica em cada etapa.',
       steps: [
         {
           number: '1',
-          title: 'Análise de viabilidade: avaliação do imóvel e da documentação para elegibilidade',
+          title: 'Envio de Proposta',
+          description:
+            'Cadastro inicial da proposta pelo parceiro com checklist de informações e documentos essenciais.',
         },
         {
           number: '2',
-          title:
-            'Due diligence jurídica: matrícula, certidões, ônus, gravames e regularidade fiscal',
+          title: 'Estruturação de Operação',
+          description:
+            'Time de Middle Office realiza o perfilamento e a estruturação sob medida para máxima fluidez e velocidade.',
         },
         {
           number: '3',
-          title:
-            'Estruturação da garantia: alienação fiduciária do imóvel em favor da instituição financeira',
+          title: 'Análises e Comitê de Pré-Aprovação',
+          description:
+            'Análise integrada de Crédito, Ativos e Jurídico em comitê especializado, avançando a proposta pré-aprovada.',
         },
         {
           number: '4',
-          title:
-            'Elaboração contratual: contrato de crédito, cessões, anuências e demais instrumentos',
+          title: 'Apresentação de Condições',
+          description:
+            'Consultor dedicado e parceiro apresentam as condições comerciais aprovadas para aceite do cliente.',
         },
         {
           number: '5',
-          title: 'Interlocução com a instituição financeira: agilidade na aprovação e desembolso',
+          title: 'Revalidação e Formalização',
+          description:
+            'Análises de pós-aprovação e emissão do contrato em formato 100% digital, simples e rápido.',
         },
         {
           number: '6',
-          title:
-            'Registro em cartório: constituição e averbação da garantia na matrícula do imóvel',
+          title: 'Registro de Alienação Fiduciária',
+          description:
+            'Registro da alienação fiduciária na matrícula do imóvel em cartório com capilaridade nacional.',
         },
         {
           number: '7',
-          title: 'Liberação dos recursos: crédito em conta e acompanhamento pós-contratação',
+          title: 'Liberação do Recurso e Fluxo de Pagamento',
+          description:
+            'Liberação dos recursos na conta do cliente (com quitação de eventuais débitos) e acompanhamento contínuo do fluxo de pagamento.',
         },
       ],
     },
@@ -363,25 +375,25 @@ export const practiceAreas: PracticeArea[] = [
       eyebrow: 'Diferenciais',
       title: 'Por que contratar Home Equity com o Grupo Fileto',
       bullets: [
-        'Taxas a partir de 0,79% ao mês + IPCA — as menores do mercado',
-        'Prazo de até 240 meses (20 anos) para parcelamento',
-        'Aceitação de mais de um garantidor, ampliando o limite de crédito disponível',
-        'Due diligence jurídica completa: segurança total sobre a situação do imóvel',
-        'Agilidade: recursos liberados em até 15 dias úteis',
-        'Ampla gama de imóveis aceitos: residenciais, comerciais, terrenos, rurais e galpões',
-        'Atendimento personalizado: soluções ajustadas ao perfil de cada cliente (empresas, empresários, pessoas físicas e condomínios)',
+        'Operação IQ (Interveniente Quitante): quitação de dívidas de IPTU e condomínio por dentro da própria operação',
+        'Mais de uma garantia por contrato e aceitação de garantias de terceiros mediante análise',
+        'Sem limite de participantes para composição de renda entre os proponentes',
+        'Pré-aprovação sem comprovação de renda através da Esteira Flex',
+        'Aceitação de imóvel sem habite-se para viabilização do crédito',
+        'Liberação no protocolo até R$ 1 milhão (após 1ª análise) sem averbação concomitante',
+        'Operações estruturadas com Terceiro Garantidor (TQ)',
+        'Parceria com fintech pioneira no mercado brasileiro, 3º maior player nacional e mais de R$ 4 bilhões originados',
       ],
     },
     scenario: {
       eyebrow: 'Cenário brasileiro',
-      title: 'Home Equity: o mercado de crédito com garantia de imóvel no Brasil',
-      body: 'O Home Equity é o segmento que mais cresce no mercado de crédito brasileiro. Com a Selic elevada e as taxas de juros do crédito tradicional em patamares proibitivos, a garantia imobiliária se consolida como a alternativa mais inteligente e econômica para quem precisa de recursos com custo baixo e prazo alongado.',
+      title: 'Panorama do mercado de Home Equity e Financiamento Imobiliário no Brasil',
+      body: 'O crédito com garantia de imóvel (Home Equity) e o Sistema Financeiro Imobiliário (SFI) consolidam-se como as alternativas mais eficientes de alavancagem de capital no Brasil. Em um cenário de taxas bancárias elevadas para crédito sem garantia, transformar patrimônio imobiliário em liquidez destrava negócios com custos substancialmente menores e prazos sustentáveis.',
       bullets: [
-        'O crédito com garantia de imóvel cresceu mais de 50% ao ano no Brasil nos últimos exercícios (BACEN)',
-        'As taxas do Home Equity são até 80% menores que as do cheque especial e do crédito pessoal sem garantia',
-        'Mais de R$ 100 bilhões em operações de Home Equity já foram contratadas no país',
-        'A aceitação de mais de um garantidor permite ampliar significativamente o limite de crédito disponível',
-        'O Brasil possui mais de 70 milhões de imóveis — o potencial de alavancagem via Home Equity ainda é subutilizado',
+        'Taxas até 12 vezes mais baixas do que modalidades tradicionais como cheque especial, cartão e empréstimo pessoal sem garantia',
+        'Expansão acelerada das operações via SFI e Home Equity no Brasil, impulsionadas pela digitalização e agilidade de fintechs especializadas',
+        'Grande volume de concessões voltado a capital de giro empresarial, investimentos e consolidação de passivos onerosos',
+        'Potencial bilionário ainda subutilizado no país, onde a maior parte do patrimônio das famílias e empresas permanece imobilizado',
       ],
     },
   },
