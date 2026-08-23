@@ -47,14 +47,14 @@ export function Navbar() {
           : 'bg-transparent py-4 sm:py-5',
       )}
     >
-      <div className="container mx-auto px-4 md:px-8 flex justify-between items-center">
-        <Link to="/" className="flex items-center gap-0 group">
+      <div className="container mx-auto px-3 md:px-6 flex justify-between items-center">
+        <Link to="/" className="flex items-center gap-0 group flex-shrink-0">
           <img
             src={logoFileto}
             alt="GRUPO FILETO"
-            className="h-28 sm:h-32 md:h-36 w-auto object-contain flex-shrink-0 transition-transform duration-300 group-hover:scale-105"
+            className="h-24 sm:h-28 md:h-32 w-auto object-contain flex-shrink-0 transition-transform duration-300 group-hover:scale-105"
           />
-          <div className="-ml-8 sm:-ml-10 flex flex-col items-center font-serif font-bold text-[#b8934a] text-xs sm:text-sm md:text-base leading-tight select-none">
+          <div className="-ml-6 sm:-ml-8 flex flex-col items-center font-serif font-bold text-[#b8934a] text-xs sm:text-sm md:text-base leading-tight select-none">
             <span className="block w-full text-center tracking-[0.10em]">GRUPO</span>
             <span className="block w-full text-center tracking-[0.04em]">FILETO</span>
           </div>
