@@ -47,7 +47,7 @@ export function Navbar() {
           : 'bg-transparent py-4 sm:py-5',
       )}
     >
-      <div className="container mx-auto px-3 md:px-6 flex justify-between items-center">
+      <div className="container mx-auto px-4 md:px-8 flex justify-between items-center">
         <Link to="/" className="flex items-center gap-0 group flex-shrink-0">
           <img
             src={logoFileto}
@@ -61,7 +61,7 @@ export function Navbar() {
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex gap-8">
+        <nav className="hidden md:flex gap-3 lg:gap-5">
           {navLinks.map((link) => (
             <a
               key={link.name}
