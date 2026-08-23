@@ -184,6 +184,119 @@ export const practiceAreas: PracticeArea[] = [
     fullDescription:
       'Oferecemos soluções inteligentes para otimização da carga tributária. Atuamos fortemente no contencioso administrativo e judicial, defendendo os interesses de nossos clientes contra autuações e buscando a recuperação de créditos.',
   },
+  {
+    id: '5',
+    slug: 'planejamento-patrimonial-sucessorio',
+    title: 'Planejamento Patrimonial e Sucessório',
+    icon: 'Shield',
+    description:
+      'Estruturação de Holdings Familiares e Empresariais para proteção patrimonial e planejamento sucessório.',
+    fullDescription: '',
+    subtitle: 'Especialista em direito patrimonial e sucessório, o Grupo Fileto oferece',
+    aboutSection: {
+      eyebrow: 'Proteção patrimonial',
+      title: 'Estruturação de Holdings Familiares e Empresariais',
+      body: 'O planejamento patrimonial e sucessório é uma das áreas mais sensíveis e estratégicas do direito empresarial contemporâneo. O Grupo Fileto atua na estruturação de holdings — familiares e empresariais — como instrumento de proteção do patrimônio acumulado ao longo de gerações, otimização fiscal e organização da sucessão, prevenindo conflitos e assegurando a continuidade dos negócios de forma planejada, segura e eficiente.',
+      bullets: [
+        'Proteção do patrimônio pessoal e empresarial contra riscos e contingências',
+        'Planejamento da sucessão hereditária com redução de carga tributária (ITCMD)',
+        'Estruturação de holdings patrimoniais, familiares e empresariais',
+        'Governança familiar: acordos de sócios, protocolos e regras de convivência',
+        'Blindagem patrimonial contra penhoras, bloqueios judiciais e disputas societárias',
+        'Reorganização societária com foco em eficiência fiscal e proteção de ativos',
+        'Assessoria completa na elaboração de testamentos e doações com reserva de usufruto',
+      ],
+    },
+    stats: [
+      {
+        value: '70%',
+        label: 'das empresas familiares não sobrevivem à 2ª geração',
+        icon: 'TrendingDown',
+      },
+      {
+        value: 'Até 8%',
+        label: 'de ITCMD (imposto sobre herança) — planejamento reduz essa carga',
+        icon: 'Percent',
+      },
+      {
+        value: '3ª+ geração',
+        label: 'Empresas com holding sobrevivem por mais gerações',
+        icon: 'Shield',
+      },
+      {
+        value: '100%',
+        label: 'de segurança jurídica na estruturação societária',
+        icon: 'CheckCircle',
+      },
+    ],
+    method: {
+      eyebrow: 'Nossa metodologia',
+      title: 'Um processo estruturado para proteger o seu legado',
+      intro:
+        'Da análise patrimonial inicial até a implementação completa da holding, conduzimos cada etapa com rigor técnico, confidencialidade absoluta e visão estratégica de longo prazo.',
+      steps: [
+        {
+          number: '1',
+          title:
+            'Diagnóstico patrimonial: mapeamento completo de ativos, participações e estrutura societária atual',
+        },
+        {
+          number: '2',
+          title:
+            'Análise de riscos e vulnerabilidades: identificação de exposições fiscais, societárias e familiares',
+        },
+        {
+          number: '3',
+          title:
+            'Desenho da estrutura societária ideal: holding patrimonial, familiar ou empresarial conforme o caso',
+        },
+        {
+          number: '4',
+          title: 'Elaboração de acordos de sócios, protocolos familiares e regras de governança',
+        },
+        {
+          number: '5',
+          title:
+            'Implementação jurídica: constituição, integralização de capital e reorganização societária',
+        },
+        {
+          number: '6',
+          title: 'Planejamento sucessório: testamentos, doações, usufruto e cláusulas de proteção',
+        },
+        {
+          number: '7',
+          title:
+            'Monitoramento contínuo e atualização da estrutura conforme mudanças legislativas e familiares',
+        },
+      ],
+    },
+    differentials: {
+      eyebrow: 'Diferenciais',
+      title: 'Por que estruturar uma holding com o Grupo Fileto',
+      bullets: [
+        'Visão multidisciplinar: atuação integrada das áreas societária, tributária e sucessória',
+        'Experiência comprovada de mais de 30 anos em direito empresarial e patrimonial',
+        'Atendimento personalizado e confidencial para cada núcleo familiar ou empresarial',
+        'Foco em resultados de longo prazo: perpetuidade do patrimônio e harmonia familiar',
+        'Blindagem patrimonial completa contra os principais riscos do ambiente de negócios brasileiro',
+        'Estruturação de holdings com total conformidade à legislação vigente e às normas da RFB',
+        'Redução legal e planejada da carga tributária sobre heranças e doações (ITCMD)',
+        'Prevenção de litígios familiares com acordos e protocolos de governança claros e eficazes',
+      ],
+    },
+    scenario: {
+      eyebrow: 'Cenário brasileiro',
+      title: 'A importância do planejamento patrimonial e sucessório no Brasil',
+      body: 'O Brasil tem uma das legislações mais complexas do mundo em matéria tributária e sucessória. Sem planejamento adequado, o patrimônio construído ao longo de uma vida pode ser dilapidado por disputas, tributos e ineficiências. Dados do IBGE, IBPT e IBGC demonstram a relevância desse planejamento.',
+      bullets: [
+        'Cerca de 90% das empresas brasileiras têm perfil familiar (IBGE)',
+        'Apenas 30% das empresas familiares sobrevivem à transição para a segunda geração (IBGC)',
+        'ITCMD pode chegar a 8% sobre o valor total dos bens transmitidos, a depender do estado',
+        'Disputas societárias e familiares estão entre as principais causas de dissolução de empresas no Brasil',
+        'A holding reduz a carga tributária sobre heranças e protege o patrimônio de penhoras e bloqueios',
+      ],
+    },
+  },
 ]
 
 export interface TeamMember {

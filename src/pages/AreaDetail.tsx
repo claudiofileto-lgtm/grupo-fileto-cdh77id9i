@@ -15,10 +15,14 @@ import {
   MapPin,
   ShieldCheck,
   Check,
+  CheckCircle,
   FileText,
   Lock,
   Award,
   TrendingUp,
+  TrendingDown,
+  Percent,
+  Shield,
 } from 'lucide-react'
 
 const iconMap: Record<string, React.ElementType> = {
@@ -31,10 +35,14 @@ const iconMap: Record<string, React.ElementType> = {
   MapPin,
   ShieldCheck,
   Check,
+  CheckCircle,
   FileText,
   Lock,
   Award,
   TrendingUp,
+  TrendingDown,
+  Percent,
+  Shield,
 }
 
 const HIGHLIGHT_PHRASE = 'Primeira TaxTech do Brasil'
