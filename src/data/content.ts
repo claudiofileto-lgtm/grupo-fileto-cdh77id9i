@@ -154,7 +154,7 @@ export const practiceAreas: PracticeArea[] = [
         'Operações de M&A (fusões, aquisições, incorporações, cisões e joint ventures)',
         'Recuperação Judicial e Extrajudicial, Falências e reestruturação de passivos empresariais',
         'Planejamento societário e estruturação de holdings empresariais',
-        'Soluções de capital de giro e financiamento para grupos empresariais',
+        'Soluções de capital de giro e financiamento para grupos empresariais: investimentos, aquisição de equipamentos, imóveis, ampliação fabril',
       ],
     },
     stats: [
