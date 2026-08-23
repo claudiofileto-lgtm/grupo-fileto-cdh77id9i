@@ -33,30 +33,37 @@ export function PracticeAreas() {
           </p>
         </FadeIn>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 items-stretch">
           {practiceAreas.map((area, index) => {
             const Icon = iconMap[area.icon] || Scale
             return (
-              <FadeIn key={area.id} delay={index * 150}>
+              <FadeIn key={area.id} delay={index * 150} className="h-full flex">
                 <Link
                   to={`/areas/${area.slug}`}
-                  className="group block p-8 md:p-12 border border-border bg-background hover:border-primary/50 hover:bg-card transition-all duration-500 relative overflow-hidden"
+                  className="group flex flex-col justify-between w-full h-full p-6 md:p-8 border border-border bg-background hover:border-primary/50 hover:bg-card transition-all duration-500 relative overflow-hidden"
                 >
                   <div className="absolute top-0 left-0 w-1 h-0 bg-primary transition-all duration-500 group-hover:h-full"></div>
 
-                  <div className="flex flex-col md:flex-row gap-6 md:items-start">
-                    <div className="w-full">
-                      <h4 className="font-serif text-2xl font-semibold mb-4 text-foreground group-hover:text-primary transition-colors">
+                  <div className="flex flex-col gap-4">
+                    <div className="flex items-start justify-between gap-4">
+                      <h4 className="font-serif text-xl md:text-2xl font-semibold text-foreground group-hover:text-primary transition-colors leading-snug">
                         {area.title}
                       </h4>
-                      <p
-                        className="mb-6 leading-relaxed text-white [&_strong]:font-semibold text-justify"
-                        dangerouslySetInnerHTML={{ __html: area.description }}
-                      />
-                      <span className="inline-flex items-center text-sm font-medium text-primary opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
-                        Saiba mais <ArrowRight className="ml-2 w-4 h-4" />
-                      </span>
+                      <div className="p-2.5 rounded-sm bg-primary/10 text-primary border border-primary/20 shrink-0 group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">
+                        <Icon className="w-5 h-5" />
+                      </div>
                     </div>
+                    <p
+                      className="text-sm md:text-base leading-relaxed text-muted-foreground group-hover:text-foreground/90 transition-colors [&_strong]:font-semibold [&_strong]:text-foreground text-justify"
+                      dangerouslySetInnerHTML={{ __html: area.description }}
+                    />
+                  </div>
+
+                  <div className="pt-6 mt-auto flex items-center justify-between border-t border-border/40">
+                    <span className="inline-flex items-center text-sm font-medium text-primary group-hover:translate-x-1 transition-all duration-300">
+                      Saiba mais{' '}
+                      <ArrowRight className="ml-2 w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
+                    </span>
                   </div>
                 </Link>
               </FadeIn>
