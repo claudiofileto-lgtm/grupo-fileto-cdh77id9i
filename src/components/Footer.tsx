@@ -4,96 +4,101 @@ import logoFileto from '@/assets/logofbronze-sf-07c40.png'
 
 export function Footer() {
   return (
-    <footer className="bg-card border-t border-border pt-16 pb-8">
+    <footer className="bg-gray-900 border-t border-gray-800 pt-3 sm:pt-4 pb-6 text-gray-300">
       <div className="container mx-auto px-4 md:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 lg:gap-16 mb-12 items-start">
-          {/* Coluna 1 (esquerda): APENAS o logo F + GRUPO FILETO */}
-          <div className="flex items-start">
-            <Link to="/" className="flex items-center gap-0 group">
-              <img
-                src={logoFileto}
-                alt="GRUPO FILETO"
-                className="h-28 sm:h-32 md:h-36 w-auto object-contain flex-shrink-0 transition-transform duration-300 group-hover:scale-105"
-              />
-              <div className="-ml-8 sm:-ml-10 flex flex-col items-center font-serif font-bold text-[#b8934a] text-xs sm:text-sm md:text-base leading-tight select-none">
-                <span className="block w-full text-center tracking-[0.10em]">GRUPO</span>
-                <span className="block w-full text-center tracking-[0.04em]">FILETO</span>
-              </div>
-            </Link>
+        {/* 1. Logo F + GRUPO FILETO centralizado no topo */}
+        <div className="flex justify-center items-center mb-6 sm:mb-8">
+          <Link to="/" className="flex items-center gap-0 group">
+            <img
+              src={logoFileto}
+              alt="GRUPO FILETO"
+              className="h-28 sm:h-32 md:h-36 w-auto object-contain flex-shrink-0 transition-transform duration-300 group-hover:scale-105"
+            />
+            <div className="-ml-8 sm:-ml-10 flex flex-col items-center font-serif font-bold text-[#b8934a] text-xs sm:text-sm md:text-base leading-tight select-none">
+              <span className="block w-full text-center tracking-[0.10em]">GRUPO</span>
+              <span className="block w-full text-center tracking-[0.04em]">FILETO</span>
+            </div>
+          </Link>
+        </div>
+
+        {/* 2. Abaixo do logo, os 4 blocos lado a lado na mesma linha horizontal */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mb-8 items-start">
+          {/* Bloco 1: Sobre */}
+          <div>
+            <h4 className="font-serif text-base md:text-lg font-semibold mb-2.5 text-white">
+              Sobre
+            </h4>
+            <p className="text-gray-300 text-xs sm:text-sm leading-relaxed">
+              Expertise estratégica jurídica, tributária, empresarial e financeira a serviço dos
+              interesses corporativos e pessoais mais complexos e desafiadores.
+            </p>
           </div>
 
-          {/* Coluna 2 (direita): Sobre, Endereço, Contato e Redes Sociais empilhados verticalmente */}
-          <div className="space-y-8">
-            {/* Bloco Sobre */}
-            <div>
-              <h4 className="font-serif text-lg font-semibold mb-3 text-foreground">Sobre</h4>
-              <p className="text-muted-foreground text-sm leading-relaxed">
-                Expertise estratégica jurídica, tributária, empresarial e financeira a serviço dos
-                interesses corporativos e pessoais mais complexos e desafiadores.
-              </p>
+          {/* Bloco 2: Endereço */}
+          <div>
+            <h4 className="font-serif text-base md:text-lg font-semibold mb-2.5 text-white">
+              Endereço
+            </h4>
+            <div className="flex gap-2.5 text-xs sm:text-sm text-gray-300">
+              <MapPin className="text-primary shrink-0 mt-0.5" size={17} />
+              <a
+                href="https://www.google.com/maps?q=Rua+Manoel+Coelho,+676,+Centro,+São+Caetano+do+Sul,+SP"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-primary transition-colors leading-relaxed"
+              >
+                Rua Manoel Coelho, nº 676, sala 1508 — Centro — São Caetano do Sul — SP — CEP
+                09510-101
+              </a>
             </div>
+          </div>
 
-            {/* Bloco Endereço */}
-            <div>
-              <h4 className="font-serif text-lg font-semibold mb-4 text-foreground">Endereço</h4>
-              <ul className="space-y-3 text-sm text-muted-foreground">
-                <li className="flex gap-3">
-                  <MapPin className="text-primary shrink-0 mt-0.5" size={18} />
-                  <a
-                    href="https://www.google.com/maps?q=Rua+Manoel+Coelho,+676,+Centro,+São+Caetano+do+Sul,+SP"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:text-primary transition-colors"
-                  >
-                    Rua Manoel Coelho, nº 676, sala 1508 — Centro — São Caetano do Sul — SP — CEP
-                    09510-101
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            {/* Bloco Contato */}
-            <div>
-              <h4 className="font-serif text-lg font-semibold mb-4 text-foreground">Contato</h4>
-              <ul className="space-y-3 text-sm text-muted-foreground">
-                <li className="flex gap-3 items-center hover:text-primary transition-colors">
-                  <Phone className="text-primary shrink-0" size={18} />
-                  <a href="tel:+5511933293331">+55 (11) 93329-3331</a>
-                </li>
-                <li className="flex gap-3 items-center hover:text-primary transition-colors">
-                  <Mail className="text-primary shrink-0" size={18} />
-                  <a href="mailto:contato@filetoexpertise.com.br">contato@filetoexpertise.com.br</a>
-                </li>
-              </ul>
-            </div>
-
-            {/* Bloco Redes Sociais */}
-            <div>
-              <h4 className="font-serif text-lg font-semibold mb-4 text-foreground">
-                Redes Sociais
-              </h4>
-              <div className="flex gap-4">
-                <a
-                  href="#"
-                  aria-label="LinkedIn"
-                  className="w-10 h-10 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-white hover:border-primary transition-all"
-                >
-                  <Linkedin size={18} />
+          {/* Bloco 3: Contato */}
+          <div>
+            <h4 className="font-serif text-base md:text-lg font-semibold mb-2.5 text-white">
+              Contato
+            </h4>
+            <ul className="space-y-2 text-xs sm:text-sm text-gray-300">
+              <li className="flex gap-2.5 items-center hover:text-primary transition-colors">
+                <Phone className="text-primary shrink-0" size={17} />
+                <a href="tel:+5511933293331">+55 (11) 93329-3331</a>
+              </li>
+              <li className="flex gap-2.5 items-center hover:text-primary transition-colors">
+                <Mail className="text-primary shrink-0" size={17} />
+                <a href="mailto:contato@filetoexpertise.com.br" className="break-all">
+                  contato@filetoexpertise.com.br
                 </a>
-                <a
-                  href="#"
-                  aria-label="Instagram"
-                  className="w-10 h-10 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-white hover:border-primary transition-all"
-                >
-                  <Instagram size={18} />
-                </a>
-              </div>
+              </li>
+            </ul>
+          </div>
+
+          {/* Bloco 4: Redes Sociais */}
+          <div>
+            <h4 className="font-serif text-base md:text-lg font-semibold mb-2.5 text-white">
+              Redes Sociais
+            </h4>
+            <div className="flex gap-3">
+              <a
+                href="#"
+                aria-label="LinkedIn"
+                className="w-9 h-9 rounded-full border border-gray-700 bg-gray-800/60 flex items-center justify-center text-gray-300 hover:bg-primary hover:text-white hover:border-primary transition-all"
+              >
+                <Linkedin size={17} />
+              </a>
+              <a
+                href="#"
+                aria-label="Instagram"
+                className="w-9 h-9 rounded-full border border-gray-700 bg-gray-800/60 flex items-center justify-center text-gray-300 hover:bg-primary hover:text-white hover:border-primary transition-all"
+              >
+                <Instagram size={17} />
+              </a>
             </div>
           </div>
         </div>
 
-        <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} GRUPO FILETO. Todos os direitos reservados.</p>
+        {/* 4. Copyright mantido abaixo de tudo */}
+        <div className="border-t border-gray-800 pt-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-gray-400">
+          <p>© {new Date().getFullYear()} GRUPO FILETO. Todos os direitos reservados.</p>
           <p>Design sofisticado e desenvolvimento por Skip.</p>
         </div>
       </div>
