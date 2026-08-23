@@ -54,7 +54,7 @@ export function Navbar() {
             alt="GRUPO FILETO"
             className="h-28 sm:h-32 md:h-36 w-auto object-contain flex-shrink-0 transition-transform duration-300 group-hover:scale-105"
           />
-          <div className="-ml-8 sm:-ml-10 flex flex-col items-center font-serif font-bold bg-gradient-to-r from-amber-400 via-yellow-300 to-amber-400 bg-clip-text text-transparent text-xs sm:text-sm md:text-base leading-tight select-none">
+          <div className="-ml-8 sm:-ml-10 flex flex-col items-center font-serif font-bold text-primary text-xs sm:text-sm md:text-base leading-tight select-none">
             <span className="block w-full text-center tracking-[0.10em]">GRUPO</span>
             <span className="block w-full text-center tracking-[0.04em]">FILETO</span>
           </div>
