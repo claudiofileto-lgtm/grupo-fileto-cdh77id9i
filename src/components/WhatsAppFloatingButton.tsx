@@ -12,7 +12,7 @@ export function WhatsAppFloatingButton() {
     >
       {/* Tooltip / Label ao lado */}
       <div
-        className="pointer-events-none hidden sm:inline-flex items-center bg-card/95 backdrop-blur-sm text-[#25D366] border border-border px-3 py-1.5 rounded-full text-xs font-medium shadow-md opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"
+        className="pointer-events-none hidden sm:inline-flex items-center bg-card/95 backdrop-blur-sm text-[#b8934a] border border-border px-3 py-1.5 rounded-full text-xs font-medium shadow-md opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"
         role="tooltip"
       >
         <span>Fale conosco</span>
@@ -24,7 +24,7 @@ export function WhatsAppFloatingButton() {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Fale conosco pelo WhatsApp"
-        className="w-14 h-14 rounded-full bg-[#25D366] text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 flex items-center justify-center focus:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-2"
+        className="w-14 h-14 rounded-full bg-[#b8934a] text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 flex items-center justify-center focus:outline-none focus-visible:ring-2 focus-visible:ring-[#b8934a] focus-visible:ring-offset-2"
       >
         <MessageCircle className="w-7 h-7 text-white fill-white/20" strokeWidth={2} />
       </a>
