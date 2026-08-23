@@ -43,20 +43,20 @@ export function Navbar() {
       className={cn(
         'fixed top-0 w-full z-50 transition-all duration-500 border-b border-transparent',
         isScrolled || !isHome
-          ? 'bg-background/95 backdrop-blur-md border-border py-4'
-          : 'bg-transparent py-6',
+          ? 'bg-background/95 backdrop-blur-md border-border py-2.5 sm:py-3'
+          : 'bg-transparent py-4 sm:py-5',
       )}
     >
       <div className="container mx-auto px-4 md:px-8 flex justify-between items-center">
-        <Link to="/" className="flex items-center gap-2 sm:gap-2.5 group">
+        <Link to="/" className="flex items-center gap-1.5 sm:gap-2 group">
           <img
             src={logoFileto}
             alt="GRUPO FILETO"
-            className="h-6 sm:h-7 md:h-8 w-auto object-contain flex-shrink-0"
+            className="h-8 sm:h-9 md:h-10 w-auto object-contain flex-shrink-0"
           />
-          <div className="flex flex-col items-center justify-center font-serif font-bold text-primary text-xs sm:text-sm md:text-base leading-none">
-            <span className="tracking-[0.30em] mr-[-0.30em]">GRUPO</span>
-            <span className="tracking-[0.02em] mr-[-0.02em]">FILETO</span>
+          <div className="flex flex-col items-center justify-center font-serif font-bold text-primary text-xs sm:text-sm md:text-base leading-tight">
+            <span className="tracking-[0.18em] mr-[-0.18em] w-full text-center">GRUPO</span>
+            <span className="tracking-[0.05em] mr-[-0.05em] w-full text-center">FILETO</span>
           </div>
         </Link>
 
