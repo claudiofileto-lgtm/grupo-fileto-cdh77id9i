@@ -49,7 +49,7 @@ export function Team() {
             {/* Founder Portrait Column - Rectangular format, subtle gold borders, warm nude background */}
             <div className="lg:col-span-5 flex flex-col items-center justify-center">
               <FadeIn direction="right">
-                <div className="relative flex flex-col items-center w-full max-w-sm sm:max-w-md mx-auto">
+                <div className="relative flex flex-col items-center w-full max-w-[320px] sm:max-w-sm mx-auto">
                   {/* Outer Gold Ambient Glow Halo */}
                   <div className="absolute -inset-4 sm:-inset-6 rounded-2xl bg-primary/15 blur-2xl opacity-75 pointer-events-none" />
 
