@@ -48,7 +48,7 @@ export default function TeamDetail() {
             className="inline-flex items-center text-sm font-medium text-muted-foreground hover:text-primary transition-colors mb-10 group"
           >
             <ArrowLeft className="w-4 h-4 mr-2 transform group-hover:-translate-x-1 transition-transform" />
-            Voltar para Liderança & Sócio Fundador
+            Voltar para Liderança & CEO - Sócio Fundador
           </Link>
         </FadeIn>
 
@@ -111,7 +111,7 @@ export default function TeamDetail() {
                   <div className="flex items-center gap-2 mb-2">
                     <div className="h-[2px] w-8 bg-primary"></div>
                     <span className="text-primary text-xs uppercase tracking-widest font-semibold">
-                      Sócio Fundador & CEO
+                      CEO - Sócio Fundador
                     </span>
                   </div>
                   <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-foreground mb-2">

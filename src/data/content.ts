@@ -651,7 +651,7 @@ export const founderMember: TeamMember = {
   id: '1',
   slug: 'claudio-fileto',
   name: 'Claudio Fileto',
-  role: 'Sócio Fundador',
+  role: 'CEO - Sócio Fundador',
   image: '/Claudio_Circulo verde-SF-86d2f.png',
   bio: 'Advogado desde 1991, especialista em administração empresarial e direito tributário, com mais de 25 anos de sólida atuação em gestão e direção executiva em grandes empresas nacionais e multinacionais. Fundador do GRUPO FILETO.',
   extendedBio: [

@@ -29,7 +29,7 @@ export function Team() {
               </h2>
             </div>
             <h3 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-foreground leading-tight">
-              Sócio Fundador
+              CEO - Sócio Fundador
             </h3>
             <p className="text-muted-foreground mt-4 text-base md:text-lg leading-relaxed font-light">
               Liderança pautada em mais de 30 anos de prática jurídica e executiva, integrando

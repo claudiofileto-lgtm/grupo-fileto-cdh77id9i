@@ -34,7 +34,7 @@ export function Navbar() {
     { name: 'Início', href: '#inicio' },
     { name: 'O Escritório', href: '#escritorio' },
     { name: 'Áreas de Atuação', href: '#areas' },
-    { name: 'Sócio Fundador', href: '#lideranca' },
+    { name: 'CEO - Sócio Fundador', href: '#lideranca' },
     { name: 'Contato', href: '#contato' },
   ]
 
