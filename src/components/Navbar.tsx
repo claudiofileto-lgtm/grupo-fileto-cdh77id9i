@@ -61,7 +61,7 @@ export function Navbar() {
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex gap-3 lg:gap-5">
+        <nav className="hidden md:flex gap-5 lg:gap-7">
           {navLinks.map((link) => (
             <a
               key={link.name}
