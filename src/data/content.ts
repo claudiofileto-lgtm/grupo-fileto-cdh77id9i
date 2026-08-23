@@ -137,7 +137,7 @@ export const practiceAreas: PracticeArea[] = [
   {
     id: '2',
     slug: 'direito-empresarial',
-    title: 'Direito Empresarial',
+    title: 'Direito Empresarial e Questões Societárias',
     icon: 'Building2',
     description: 'Consultoria para estruturação, fusões, aquisições e governança corporativa.',
     fullDescription:
@@ -155,6 +155,7 @@ export const practiceAreas: PracticeArea[] = [
         'Recuperação Judicial e Extrajudicial, Falências e reestruturação de passivos empresariais',
         'Planejamento societário e estruturação de holdings empresariais',
         'Soluções de capital de giro e financiamento para grupos empresariais: investimentos, aquisição de equipamentos, imóveis, ampliação fabril',
+        'Dissolução de sociedade e planejamento de sucessão e governança',
       ],
     },
     stats: [
