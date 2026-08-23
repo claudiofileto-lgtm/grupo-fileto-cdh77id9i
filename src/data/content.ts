@@ -287,7 +287,7 @@ export const practiceAreas: PracticeArea[] = [
     aboutSection: {
       eyebrow: 'Home Equity',
       title: 'Crédito com Garantia de Imóvel — taxas reduzidas e prazos alongados',
-      body: 'Em parceria com fintech pioneira e 3º maior player do mercado nacional de Home Equity — com mais de R$ 4 bilhões originados e atuação 100% online em todo o Brasil —, estruturamos operações de crédito com as melhores condições do país, além de produtos complementares como Financiamento Imobiliário (SFI), Crédito para Construção e Crédito para Condomínios.',
+      body: 'Em parceria com fintech pioneira e uma das 3 maiores do mercado nacional de Home Equity — com mais de R$ 4 bilhões originados e atuação 100% online em todo o Brasil —, estruturamos operações de crédito com as melhores condições do país, além de produtos complementares como Financiamento Imobiliário (SFI), Crédito para Construção e Crédito para Condomínios.',
       bullets: [
         'Taxas até 12x mais baixas que outras linhas de crédito tradicionais (a partir de 0,79% a.m. + IPCA)',
         'Prazos de até 240 meses (20 anos) com carência para o primeiro pagamento',
@@ -382,7 +382,7 @@ export const practiceAreas: PracticeArea[] = [
         'Aceitação de imóvel sem habite-se para viabilização do crédito',
         'Liberação no protocolo até R$ 1 milhão (após 1ª análise) sem averbação concomitante',
         'Operações estruturadas com Terceiro Garantidor (TQ)',
-        'Parceria com fintech pioneira no mercado brasileiro, 3º maior player nacional e mais de R$ 4 bilhões originados',
+        'Parceria com fintech pioneira no mercado brasileiro, uma das 3 maiores do Brasil e mais de R$ 4 bilhões originados',
       ],
     },
     scenario: {
@@ -394,7 +394,7 @@ export const practiceAreas: PracticeArea[] = [
         'Expansão acelerada das operações via SFI e Home Equity no Brasil, impulsionadas pela digitalização e agilidade de fintechs especializadas',
         'Grande volume de concessões voltado a capital de giro empresarial, investimentos e consolidação de passivos onerosos',
         'Potencial bilionário ainda subutilizado no país, onde a maior parte do patrimônio das famílias e empresas permanece imobilizado',
-        'O Grupo Fileto é Parceiro Contratado pela principal fintech de Home Equity do país (pioneira, 3º maior player do Brasil, +R$ 4 bilhões originados, 100% online), atuando com consultoria jurídica especializada na estruturação, análise e formalização das operações de Home Equity e SFI.',
+        'O Grupo Fileto é Parceiro Contratado por uma das principais fintechs de Home Equity do país (pioneira, uma das 3 maiores do Brasil, +R$ 4 bilhões originados, 100% online), atuando com consultoria jurídica especializada na estruturação, análise e formalização das operações de Home Equity e SFI.',
       ],
     },
   },
