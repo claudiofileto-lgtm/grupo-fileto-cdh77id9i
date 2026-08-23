@@ -38,6 +38,16 @@ export function Team() {
           </FadeIn>
         </div>
 
+        <FadeIn delay={100} className="max-w-3xl mb-12 md:mb-16">
+          <div className="border-l-2 border-primary pl-4 py-1">
+            <p className="text-foreground font-serif text-lg sm:text-xl font-medium leading-relaxed italic text-justify">
+              &ldquo;Aliamos mais de três décadas de rigor técnico jurídico a uma visão de negócios
+              pragmática para transformar desafios complexos em liquidez, segurança e valor
+              tangível.&rdquo;
+            </p>
+          </div>
+        </FadeIn>
+
         {/* Founder Showcase Card */}
         <div className="relative rounded-2xl bg-gradient-to-b from-card/90 via-card/70 to-card/95 border border-primary/20 backdrop-blur-md p-6 sm:p-10 md:p-14 lg:p-16 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.8)] overflow-hidden">
           {/* Elegant gold corner accents */}
@@ -105,14 +115,7 @@ export function Team() {
               <FadeIn direction="left" delay={200}>
                 {/* Introduction Paragraph */}
                 <div className="space-y-4 text-muted-foreground text-sm sm:text-base leading-relaxed mb-8 text-justify">
-                  <div className="border-l-2 border-primary pl-4 py-1">
-                    <p className="text-foreground font-serif text-lg sm:text-xl font-medium leading-relaxed italic text-justify">
-                      &ldquo;Aliamos mais de três décadas de rigor técnico jurídico a uma visão de
-                      negócios pragmática para transformar desafios complexos em liquidez, segurança
-                      e valor tangível.&rdquo;
-                    </p>
-                  </div>
-                  <p className="text-foreground/90 font-normal leading-relaxed pt-2 text-justify">
+                  <p className="text-foreground/90 font-normal leading-relaxed text-justify">
                     Com sólida formação jurídica e especializações em administração empresarial e
                     direito tributário, Claudio Fileto lidera o Grupo Fileto com o compromisso de
                     entregar valor estratégico tangível aos negócios de seus clientes.
