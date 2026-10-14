@@ -4,22 +4,25 @@ import buildingPhoto from '@/assets/foto-helbor-scs-2c09d.jpg'
 
 export function Hero() {
   return (
-    <section id="inicio" className="relative min-h-screen flex items-center pt-20 overflow-hidden">
+    <section
+      id="inicio"
+      className="relative min-h-[90vh] md:min-h-[105vh] flex items-center pt-28 pb-20 md:pt-36 md:pb-28 overflow-hidden"
+    >
       <div className="absolute inset-0 z-0 overflow-hidden">
         {/*
-          Garantia de que a largura inteira da foto seja visível de borda a borda
-          (sem corte lateral), cortando apenas o excesso na altura:
-          A foto do Helbor possui proporção vertical (748x997).
-          - Em telas onde aspect-ratio do viewport é paisagem/widescreen (típico de desktop e laptop),
-            `w-full h-auto` garante que 100% da largura da imagem seja exibida sem cortar as laterais.
-          - O alinhamento vertical no terço superior (center 30%) foca na fachada e topo do edifício Helbor.
-          - Em telas de proporção vertical (smartphones), `min-h-full min-w-full object-cover` garante
-            preenchimento harmonioso sem deixar espaços vazios.
+          Garantia de que a largura inteira da foto do edifício Helbor (748x997)
+          seja 100% visível de ponta a ponta sem corte lateral, com corte
+          apenas na altura (topo/base) se necessário.
+          - `w-full` estende a foto por 100% da largura do Hero de ponta a ponta.
+          - `min-h-full object-cover` garante que ela cubra verticalmente toda a área
+            ampliada do Hero com foco na fachada e arquitetura do edifício.
+          - Hero com altura mínima aumentada (min-h-[90vh] md:min-h-[105vh]) e padding
+            espaçoso para que a foto fique visualmente muito maior e imponente.
         */}
         <img
           src={buildingPhoto}
           alt="Edifício Helbor Offices - Sede Grupo Fileto"
-          className="absolute left-0 top-1/2 -translate-y-1/2 w-full h-auto min-h-full object-cover object-[center_30%] opacity-40"
+          className="absolute inset-0 w-full h-full min-h-full min-w-full object-cover object-[center_28%] opacity-45 pointer-events-none select-none transition-opacity duration-700"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent pointer-events-none" />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent pointer-events-none" />
