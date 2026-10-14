@@ -4,12 +4,12 @@ import buildingPhoto from '@/assets/foto-helbor-scs-2c09d.jpg'
 
 export function Hero() {
   return (
-    <section id="inicio" className="relative min-h-screen flex items-center pt-20">
-      <div className="absolute inset-0 z-0">
+    <section id="inicio" className="relative min-h-screen flex items-center pt-20 overflow-hidden">
+      <div className="absolute inset-0 z-0 overflow-hidden">
         <img
           src={buildingPhoto}
           alt="Edifício Helbor Offices - Sede Grupo Fileto"
-          className="w-full h-full object-cover opacity-40"
+          className="w-full h-full min-w-full min-h-full object-cover object-center opacity-40"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
