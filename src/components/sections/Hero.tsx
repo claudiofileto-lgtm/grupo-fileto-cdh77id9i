@@ -6,13 +6,23 @@ export function Hero() {
   return (
     <section id="inicio" className="relative min-h-screen flex items-center pt-20 overflow-hidden">
       <div className="absolute inset-0 z-0 overflow-hidden">
+        {/*
+          Garantia de que a largura inteira da foto seja visível de borda a borda
+          (sem corte lateral), cortando apenas o excesso na altura:
+          A foto do Helbor possui proporção vertical (748x997).
+          - Em telas onde aspect-ratio do viewport é paisagem/widescreen (típico de desktop e laptop),
+            `w-full h-auto` garante que 100% da largura da imagem seja exibida sem cortar as laterais.
+          - O alinhamento vertical no terço superior (center 30%) foca na fachada e topo do edifício Helbor.
+          - Em telas de proporção vertical (smartphones), `min-h-full min-w-full object-cover` garante
+            preenchimento harmonioso sem deixar espaços vazios.
+        */}
         <img
           src={buildingPhoto}
           alt="Edifício Helbor Offices - Sede Grupo Fileto"
-          className="w-full h-full min-w-full min-h-full object-cover object-center opacity-40"
+          className="absolute left-0 top-1/2 -translate-y-1/2 w-full h-auto min-h-full object-cover object-[center_30%] opacity-40"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent pointer-events-none" />
       </div>
 
       <div className="container mx-auto px-4 md:px-8 relative z-10 text-[0rem] text-left">
