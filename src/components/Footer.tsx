@@ -29,8 +29,8 @@ export function Footer() {
               Sobre
             </h4>
             <p className="text-gray-300 text-xs sm:text-sm leading-relaxed text-justify">
-              Expertise estratégica jurídica, tributária, empresarial e financeira a serviço dos
-              interesses corporativos e pessoais mais complexos e desafiadores.
+              Expertise estratégica nas áreas jurídica, tributária, empresarial e financeira a
+              serviço dos interesses corporativos e pessoais mais complexos e desafiadores.
             </p>
           </div>
 
