@@ -203,11 +203,11 @@ export function Team() {
                     <ArrowUpRight className="w-4 h-4" />
                   </a>
                   <a
-                    href="mailto:contato@filetoexpertise.com.br"
+                    href="mailto:contato@grupofileto.com"
                     className="inline-flex items-center gap-2 px-4 py-2.5 bg-card/80 border border-border text-muted-foreground hover:text-primary hover:border-primary/40 text-sm rounded-md transition-colors"
                   >
                     <Mail className="w-4 h-4 text-primary" />
-                    contato@filetoexpertise.com.br
+                    contato@grupofileto.com
                   </a>
                   <a
                     href="tel:+5511933293331"

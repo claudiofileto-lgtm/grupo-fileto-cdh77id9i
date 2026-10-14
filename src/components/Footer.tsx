@@ -65,8 +65,8 @@ export function Footer() {
               </li>
               <li className="flex gap-2.5 items-center hover:text-primary transition-colors">
                 <Mail className="text-primary shrink-0" size={17} />
-                <a href="mailto:contato@filetoexpertise.com.br" className="break-all">
-                  contato@filetoexpertise.com.br
+                <a href="mailto:contato@grupofileto.com" className="break-all">
+                  contato@grupofileto.com
                 </a>
               </li>
             </ul>

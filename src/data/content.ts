@@ -728,7 +728,7 @@ export const founderMember: TeamMember = {
     'Consultoria Empresarial',
     'Planejamento Patrimonial, Societário e Sucessório (Holdings)',
   ],
-  email: 'contato@filetoexpertise.com.br',
+  email: 'contato@grupofileto.com',
   phone: '+55 (11) 93329-3331',
   credentials: [
     { label: 'Advocacia', value: 'Desde 1991' },
