@@ -64,7 +64,7 @@ export function Team() {
                   <div className="absolute -inset-4 sm:-inset-6 rounded-2xl bg-primary/15 blur-2xl opacity-75 pointer-events-none" />
 
                   {/* Rectangular Outer Gold Frame */}
-                  <div className="relative p-1.5 sm:p-2 rounded-2xl bg-gradient-to-b from-primary/70 via-primary/30 to-primary/70 shadow-[0_15px_40px_rgba(198,162,88,0.2)] w-full">
+                  <div className="relative p-1.5 sm:p-2 rounded-2xl bg-gradient-to-b from-primary/70 via-primary/30 to-primary/70 shadow-[0_15px_40px_rgba(197,161,89,0.25)] w-full">
                     {/* Inner Gold Inset Frame */}
                     <div className="p-1 rounded-xl bg-background/80 border border-primary/40">
                       {/* Rectangular Photo Container with Nude Background */}

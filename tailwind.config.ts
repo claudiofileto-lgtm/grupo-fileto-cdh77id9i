@@ -70,7 +70,7 @@ export default {
         sm: 'calc(var(--radius) - 4px)',
       },
       boxShadow: {
-        glow: '0 0 20px rgba(198, 162, 88, 0.15)',
+        glow: '0 0 20px rgba(197, 161, 89, 0.18)',
       },
     },
   },
