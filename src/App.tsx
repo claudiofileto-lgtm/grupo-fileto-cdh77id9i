@@ -20,8 +20,8 @@ const App = () => (
           <Route path="/equipe/:slug" element={<TeamDetail />} />
           <Route path="/lideranca/:slug" element={<TeamDetail />} />
           <Route path="/fundador" element={<TeamDetail />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
-        <Route path="*" element={<NotFound />} />
       </Routes>
     </TooltipProvider>
   </BrowserRouter>
