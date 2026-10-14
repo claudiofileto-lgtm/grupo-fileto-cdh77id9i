@@ -712,12 +712,9 @@
   function se(e) {
     return (
       (K = 5),
-      ce(
-        function () {
-          return { current: e }
-        },
-        [],
-      )
+      ce(function () {
+        return { current: e }
+      }, [])
     )
   }
   function ce(e, r) {
@@ -2429,13 +2426,10 @@
       h = null == n ? void 0 : n.disableAutofocus
     ue(() => {
       h ||
-        setTimeout(
-          () => {
-            var e
-            c || null == (e = d.current) || e.focus()
-          },
-          100,
-        )
+        setTimeout(() => {
+          var e
+          c || null == (e = d.current) || e.focus()
+        }, 100)
     }, [c, h])
     var y = 'surveyQuestion' + a,
       g = ce(
@@ -2740,13 +2734,10 @@
             x && h(''),
             void (
               n &&
-              setTimeout(
-                () => {
-                  var e
-                  return null == (e = d.current) ? void 0 : e.focus()
-                },
-                75,
-              )
+              setTimeout(() => {
+                var e
+                return null == (e = d.current) ? void 0 : e.focus()
+              }, 75)
             )
           )
         }
@@ -3085,12 +3076,9 @@
               M = Me(T) ? Math.max(0, Date.now() - T) : 0,
               I = Math.max(0, 1e3 * S - M)
             if (0 >= I) return q()
-            var N = Gt.setTimeout(
-              () => {
-                ;(t.B.delete(h.id), q())
-              },
-              I,
-            )
+            var N = Gt.setTimeout(() => {
+              ;(t.B.delete(h.id), q())
+            }, I)
             t.B.set(h.id, N)
           }
         }),
@@ -3195,44 +3183,38 @@
           ;(void 0 === r && (r = !1),
             null == (n = t._posthog) ||
               null == (n = n.surveys) ||
-              n.getSurveys(
-                (r) => {
-                  var n = r.filter((e) => t.K(e))
-                  e(n)
-                },
-                r,
-              ))
+              n.getSurveys((r) => {
+                var n = r.filter((e) => t.K(e))
+                e(n)
+              }, r))
         }),
         (this.callSurveysAndEvaluateDisplayLogic = function (e) {
           ;(void 0 === e && (e = !1),
-            t.getActiveMatchingSurveys(
-              (e) => {
-                var r = e.filter((e) => e.type === Xe.Popover || e.type === Xe.Widget),
-                  n = new Set(r.map((e) => e.id))
-                for (var i of Array.from(t.B.keys())) n.has(i) || t.cancelSurvey(i)
-                var o = t.ae(r),
-                  a = new Set()
-                ;(o.forEach((e) => {
-                  if (e.type === Xe.Widget) {
-                    var r, n, i, o
-                    if ((null == (r = e.appearance) ? void 0 : r.widgetType) === Ge.Tab)
-                      return void t.J(e)
-                    ;(null == (n = e.appearance) ? void 0 : n.widgetType) === Ge.Selector &&
-                      null != (i = e.appearance) &&
-                      i.widgetSelector &&
-                      (a.add(e.id), t.ne(e, null == (o = e.appearance) ? void 0 : o.widgetSelector))
-                  }
-                  qe(t.oe) &&
-                    e.type === Xe.Popover &&
-                    t.handlePopoverSurvey(e, void 0, { resumeDelayFromActivation: !0 })
-                }),
-                  t.U.forEach((e) => {
-                    var r = e.survey
-                    a.has(r.id) || t.ee(r)
-                  }))
-              },
-              e,
-            ))
+            t.getActiveMatchingSurveys((e) => {
+              var r = e.filter((e) => e.type === Xe.Popover || e.type === Xe.Widget),
+                n = new Set(r.map((e) => e.id))
+              for (var i of Array.from(t.B.keys())) n.has(i) || t.cancelSurvey(i)
+              var o = t.ae(r),
+                a = new Set()
+              ;(o.forEach((e) => {
+                if (e.type === Xe.Widget) {
+                  var r, n, i, o
+                  if ((null == (r = e.appearance) ? void 0 : r.widgetType) === Ge.Tab)
+                    return void t.J(e)
+                  ;(null == (n = e.appearance) ? void 0 : n.widgetType) === Ge.Selector &&
+                    null != (i = e.appearance) &&
+                    i.widgetSelector &&
+                    (a.add(e.id), t.ne(e, null == (o = e.appearance) ? void 0 : o.widgetSelector))
+                }
+                qe(t.oe) &&
+                  e.type === Xe.Popover &&
+                  t.handlePopoverSurvey(e, void 0, { resumeDelayFromActivation: !0 })
+              }),
+                t.U.forEach((e) => {
+                  var r = e.survey
+                  a.has(r.id) || t.ee(r)
+                }))
+            }, e))
         }),
         (this.G = (e) => {
           ;(qe(this.oe) ||
@@ -3655,12 +3637,9 @@
       n.callSurveysAndEvaluateDisplayLogic(!0)
       var i = () => {
         Ce(t) &&
-          (t = setInterval(
-            () => {
-              n.callSurveysAndEvaluateDisplayLogic(!1)
-            },
-            1e3,
-          ))
+          (t = setInterval(() => {
+            n.callSurveysAndEvaluateDisplayLogic(!1)
+          }, 1e3))
       }
       return (
         i(),
@@ -3824,12 +3803,9 @@
                       ;(h(!0),
                         null != (n = r.appearance) &&
                           n.autoDisappear &&
-                          setTimeout(
-                            () => {
-                              g()
-                            },
-                            5e3,
-                          ))
+                          setTimeout(() => {
+                            g()
+                          }, 5e3))
                     }
                   },
                   a = () => {
@@ -4181,12 +4157,9 @@
       return null
     var S = () => {
       ;(u.schedule !== tr && h(!1),
-        setTimeout(
-          () => {
-            b(!1)
-          },
-          200,
-        ))
+        setTimeout(() => {
+          b(!1)
+        }, 200))
     }
     return gt(C, {
       children: [

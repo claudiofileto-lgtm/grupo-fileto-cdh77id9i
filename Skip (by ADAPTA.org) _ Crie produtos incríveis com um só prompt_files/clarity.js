@@ -1260,12 +1260,9 @@
       for (r = 0; r < arguments.length; r++) l[r] = arguments[r]
       if (((u = (o = performance.now()) - n), 0 !== n && u < e)) {
         if (((i = l), a)) return
-        a = setTimeout(
-          function () {
-            ;((n = performance.now()), t.apply(c, i), (i = null), (a = null))
-          },
-          e - u,
-        )
+        a = setTimeout(function () {
+          ;((n = performance.now()), t.apply(c, i), (i = null), (a = null))
+        }, e - u)
       } else ((n = o), t.apply(this, l))
     }
     return (
@@ -1893,12 +1890,9 @@
             return (
               Object.keys(Dt).length > 0 &&
                 (Pt && Jn(Pt),
-                (Pt = Bn(
-                  function () {
-                    Nr(_i, 1)
-                  },
-                  33,
-                ))),
+                (Pt = Bn(function () {
+                  Nr(_i, 1)
+                }, 33))),
               0 === Object.keys(Dt).length && o ? [4, yi(6, t, xn())] : [3, 13]
             )
           case 12:
@@ -1958,20 +1952,17 @@
     return (
       Ct.includes(t) || Ct.push(t),
       At && Jn(At),
-      (At = Bn(
-        function () {
-          !(function () {
-            var t, e, n, a
-            for (t = 0, e = Ct; t < e.length; t++)
-              if ((n = e[t])) {
-                if ((a = n.nodeType === Node.DOCUMENT_FRAGMENT_NODE) && $i(n)) continue
-                Di(n, a ? 'childList' : 'characterData')
-              }
-            Ct = []
-          })()
-        },
-        33,
-      )),
+      (At = Bn(function () {
+        !(function () {
+          var t, e, n, a
+          for (t = 0, e = Ct; t < e.length; t++)
+            if ((n = e[t])) {
+              if ((a = n.nodeType === Node.DOCUMENT_FRAGMENT_NODE) && $i(n)) continue
+              Di(n, a ? 'childList' : 'characterData')
+            }
+          Ct = []
+        })()
+      }, 33)),
       t
     )
   }
