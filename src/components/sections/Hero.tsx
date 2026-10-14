@@ -43,7 +43,7 @@ export function Hero() {
           </FadeIn>
 
           <FadeIn delay={500}>
-            <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl leading-relaxed text-justify">
+            <p className="text-base sm:text-lg md:text-[1.125rem] text-muted-foreground mb-10 max-w-2xl leading-relaxed text-justify hyphens-none">
               Expertise estratégica nas áreas jurídica, tributária, empresarial e financeira a
               serviço dos interesses corporativos e pessoais mais complexos e desafiadores.
             </p>
