@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
 import { cn } from '@/lib/utils'
-import logoFileto from '@/assets/logofbronze-sf-07c40.png'
+import logoHorizontal from '@/assets/logolatgf2douradoantescov-sf-bfed0.png'
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -47,16 +47,16 @@ export function Navbar() {
       )}
     >
       <div className="container mx-auto px-4 md:px-8 flex justify-between items-center py-0">
-        <Link to="/" className="flex items-center gap-0 group flex-shrink-0">
+        <Link
+          to="/"
+          className="flex items-center group flex-shrink-0 py-1 sm:py-1.5"
+          aria-label="Grupo Fileto - Ir para o início"
+        >
           <img
-            src={logoFileto}
-            alt="GRUPO FILETO"
-            className="h-24 sm:h-28 md:h-32 w-auto object-contain flex-shrink-0 transition-transform duration-300 group-hover:scale-105 block"
+            src={logoHorizontal}
+            alt="Grupo Fileto"
+            className="h-14 sm:h-16 md:h-20 w-auto max-w-[220px] sm:max-w-[260px] md:max-w-[300px] object-contain transition-transform duration-300 group-hover:scale-105 block mix-blend-screen"
           />
-          <div className="-ml-6 sm:-ml-8 flex flex-col items-center font-serif font-bold text-[#b8934a] text-xs sm:text-sm md:text-base leading-tight select-none">
-            <span className="block w-full text-center tracking-[0.10em]">GRUPO</span>
-            <span className="block w-full text-center tracking-[0.04em]">FILETO</span>
-          </div>
         </Link>
 
         {/* Desktop Nav */}
