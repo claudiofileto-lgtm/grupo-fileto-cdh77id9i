@@ -15,8 +15,8 @@
     --popover: 0 0% 7%;
     --popover-foreground: 0 0% 98%;
 
-    /* Gold accent #c5a059 */
-    --primary: 40 47% 56%;
+    /* Gold accent #c6a258 da logomarca do cabeçalho */
+    --primary: 40 48% 56%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 0 0% 12%;
@@ -25,7 +25,7 @@
     --muted: 0 0% 15%;
     --muted-foreground: 0 0% 65%;
 
-    --accent: 40 47% 56%;
+    --accent: 40 48% 56%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 30.6%;
@@ -33,7 +33,7 @@
 
     --border: 0 0% 15%;
     --input: 0 0% 15%;
-    --ring: 40 47% 56%;
+    --ring: 40 48% 56%;
 
     --radius: 0.25rem;
   }
@@ -66,7 +66,7 @@
 
 @layer utilities {
   .text-glow {
-    text-shadow: 0 0 10px rgba(197, 160, 89, 0.5);
+    text-shadow: 0 0 10px rgba(198, 162, 88, 0.5);
   }
 
   /* Page transition animations (varied, premium, GPU-accelerated) */
