@@ -19,10 +19,10 @@ export function Hero() {
         <img
           src={buildingPhoto}
           alt="Edifício Helbor Offices - Sede Grupo Fileto"
-          className="absolute inset-0 w-full h-full min-h-full min-w-full object-cover object-[center_28%] opacity-40 pointer-events-none select-none transition-opacity duration-700"
+          className="absolute inset-0 w-full h-full min-h-full min-w-full object-cover object-[center_28%] opacity-60 pointer-events-none select-none transition-opacity duration-700"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent pointer-events-none" />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/50 to-transparent pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent pointer-events-none" />
       </div>
 
       <div className="container mx-auto px-4 md:px-8 relative z-10 text-[0rem] text-left">
