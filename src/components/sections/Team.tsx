@@ -74,7 +74,7 @@ export function Team() {
                       >
                         {/* Direct Rectangular Image */}
                         <img
-                          src="/visual-edits/claudio-pessoal-removebg-preview-ec646a80.png"
+                          src={founderMember.image}
                           alt={founderMember.name}
                           className="w-full h-full object-cover object-top transition-transform duration-700 hover:scale-105 select-none"
                           loading="lazy"
