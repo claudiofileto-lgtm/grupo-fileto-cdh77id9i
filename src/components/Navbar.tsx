@@ -49,18 +49,18 @@ export function Navbar() {
       <div className="container mx-auto px-4 md:px-8 flex justify-between items-center py-0">
         <Link
           to="/"
-          className="flex items-center group flex-shrink-0 py-1 sm:py-1.5"
+          className="flex items-center group flex-shrink-0 py-1 sm:py-1.5 pl-1 sm:pl-2 md:pl-3"
           aria-label="Grupo Fileto - Ir para o início"
         >
           <img
             src={logoHorizontal}
             alt="Grupo Fileto"
-            className="h-14 sm:h-16 md:h-20 w-auto max-w-[220px] sm:max-w-[260px] md:max-w-[300px] object-contain transition-transform duration-300 group-hover:scale-105 block mix-blend-screen"
+            className="h-16 sm:h-[72px] md:h-[88px] w-auto max-w-[245px] sm:max-w-[290px] md:max-w-[335px] object-contain transition-transform duration-300 group-hover:scale-105 block mix-blend-screen"
           />
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden sm:flex items-center gap-5 lg:gap-7">
+        <nav className="hidden sm:flex items-center gap-4 lg:gap-6 mr-1 md:mr-2">
           {navLinks.map((link) => (
             <a
               key={link.name}
