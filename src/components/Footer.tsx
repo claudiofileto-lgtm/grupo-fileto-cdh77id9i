@@ -1,23 +1,23 @@
 import { Link } from 'react-router-dom'
 import { MapPin, Phone, Mail, Instagram, Linkedin } from 'lucide-react'
-import logoFileto from '@/assets/logofbronze-sf-07c40.png'
+import logoHorizontal from '@/assets/logolatgf2douradoantescov-sf-bfed0.png'
 
 export function Footer() {
   return (
     <footer className="bg-gray-900 border-t border-gray-800 pt-0 sm:pt-0 pb-6 text-gray-300">
       <div className="container mx-auto px-4 md:px-8">
-        {/* 1. Logo F + GRUPO FILETO centralizado no topo */}
-        <div className="flex justify-center items-center mb-0">
-          <Link to="/" className="flex items-center gap-0 group">
+        {/* 1. Logo GRUPO FILETO centralizado no topo */}
+        <div className="flex justify-center items-center py-2 sm:py-3 mb-1">
+          <Link
+            to="/"
+            className="flex items-center group transition-transform duration-300 group-hover:scale-105"
+            aria-label="Grupo Fileto - Ir para o início"
+          >
             <img
-              src={logoFileto}
-              alt="GRUPO FILETO"
-              className="h-28 sm:h-32 md:h-36 w-auto object-contain flex-shrink-0 transition-transform duration-300 group-hover:scale-105"
+              src={logoHorizontal}
+              alt="Grupo Fileto"
+              className="h-28 sm:h-32 md:h-36 lg:h-40 w-auto max-w-[340px] sm:max-w-[400px] md:max-w-[460px] object-contain flex-shrink-0 transition-transform duration-300 group-hover:scale-105 block mix-blend-screen"
             />
-            <div className="-ml-8 sm:-ml-10 flex flex-col items-center font-serif font-bold text-primary text-xs sm:text-sm md:text-base leading-tight select-none">
-              <span className="block w-full text-center tracking-[0.10em]">GRUPO</span>
-              <span className="block w-full text-center tracking-[0.04em]">FILETO</span>
-            </div>
           </Link>
         </div>
 
