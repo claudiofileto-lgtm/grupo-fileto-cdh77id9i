@@ -1,13 +1,14 @@
 import { FadeIn } from '../FadeIn'
 import { Button } from '@/components/ui/button'
+import buildingPhoto from '@/assets/foto-helbor-scs-2c09d.jpg'
 
 export function Hero() {
   return (
     <section id="inicio" className="relative min-h-screen flex items-center pt-20">
       <div className="absolute inset-0 z-0">
         <img
-          src="https://img.usecurling.com/p/1920/1080?q=modern%20corporate%20architecture%20building&color=black"
-          alt="Escritório de Advocacia"
+          src={buildingPhoto}
+          alt="Edifício Helbor Offices - Sede Grupo Fileto"
           className="w-full h-full object-cover opacity-40"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent" />
