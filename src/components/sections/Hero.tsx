@@ -6,7 +6,7 @@ export function Hero() {
   return (
     <section
       id="inicio"
-      className="relative min-h-[90vh] md:min-h-[105vh] flex items-center pt-28 pb-20 md:pt-36 md:pb-28 overflow-hidden"
+      className="relative min-h-[100vh] md:min-h-[125vh] flex items-center pt-32 pb-24 md:pt-44 md:pb-36 overflow-hidden"
     >
       <div className="absolute inset-0 z-0 overflow-hidden">
         {/*
@@ -16,8 +16,8 @@ export function Hero() {
           - `w-full` estende a foto por 100% da largura do Hero de ponta a ponta.
           - `min-h-full object-cover` garante que ela cubra verticalmente toda a área
             ampliada do Hero com foco na fachada e arquitetura do edifício.
-          - Hero com altura mínima aumentada (min-h-[90vh] md:min-h-[105vh]) e padding
-            espaçoso para que a foto fique visualmente muito maior e imponente.
+          - Hero com altura mínima ampliada (min-h-[100vh] md:min-h-[125vh]) e padding
+            generoso para que a foto do edifício fique visivelmente maior e imponente.
         */}
         <img
           src={buildingPhoto}
