@@ -9,13 +9,11 @@ export function About() {
             <div className="flex flex-col">
               <div className="relative mb-12 md:mb-16">
                 <div className="absolute -inset-4 border border-primary/20 translate-x-4 translate-y-4 pointer-events-none" />
-                <div className="w-full h-[560px] sm:h-[640px] md:h-[700px] lg:h-[740px] xl:h-[760px] relative z-10 overflow-hidden bg-card/40 flex items-center justify-center">
-                  <img
-                    src="https://img.usecurling.com/p/1200/1500?q=modern%20law%20firm%20corporate%20office%20interior&color=black"
-                    alt="Interior do Escritório"
-                    className="w-full h-full object-cover object-center filter grayscale-[20%] transition-transform duration-700 hover:scale-105"
-                  />
-                </div>
+                <img
+                  src="https://img.usecurling.com/p/800/1000?q=modern%20corporate%20office%20interior&color=black"
+                  alt="Interior do Escritório"
+                  className="w-full h-auto object-cover relative z-10 filter grayscale-[20%]"
+                />
                 <div className="absolute bottom-0 right-0 bg-card p-6 md:p-8 z-20 shadow-2xl border-l border-t border-primary/30 transform translate-x-4 md:translate-x-12 translate-y-4 md:translate-y-12">
                   <p className="font-serif text-3xl md:text-5xl text-primary font-bold mb-2">32+</p>
                   <p className="text-sm md:text-base text-muted-foreground uppercase tracking-wider">
