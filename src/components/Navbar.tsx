@@ -33,6 +33,7 @@ export function Navbar() {
   const navLinks = [
     { name: 'Início', href: '#inicio' },
     { name: 'O Escritório', href: '#escritorio' },
+    { name: 'Áreas de Atuação', href: '#areas' },
     { name: 'CEO - Sócio Fundador', href: '#lideranca' },
     { name: 'Contato', href: '#contato' },
   ]
