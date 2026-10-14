@@ -1,6 +1,6 @@
 import { FadeIn } from '../FadeIn'
 import { Button } from '@/components/ui/button'
-import buildingPhoto from '@/assets/foto-helbor-scs-2c09d.jpg'
+import buildingPhoto from '@/assets/image-125b0.png'
 
 export function Hero() {
   return (
@@ -10,19 +10,16 @@ export function Hero() {
     >
       <div className="absolute inset-0 z-0 overflow-hidden">
         {/*
-          Garantia de que a largura inteira da foto do edifício Helbor (748x997)
-          seja 100% visível de ponta a ponta sem corte lateral, com corte
-          apenas na altura (topo/base) se necessário.
-          - `w-full` estende a foto por 100% da largura do Hero de ponta a ponta.
-          - `min-h-full object-cover` garante que ela cubra verticalmente toda a área
-            ampliada do Hero com foco na fachada e arquitetura do edifício.
-          - Hero com altura mínima ampliada (min-h-[100vh] md:min-h-[125vh]) e padding
-            generoso para que a foto do edifício fique visivelmente maior e imponente.
+          Foto do edifício Helbor Offices São Caetano (torre de vidro, espelho d'água e jardins)
+          - `w-full` cobrindo 100% da largura de ponta a ponta
+          - Corte apenas na altura (topo/base)
+          - Foco vertical em ~28-30% do topo
+          - Opacidade e gradientes de escurecimento preservados
         */}
         <img
           src={buildingPhoto}
           alt="Edifício Helbor Offices - Sede Grupo Fileto"
-          className="absolute inset-0 w-full h-full min-h-full min-w-full object-cover object-[center_28%] opacity-45 pointer-events-none select-none transition-opacity duration-700"
+          className="absolute inset-0 w-full h-full min-h-full min-w-full object-cover object-[center_28%] opacity-40 pointer-events-none select-none transition-opacity duration-700"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent pointer-events-none" />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent pointer-events-none" />
