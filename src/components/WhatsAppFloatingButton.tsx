@@ -1,4 +1,5 @@
 import { MessageCircle } from 'lucide-react'
+import { BRAND_GOLD } from '@/analyze-logo-temp'
 
 export function WhatsAppFloatingButton() {
   const phoneNumber = '5511933293331'
@@ -18,13 +19,14 @@ export function WhatsAppFloatingButton() {
         <span>Fale conosco</span>
       </div>
 
-      {/* Botão flutuante circular */}
+      {/* Botão flutuante circular - tom escuro representativo do dourado escovado da logomarca */}
       <a
         href={whatsappUrl}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Fale conosco pelo WhatsApp"
-        className="w-14 h-14 rounded-full bg-primary text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 flex items-center justify-center focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+        style={{ backgroundColor: BRAND_GOLD.buttonDark }}
+        className="w-14 h-14 rounded-full text-white shadow-lg hover:shadow-xl hover:brightness-105 transition-all duration-300 hover:scale-110 flex items-center justify-center focus:outline-none focus-visible:ring-2 focus-visible:ring-[#ad8942] focus-visible:ring-offset-2"
       >
         <MessageCircle className="w-7 h-7 text-white fill-white/20" strokeWidth={2} />
       </a>
