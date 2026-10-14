@@ -40,18 +40,18 @@ export function Navbar() {
   return (
     <header
       className={cn(
-        'fixed top-0 w-full z-50 transition-all duration-500 border-b border-transparent',
+        'fixed top-0 w-full z-50 transition-all duration-300 border-b border-transparent py-0',
         isScrolled || !isHome
-          ? 'bg-background/95 backdrop-blur-md border-border py-2.5 sm:py-3'
-          : 'bg-transparent py-4 sm:py-5',
+          ? 'bg-background/95 backdrop-blur-md border-border'
+          : 'bg-transparent',
       )}
     >
-      <div className="container mx-auto px-4 md:px-8 flex justify-between items-center">
+      <div className="container mx-auto px-4 md:px-8 flex justify-between items-center py-0">
         <Link to="/" className="flex items-center gap-0 group flex-shrink-0">
           <img
             src={logoFileto}
             alt="GRUPO FILETO"
-            className="h-24 sm:h-28 md:h-32 w-auto object-contain flex-shrink-0 transition-transform duration-300 group-hover:scale-105"
+            className="h-24 sm:h-28 md:h-32 w-auto object-contain flex-shrink-0 transition-transform duration-300 group-hover:scale-105 block"
           />
           <div className="-ml-6 sm:-ml-8 flex flex-col items-center font-serif font-bold text-[#b8934a] text-xs sm:text-sm md:text-base leading-tight select-none">
             <span className="block w-full text-center tracking-[0.10em]">GRUPO</span>
@@ -60,24 +60,25 @@ export function Navbar() {
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex gap-5 lg:gap-7">
+        <nav className="hidden sm:flex items-center gap-5 lg:gap-7">
           {navLinks.map((link) => (
             <a
               key={link.name}
               href={link.href}
               onClick={(e) => handleNavClick(e, link.href)}
-              className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors relative group"
+              className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors relative group py-1 whitespace-nowrap"
             >
               {link.name}
-              <span className="absolute -bottom-2 left-1/2 w-0 h-[1px] bg-primary transition-all duration-300 group-hover:w-full group-hover:left-0" />
+              <span className="absolute -bottom-1 left-1/2 w-0 h-[1px] bg-primary transition-all duration-300 group-hover:w-full group-hover:left-0" />
             </a>
           ))}
         </nav>
 
         {/* Mobile Toggle */}
         <button
-          className="md:hidden text-foreground p-2"
+          className="sm:hidden text-foreground p-2"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          aria-label="Abrir menu"
         >
           {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
@@ -85,7 +86,7 @@ export function Navbar() {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-background border-b border-border py-4 px-4 flex flex-col gap-4 shadow-xl animate-fade-in-down">
+        <div className="sm:hidden absolute top-full left-0 w-full bg-background border-b border-border py-4 px-4 flex flex-col gap-4 shadow-xl animate-fade-in-down">
           {navLinks.map((link) => (
             <a
               key={link.name}
