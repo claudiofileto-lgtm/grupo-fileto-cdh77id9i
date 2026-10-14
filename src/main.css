@@ -70,10 +70,11 @@
   }
 
   /* Page transition animations (varied, premium, GPU-accelerated) */
+  /* 1. De baixo para cima (sobe) */
   @keyframes pageFadeUp {
     0% {
       opacity: 0;
-      transform: translateY(22px);
+      transform: translateY(32px);
     }
     100% {
       opacity: 1;
@@ -81,10 +82,23 @@
     }
   }
 
-  @keyframes pageSlideRight {
+  /* 2. De cima para baixo (desce) */
+  @keyframes pageFadeDown {
     0% {
       opacity: 0;
-      transform: translateX(36px);
+      transform: translateY(-32px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* 3. Da direita para a esquerda (entra pela direita deslizando à esquerda) */
+  @keyframes pageSlideFromRight {
+    0% {
+      opacity: 0;
+      transform: translateX(44px);
     }
     100% {
       opacity: 1;
@@ -92,10 +106,11 @@
     }
   }
 
-  @keyframes pageSlideLeft {
+  /* 4. Da esquerda para a direita (entra pela esquerda deslizando à direita) */
+  @keyframes pageSlideFromLeft {
     0% {
       opacity: 0;
-      transform: translateX(-36px);
+      transform: translateX(-44px);
     }
     100% {
       opacity: 1;
@@ -103,10 +118,11 @@
     }
   }
 
+  /* 5. Zoom suave (aproximação elegante) */
   @keyframes pageZoomIn {
     0% {
       opacity: 0;
-      transform: scale(0.96);
+      transform: scale(0.95);
     }
     100% {
       opacity: 1;
@@ -114,27 +130,15 @@
     }
   }
 
-  @keyframes pageBlurIn {
-    0% {
-      opacity: 0;
-      filter: blur(8px);
-      transform: translateY(12px) scale(0.985);
-    }
-    100% {
-      opacity: 1;
-      filter: blur(0px);
-      transform: translateY(0) scale(1);
-    }
-  }
-
+  /* 6. Perspectiva 3D Elevate (inclinação tridimensional suave) */
   @keyframes pageElevate {
     0% {
       opacity: 0;
-      transform: perspective(1000px) rotateX(2.5deg) translateY(18px);
+      transform: perspective(1100px) rotateX(3.5deg) translateY(22px);
     }
     100% {
       opacity: 1;
-      transform: perspective(1000px) rotateX(0deg) translateY(0);
+      transform: perspective(1100px) rotateX(0deg) translateY(0);
     }
   }
 
@@ -143,38 +147,38 @@
     will-change: opacity, transform;
   }
 
-  .animate-page-slide-right {
-    animation: pageSlideRight 600ms cubic-bezier(0.16, 1, 0.3, 1) both;
+  .animate-page-fade-down {
+    animation: pageFadeDown 620ms cubic-bezier(0.16, 1, 0.3, 1) both;
     will-change: opacity, transform;
   }
 
-  .animate-page-slide-left {
-    animation: pageSlideLeft 600ms cubic-bezier(0.16, 1, 0.3, 1) both;
+  .animate-page-slide-from-right {
+    animation: pageSlideFromRight 620ms cubic-bezier(0.16, 1, 0.3, 1) both;
+    will-change: opacity, transform;
+  }
+
+  .animate-page-slide-from-left {
+    animation: pageSlideFromLeft 620ms cubic-bezier(0.16, 1, 0.3, 1) both;
     will-change: opacity, transform;
   }
 
   .animate-page-zoom-in {
-    animation: pageZoomIn 650ms cubic-bezier(0.16, 1, 0.3, 1) both;
+    animation: pageZoomIn 620ms cubic-bezier(0.16, 1, 0.3, 1) both;
     will-change: opacity, transform;
   }
 
-  .animate-page-blur-in {
-    animation: pageBlurIn 650ms cubic-bezier(0.16, 1, 0.3, 1) both;
-    will-change: opacity, transform, filter;
-  }
-
   .animate-page-elevate {
-    animation: pageElevate 680ms cubic-bezier(0.16, 1, 0.3, 1) both;
+    animation: pageElevate 640ms cubic-bezier(0.16, 1, 0.3, 1) both;
     will-change: opacity, transform;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .animate-page-fade-up,
-  .animate-page-slide-right,
-  .animate-page-slide-left,
+  .animate-page-fade-down,
+  .animate-page-slide-from-right,
+  .animate-page-slide-from-left,
   .animate-page-zoom-in,
-  .animate-page-blur-in,
   .animate-page-elevate {
     animation: none !important;
     opacity: 1 !important;
