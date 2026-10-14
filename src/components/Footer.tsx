@@ -28,7 +28,7 @@ export function Footer() {
             <h4 className="font-serif text-base md:text-lg font-semibold mb-2.5 text-white">
               Sobre
             </h4>
-            <p className="text-gray-300 text-xs sm:text-sm leading-relaxed text-justify">
+            <p className="text-gray-300 hover:text-primary transition-colors text-xs sm:text-sm leading-relaxed text-justify">
               Expertise estratégica nas áreas jurídica, tributária, empresarial e financeira a
               serviço dos interesses corporativos e pessoais mais complexos e desafiadores.
             </p>
